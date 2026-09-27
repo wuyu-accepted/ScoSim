@@ -1,0 +1,483 @@
+{
+  "accounting_basis": "network_success rows represent billable successful transport; cache_hit rows are reported but not billed again",
+  "ledger_sha256": "7048302e8c1559b00f876a9f00e0edea68b037354fff51f505ec93dcac4c493f",
+  "limitations": [
+    "Prices were not frozen; all monetary fields are NA_price_not_frozen.",
+    "The competition-era Dimensions 1/4 archive exposes only aggregate request and token totals, not input/output or resident/governance separation.",
+    "Dimension 2 shared_embedding calls cannot be uniquely attributed to one baseline and are assigned to shared_cross_method.",
+    "The Dimension 3 full-input CampusPulse trajectory reuses the already-paid formal CampusPulse run and creates zero additional provider calls in this ledger.",
+    "Cache-hit event counts describe audit reuse events and are not guaranteed to equal unique logical evaluation cases.",
+    "Malformed concurrent-append audit lines are counted and skipped; source files are never repaired in place."
+  ],
+  "rows": [
+    {
+      "cache_hit_events": 3440,
+      "call_type": "argument_extraction",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 9,
+      "input_tokens": 213807,
+      "method": "belief_engine",
+      "network_success_calls": 715,
+      "output_tokens": 48923,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 262730
+    },
+    {
+      "cache_hit_events": 5941,
+      "call_type": "evidence_judgment",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 7,
+      "input_tokens": 224406,
+      "method": "belief_engine",
+      "network_success_calls": 989,
+      "output_tokens": 17155,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 241561
+    },
+    {
+      "cache_hit_events": 1584,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 1,
+      "input_tokens": 870613,
+      "method": "belief_engine",
+      "network_success_calls": 512,
+      "output_tokens": 52258,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 922871
+    },
+    {
+      "cache_hit_events": 6,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 7,
+      "input_tokens": 1560079,
+      "method": "campuspulse",
+      "network_success_calls": 512,
+      "output_tokens": 47283,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 1607362
+    },
+    {
+      "cache_hit_events": 0,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 0,
+      "input_tokens": 832200,
+      "method": "chuang_opinion_dynamics",
+      "network_success_calls": 512,
+      "output_tokens": 44570,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 876770
+    },
+    {
+      "cache_hit_events": 0,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 0,
+      "input_tokens": 987956,
+      "method": "generative_agents",
+      "network_success_calls": 512,
+      "output_tokens": 54114,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 1042070
+    },
+    {
+      "cache_hit_events": 538,
+      "call_type": "memory_importance_scoring",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 0,
+      "input_tokens": 149816,
+      "method": "generative_agents",
+      "network_success_calls": 702,
+      "output_tokens": 9828,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 159644
+    },
+    {
+      "cache_hit_events": 8764,
+      "call_type": "embedding",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method",
+      "failed_attempt_events": 4,
+      "input_tokens": 768009,
+      "method": "shared_cross_method",
+      "network_success_calls": 3131,
+      "output_tokens": 0,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 768009
+    },
+    {
+      "cache_hit_events": 0,
+      "call_type": "external_text_blind_judge",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "cross_method_blind_review",
+      "failed_attempt_events": 0,
+      "input_tokens": 259245,
+      "method": "external_judge",
+      "network_success_calls": 168,
+      "output_tokens": 24421,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 283666
+    },
+    {
+      "cache_hit_events": 93,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "longitudinal_ablation",
+      "failed_attempt_events": 1,
+      "input_tokens": 2634302,
+      "method": "campuspulse_ablation_conditions",
+      "network_success_calls": 1443,
+      "output_tokens": 153846,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 2788148
+    },
+    {
+      "cache_hit_events": 0,
+      "call_type": "external_text_blind_judge",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension2",
+      "experiment": "longitudinal_ablation_blind_review",
+      "failed_attempt_events": 0,
+      "input_tokens": 454490,
+      "method": "external_judge",
+      "network_success_calls": 319,
+      "output_tokens": 49696,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 504186
+    },
+    {
+      "cache_hit_events": 2384,
+      "call_type": "embedding",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "cross_method",
+      "failed_attempt_events": 8,
+      "input_tokens": 1328881,
+      "method": "belief_engine",
+      "network_success_calls": 2002,
+      "output_tokens": 0,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 1328881
+    },
+    {
+      "cache_hit_events": 0,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "cross_method",
+      "failed_attempt_events": 10,
+      "input_tokens": 22015216,
+      "method": "chuang_et_al",
+      "network_success_calls": 9000,
+      "output_tokens": 431035,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 22446251
+    },
+    {
+      "cache_hit_events": 492584,
+      "call_type": "embedding",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "cross_method",
+      "failed_attempt_events": 23,
+      "input_tokens": 4887021,
+      "method": "generative_agents",
+      "network_success_calls": 23010,
+      "output_tokens": 0,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 4887021
+    },
+    {
+      "cache_hit_events": 223036,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "cross_method",
+      "failed_attempt_events": 136,
+      "input_tokens": 27601079,
+      "method": "generative_agents",
+      "network_success_calls": 9458,
+      "output_tokens": 681446,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 28282525
+    },
+    {
+      "cache_hit_events": 197279,
+      "call_type": "memory_importance_scoring",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "cross_method",
+      "failed_attempt_events": 120,
+      "input_tokens": 2246300,
+      "method": "generative_agents",
+      "network_success_calls": 14099,
+      "output_tokens": 206074,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 2452374
+    },
+    {
+      "cache_hit_events": 3335,
+      "call_type": "memory_reflection",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "cross_method",
+      "failed_attempt_events": 3,
+      "input_tokens": 3467171,
+      "method": "generative_agents",
+      "network_success_calls": 1104,
+      "output_tokens": 192375,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 3659546
+    },
+    {
+      "cache_hit_events": 127892,
+      "call_type": "questionnaire_stance_probe",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "cross_method",
+      "failed_attempt_events": 145,
+      "input_tokens": 7011645,
+      "method": "generative_agents",
+      "network_success_calls": 3069,
+      "output_tokens": 40050,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 7051695
+    },
+    {
+      "cache_hit_events": 3734,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "longitudinal_ablation",
+      "failed_attempt_events": 36,
+      "input_tokens": 25761221,
+      "method": "campuspulse_no_profile",
+      "network_success_calls": 9000,
+      "output_tokens": 650489,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 26411710
+    },
+    {
+      "cache_hit_events": 5991,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "longitudinal_ablation",
+      "failed_attempt_events": 1,
+      "input_tokens": 8911382,
+      "method": "campuspulse_no_profile_no_smc",
+      "network_success_calls": 6009,
+      "output_tokens": 333811,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 9245193
+    },
+    {
+      "cache_hit_events": 6926,
+      "call_type": "main_simulation_action",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimension3",
+      "experiment": "longitudinal_ablation",
+      "failed_attempt_events": 36,
+      "input_tokens": 15714368,
+      "method": "campuspulse_single_particle",
+      "network_success_calls": 9000,
+      "output_tokens": 701878,
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 16416246
+    },
+    {
+      "cache_hit_events": 0,
+      "call_type": "mixed_resident_and_governance_calls",
+      "cost_cny": "NA_price_not_frozen",
+      "cost_original_currency": "NA_price_not_frozen",
+      "dimension": "dimensions1_and_4",
+      "experiment": "formal_paired_forum_run",
+      "failed_attempt_events": 0,
+      "input_tokens": "NA_not_archived",
+      "method": "campuspulse",
+      "network_success_calls": 1126,
+      "output_tokens": "NA_not_archived",
+      "price_version": "NA_price_not_frozen",
+      "total_tokens": 6337189
+    }
+  ],
+  "schema_version": "campus-pulse-full-lifecycle-usage-ledger-v1",
+  "scope": "authoritative formal experiment audits only; pilots, abandoned shards and handshake tests excluded",
+  "source_audits": [
+    {
+      "dimension": "dimension2",
+      "event_counts": {
+        "cache_hit": 6,
+        "network_or_validation_error": 7,
+        "network_success": 512
+      },
+      "experiment": "cross_method",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension2_cross_method\\formal_20260919\\campuspulse\\provider_state\\provider_audit.jsonl",
+      "sha256": "2eff96f04a377c0120a4ef4ff2e2e2d11a799de0404acda3b58edfdf15a551e7"
+    },
+    {
+      "dimension": "dimension2",
+      "event_counts": {
+        "cache_hit": 20267,
+        "network_or_validation_error": 21,
+        "network_success": 7073
+      },
+      "experiment": "cross_method",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension2_cross_method\\formal_20260919\\baselines\\provider_state\\provider_audit.jsonl",
+      "sha256": "6c0944289141dd1f053402a2df901038618c5eda8428c5f7c5f8cc7f0fb09715"
+    },
+    {
+      "dimension": "dimension2",
+      "event_counts": {
+        "network_success": 168
+      },
+      "experiment": "cross_method_blind_review",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension2_cross_method\\formal_20260919\\judge_results\\provider_state\\provider_audit.jsonl",
+      "sha256": "b3cbc0112c270e4841c23a9d7586a67dc82ffae9967ae9955d82d40657978eb1"
+    },
+    {
+      "dimension": "dimension2",
+      "event_counts": {
+        "cache_hit": 93,
+        "network_or_validation_error": 1,
+        "network_success": 1443
+      },
+      "experiment": "longitudinal_ablation",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension2_longitudinal_ablation\\formal-20260920-v1\\provider_state\\provider_audit.jsonl",
+      "sha256": "b669ff1b12316ed47e3991a2856453393ea027342ec0b0eaae1511cecca79f28"
+    },
+    {
+      "dimension": "dimension2",
+      "event_counts": {
+        "network_success": 319
+      },
+      "experiment": "longitudinal_ablation_blind_review",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension2_longitudinal_ablation\\formal-20260920-v1\\judge2048\\provider_state\\provider_audit.jsonl",
+      "sha256": "67d62b2b0623211237831656c49cb00fd7d6d2f4d3d036c9dd16a67ca663687f"
+    },
+    {
+      "dimension": "dimension3",
+      "event_counts": {
+        "cache_hit": 2384,
+        "network_or_validation_error": 8,
+        "network_success": 2002
+      },
+      "experiment": "cross_method",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension3_belief_formal\\frozen-20260815-v2\\provider_state\\provider_audit.jsonl",
+      "sha256": "f35c1f2a3419cc11888d6ba454b1677b3253d758638c50859a1d554573bcc49d"
+    },
+    {
+      "dimension": "dimension3",
+      "event_counts": {
+        "cache_hit": 1044126,
+        "default_parameter_omitted": 35056,
+        "embedding_input_bounded": 60,
+        "malformed_audit_line": 89,
+        "network_or_validation_error": 427,
+        "network_success": 50740,
+        "output_cap_compatibility_amendment": 29805
+      },
+      "experiment": "cross_method",
+      "malformed_line_count": 89,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension3_generative_agents_formal\\frozen-20260815-v1\\provider_state\\provider_audit.jsonl",
+      "sha256": "cfa0dbb27914e5029d7a341e82fbbed749cd7427f313a831a65125a82d0b73fb"
+    },
+    {
+      "dimension": "dimension3",
+      "event_counts": {
+        "default_parameter_omitted": 9000,
+        "network_or_validation_error": 10,
+        "network_success": 9000
+      },
+      "experiment": "cross_method",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension3_chuang_formal\\frozen-20260815-v1\\provider_state\\provider_audit.jsonl",
+      "sha256": "02792037d1ec39d8d0aded0965e564b0df0c54cbfe6999dc68cb1d8b75dd67ad"
+    },
+    {
+      "dimension": "dimension3",
+      "event_counts": {
+        "cache_hit": 6926,
+        "default_parameter_omitted": 15932,
+        "network_or_validation_error": 36,
+        "network_success": 9000
+      },
+      "experiment": "longitudinal_ablation",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension3_campuspulse_ablation\\frozen-20260815-v1\\single_particle\\provider_state\\provider_audit.jsonl",
+      "sha256": "97a78e4a0ae16cdbfce7db6228fe07d3b3b4ff86446adf7f488fcf7836c23c38"
+    },
+    {
+      "dimension": "dimension3",
+      "event_counts": {
+        "cache_hit": 3734,
+        "default_parameter_omitted": 12741,
+        "network_or_validation_error": 36,
+        "network_success": 9000
+      },
+      "experiment": "longitudinal_ablation",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension3_campuspulse_ablation\\frozen-20260815-v1\\no_profile\\provider_state\\provider_audit.jsonl",
+      "sha256": "5a28d437b48ff3fb8c5f56ce9539c213df0d0911399a78c49c5a58eb69633628"
+    },
+    {
+      "dimension": "dimension3",
+      "event_counts": {
+        "cache_hit": 5991,
+        "default_parameter_omitted": 12000,
+        "network_or_validation_error": 1,
+        "network_success": 6009
+      },
+      "experiment": "longitudinal_ablation",
+      "malformed_line_count": 0,
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension3_campuspulse_ablation\\frozen-20260815-v1\\no_profile_no_smc\\provider_state\\provider_audit.jsonl",
+      "sha256": "bc7c1c4dd9a8dffd81435f28cb6303ae75fe2a37fe4e01edb5499f1ee2665239"
+    }
+  ]
+}

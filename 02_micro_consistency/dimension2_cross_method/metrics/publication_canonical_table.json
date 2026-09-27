@@ -1,0 +1,14 @@
+{
+  "schema_version": "dimension2-cross-method-publication-table-v1",
+  "authority": "docs/Comparative_Experiment_Plan_v2(2).md",
+  "recomputed_in_this_step": false,
+  "methods": ["campuspulse", "belief_engine", "generative_agents", "chuang_opinion_dynamics"],
+  "metrics": {
+    "direct_context_uptake": [1.0, 1.0, 1.0, 1.0],
+    "unsupported_fact_fabrication": [0.008, 0.151, 0.083, 0.024],
+    "expression_pre_state_agreement": [0.241, 0.235, null, null],
+    "decision_post_state_expression_consistency": [0.771, 0.756, null, null],
+    "deduplicated_language_style_consistency": [0.798, 0.801, 0.898, 0.800]
+  },
+  "legacy_computed_artifacts_are_audit_only": true
+}

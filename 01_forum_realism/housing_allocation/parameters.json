@@ -1,0 +1,22 @@
+{
+  "branches": [
+    "Natural",
+    "D"
+  ],
+  "fork_after_tick": 3,
+  "governance_decision_ticks": [
+    5,
+    7
+  ],
+  "governance_slots": 6,
+  "resident_actions_per_tick": 24,
+  "resident_slots": 360,
+  "scenario": "housing_allocation_legitimacy_dispute",
+  "schema_version": "campus-pulse-paper-parameters-v1",
+  "seed": 20260722,
+  "shared_prefix_through_tick": 3,
+  "tick_end": 10,
+  "tick_start": 0,
+  "token_hard_limit": 6500000,
+  "total_slots": 366
+}

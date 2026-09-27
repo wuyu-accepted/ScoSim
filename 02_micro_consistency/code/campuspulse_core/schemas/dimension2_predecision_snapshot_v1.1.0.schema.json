@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://campuspulse.local/schemas/dimension2-predecision-snapshot-v1.1.0.schema.json",
+  "title": "Frozen-warmup CampusPulse dimension-2 predecision particle snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "protocol_version", "scenario_id", "seed", "tick", "stance_proposition", "source_kind", "warmup_condition", "warmup_ticks", "warmup_record_count", "capture_point", "source_provenance", "agents"],
+  "properties": {
+    "schema_version": {"const": "campuspulse-d2-predecision-snapshot-v1.1.0"},
+    "protocol_version": {"const": "1.2.0"},
+    "scenario_id": {"const": "governance_legitimacy_dispute"},
+    "seed": {"type": "integer"},
+    "tick": {"const": 3},
+    "stance_proposition": {"const": "The currently announced housing-allocation process is legitimate and acceptable."},
+    "source_kind": {"const": "frozen_warmup_trajectory"},
+    "warmup_condition": {"const": "full"},
+    "warmup_ticks": {"const": [0, 1, 2]},
+    "warmup_record_count": {"const": 36},
+    "capture_point": {"const": "after_tick_2_native_assimilation_before_tick_3_ablation_generation"},
+    "source_provenance": {
+      "type": "object",
+      "required": ["warmup_records_sha256", "warmup_assimilation_sha256", "panel_sha256"],
+      "properties": {
+        "warmup_records_sha256": {"$ref": "#/$defs/sha256"},
+        "warmup_assimilation_sha256": {"$ref": "#/$defs/sha256"},
+        "panel_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "agents": {
+      "type": "array", "minItems": 12, "maxItems": 12,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["agent_id", "particles", "particle_weights"],
+        "properties": {
+          "agent_id": {"type": "string", "minLength": 1},
+          "particles": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"$ref": "#/$defs/state"}},
+          "particle_weights": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"type": "number", "minimum": 0, "maximum": 1}}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "state": {
+      "type": "object", "additionalProperties": false,
+      "required": ["attention", "concern", "trust", "satisfaction", "support", "opposition", "activity", "voice", "service_strain", "rumor_belief", "verified_belief", "evidence_acceptance"],
+      "properties": {
+        "attention": {"type": "number", "minimum": 0, "maximum": 1}, "concern": {"type": "number", "minimum": 0, "maximum": 1}, "trust": {"type": "number", "minimum": 0, "maximum": 1}, "satisfaction": {"type": "number", "minimum": 0, "maximum": 1}, "support": {"type": "number", "minimum": 0, "maximum": 1}, "opposition": {"type": "number", "minimum": 0, "maximum": 1}, "activity": {"type": "number", "minimum": 0, "maximum": 1}, "voice": {"type": "number", "minimum": 0, "maximum": 1}, "service_strain": {"type": "number", "minimum": 0, "maximum": 1}, "rumor_belief": {"type": "number", "minimum": 0, "maximum": 1}, "verified_belief": {"type": "number", "minimum": 0, "maximum": 1}, "evidence_acceptance": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    }
+  }
+}

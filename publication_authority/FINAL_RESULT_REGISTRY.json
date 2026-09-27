@@ -1,0 +1,31 @@
+{
+  "authority_policy": "user_designated_final_markdown_overrides_historical_computed_tables",
+  "derived_reports": [
+    {
+      "path": "02_micro_consistency/dimension2_cross_method/report/DIMENSION2_CROSS_METHOD_REPORT.md",
+      "sha256": "2437be8f179f9f27aabc267ff95cf0ea7d2c1fefcfff4f09210909de46442cd5"
+    },
+    {
+      "path": "02_micro_consistency/dimension2_ablation/report/DIMENSION2_ABLATION_REPORT.md",
+      "sha256": "811c047049b42a45f5a15405efcf19c1026695b3e951cbdcb83d2fbafedd8cea"
+    },
+    {
+      "path": "03_population_polarization/dimension3_cross_method/report/DIMENSION3_CROSS_METHOD_REPORT.md",
+      "sha256": "51a6facb65bff198ac767f51f49526ae147a59254e47c94587e2033e10516774"
+    },
+    {
+      "path": "03_population_polarization/dimension3_ablation/report/DIMENSION3_ABLATION_REPORT.md",
+      "sha256": "f052f098b88960a356905a600450bdee123e8596740b739ce2fdf2d327af587c"
+    }
+  ],
+  "explicit_exception_confirmed_by_user": {
+    "dimension2_ablation_state_only_decision_post_state_expression_consistency": 0.924
+  },
+  "historical_metrics_policy": "retained_for_audit_not_publication_authority",
+  "recomputed": false,
+  "schema_version": "aamas2027-final-publication-authority-v1",
+  "snapshot_path": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "snapshot_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8",
+  "source_path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\docs\\Comparative_Experiment_Plan_v2(2).md",
+  "source_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8"
+}

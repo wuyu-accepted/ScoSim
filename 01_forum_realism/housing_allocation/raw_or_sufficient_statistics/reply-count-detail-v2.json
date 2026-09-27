@@ -1,0 +1,185 @@
+{
+  "schema_version": "campus-pulse-forum-reply-count-detail-v2",
+  "mature_thread_definition": "final_tick - created_tick >= 2",
+  "worlds": [
+    {
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "branch": "D",
+      "final_tick": 10,
+      "mature_thread_count": 8,
+      "exact_reply_count_histogram": {
+        "2": 2,
+        "3": 1,
+        "8": 1,
+        "10": 1,
+        "14": 2,
+        "15": 1
+      }
+    },
+    {
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "branch": "Natural",
+      "final_tick": 10,
+      "mature_thread_count": 15,
+      "exact_reply_count_histogram": {
+        "0": 2,
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1,
+        "7": 2,
+        "8": 3
+      }
+    },
+    {
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "branch": "Natural",
+      "final_tick": 6,
+      "mature_thread_count": 12,
+      "exact_reply_count_histogram": {
+        "0": 5,
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "branch": "D",
+      "final_tick": 6,
+      "mature_thread_count": 13,
+      "exact_reply_count_histogram": {
+        "0": 4,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "6": 1,
+        "7": 1,
+        "9": 1
+      }
+    }
+  ],
+  "combined_exact_reply_count_histogram": {
+    "0": 11,
+    "1": 6,
+    "2": 8,
+    "3": 6,
+    "4": 1,
+    "6": 3,
+    "7": 4,
+    "8": 4,
+    "9": 1,
+    "10": 1,
+    "14": 2,
+    "15": 1
+  },
+  "reviewed_source_threads": {
+    "scope": "reviewed_thread_sample_not_full_corpus",
+    "thread_count": 3254,
+    "input_sha256": "16926bd4e33f229b9492ed20e749fda4f57a795d98e04671cdde0555828cbbef",
+    "exact_reply_count_histogram": {
+      "0": 953,
+      "1": 664,
+      "2": 432,
+      "3": 249,
+      "4": 222,
+      "5": 135,
+      "6": 108,
+      "7": 75,
+      "8": 64,
+      "9": 62,
+      "10": 62,
+      "11": 25,
+      "12": 20,
+      "13": 23,
+      "14": 20,
+      "15": 17,
+      "16": 16,
+      "17": 14,
+      "18": 10,
+      "19": 6,
+      "20": 8,
+      "21": 4,
+      "22": 3,
+      "23": 10,
+      "24": 5,
+      "25": 1,
+      "26": 2,
+      "27": 1,
+      "28": 2,
+      "30": 2,
+      "31": 1,
+      "32": 3,
+      "33": 2,
+      "34": 2,
+      "35": 1,
+      "36": 2,
+      "37": 1,
+      "38": 3,
+      "40": 3,
+      "46": 1,
+      "48": 1,
+      "50": 2,
+      "55": 1,
+      "56": 1,
+      "58": 1,
+      "67": 1,
+      "72": 1,
+      "77": 1,
+      "80": 1,
+      "92": 1,
+      "95": 1,
+      "105": 1,
+      "121": 1,
+      "165": 1,
+      "194": 1,
+      "198": 1,
+      "208": 1,
+      "402": 1,
+      "590": 1
+    },
+    "reply_bearing_thread_share": 0.70713,
+    "thread_size_bucket_counts": {
+      "zero": 953,
+      "small": 1345,
+      "medium": 773,
+      "large": 183
+    },
+    "thread_size_distribution": {
+      "zero": 0.29287,
+      "small": 0.413337,
+      "medium": 0.237554,
+      "large": 0.056238
+    },
+    "summary": {
+      "minimum": 0,
+      "maximum": 590,
+      "mean": 4.052243,
+      "median": 2.0,
+      "p75": 4,
+      "p90": 9,
+      "p95": 13,
+      "p99": 33
+    },
+    "privacy": {
+      "raw_text_persisted": false,
+      "source_ids_persisted": false,
+      "record_level_rows_persisted": false
+    }
+  },
+  "source_reference": {
+    "full_corpus_exact_histogram_available": false,
+    "full_corpus_available_comparison": "zero/small/medium/large bins in forum-ecology-benchmark-v2.json",
+    "reviewed_sample_exact_histogram_available": true,
+    "reason": "The reviewed 3,254-thread episode file retains comment_count and supports an exact aggregate histogram. The compact 131,604-thread public ecology release retains only four bins, so no full-corpus exact histogram is imputed."
+  },
+  "provider_calls": 0,
+  "content_sha256": "20591191dbedbafbed0dab1a2e6347b193a127b8a261d9b23799008387eb697b"
+}

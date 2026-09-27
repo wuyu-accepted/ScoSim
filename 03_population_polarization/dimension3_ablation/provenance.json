@@ -1,0 +1,45 @@
+{
+  "cost_status": "NA_price_not_frozen",
+  "experiment": "03_population_polarization/dimension3_ablation",
+  "files": [
+    {
+      "bytes": 1973,
+      "path": "CASE_AND_DATA.md",
+      "sha256": "5f542eb7d1363caef122366970828f1bdb6b2fd2bd142f06390c8c790ffa08a9"
+    },
+    {
+      "bytes": 732,
+      "path": "cost_by_method_and_call_type.csv",
+      "sha256": "0ca90849f53cbee90419ce67ee276a3f6aec5424db1c8222df0e8e07ee708739"
+    },
+    {
+      "bytes": 439,
+      "path": "evidence_index.json",
+      "sha256": "b155233ac1c860c8c6595dad11d1a714e04ce32bea2857e1412a32931f2e3c9e"
+    },
+    {
+      "bytes": 38179,
+      "path": "metrics/dimension3_ablation_metrics.json",
+      "sha256": "61f86e1db84de6a0445a2b2ebfddb31f1e40185eceb87801c00fe7823dc4a24b"
+    },
+    {
+      "bytes": 795,
+      "path": "parameters.json",
+      "sha256": "451a4e9aab3396c8a0e059e809dace6b62c4579e2e9bb8671ee7003d947fc5bf"
+    },
+    {
+      "bytes": 33769597,
+      "path": "raw_or_sufficient_statistics/combined_population_states.jsonl",
+      "sha256": "d7abea1a087c2aa02eaf365ea7aee390647e8fc10bc3c58494b9dcaefecb6540"
+    },
+    {
+      "bytes": 9694,
+      "path": "report/DIMENSION3_ABLATION_REPORT.md",
+      "sha256": "f052f098b88960a356905a600450bdee123e8596740b739ce2fdf2d327af587c"
+    }
+  ],
+  "publication_authority": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "publication_authority_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8",
+  "recomputed_during_completion": false,
+  "schema_version": "aamas2027-experiment-provenance-v1"
+}

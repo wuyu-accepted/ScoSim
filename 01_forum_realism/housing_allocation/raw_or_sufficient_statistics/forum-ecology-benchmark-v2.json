@@ -1,0 +1,377 @@
+{
+  "absolute_gates": {
+    "at_least_30_mature_threads": true,
+    "mature_reply_bearing_absolute_error_le_0_20": true,
+    "mature_thread_size_js_le_0_25": true
+  },
+  "benchmark_sha256": "399a4324be1563405c086ff3db5d5f473441c4a2b74bc31e403fabcba64a3969",
+  "comparisons": {
+    "mature_reply_bearing_absolute_error": 0.008447,
+    "mature_thread_size_js_divergence": 0.005298
+  },
+  "improvement_gates": {
+    "reply_bearing_share_increased_by_0_15": true,
+    "thread_size_js_reduced_by_30_percent": true,
+    "top10_concentration_reduced_by_20_percent": true,
+    "zero_reply_share_reduced_by_0_15": true
+  },
+  "input_files": [
+    {
+      "kind": "ecology",
+      "path": "forum-ecology-release-v1.json",
+      "sha256": "c8732f5bdcf68d6d6238c9f9a87ac009d03609085fdbe500697a3d49fcc674d8"
+    },
+    {
+      "kind": "result",
+      "path": "forum-hero-result-through-T10.json",
+      "sha256": "d46bdd034ad9384e225f5013c2b65d1bb3ce832e4ce3461ee1d0d00101cc3dd2"
+    },
+    {
+      "kind": "result",
+      "path": "Natural.result.json",
+      "sha256": "d657c9ef7ebefec235aee7a562af8ca5b6fbde8d4154d992d1d16f832fa1dc58"
+    },
+    {
+      "kind": "result",
+      "path": "D.result.json",
+      "sha256": "4fb3617c41e4d441a8c424b4925e9fe8b8230333189adcd6e86988b19d704830"
+    },
+    {
+      "kind": "baseline_benchmark",
+      "path": "forum-realism-benchmark-v1.json",
+      "sha256": "832da63868558130423f730f6330e5106ff1f54462ad71aa0d1a62b857453f25"
+    }
+  ],
+  "interpretation": "These are structural ecology checks over mature synthetic threads, not evidence that generated text or policy effects match real students.",
+  "mature_simulation": {
+    "definition": "final_tick - created_tick >= 2",
+    "mean_top_10pct_thread_message_share": 0.318287,
+    "reply_bearing_thread_share": 0.770833,
+    "thread_count": 48,
+    "thread_size_distribution": {
+      "large": 0.0625,
+      "medium": 0.291667,
+      "small": 0.416667,
+      "zero": 0.229167
+    },
+    "world_count": 4
+  },
+  "pre_calibration_baseline": {
+    "benchmark_sha256": "7cb235e8d7881487af3c547bb67d6bff940c67a8c32b9fb09bacfbac0b4b1bd6",
+    "mean_top_10pct_thread_message_share": 0.509344,
+    "reply_bearing_thread_share": 0.423913,
+    "thread_size_js_divergence": 0.414208,
+    "zero_reply_share": 0.576087
+  },
+  "privacy": {
+    "raw_text_read": false,
+    "record_level_agent_ids_persisted": false,
+    "source_ids_persisted": false
+  },
+  "reference": {
+    "ecology_release_sha256": "cbe99e45ff50466c9df750375855523a02377166a9a099883f0f751c9a569b89",
+    "episode_count": 131604,
+    "micro_role_count": 120,
+    "privacy": {
+      "raw_text_persisted": false,
+      "source_ids_persisted": false,
+      "source_paths_persisted": false
+    },
+    "reply_bearing_thread_share": 0.762386,
+    "reply_function_distribution": {
+      "complaint": 0.041663,
+      "discussion": 0.047628,
+      "emotional_vent": 0.166051,
+      "experience_share_or_ask": 0.072019,
+      "help_request": 0.158567,
+      "information_share": 0.046807,
+      "other": 0.058296,
+      "question": 0.374738,
+      "request": 0.034231
+    },
+    "thread_size_distribution": {
+      "large": 0.04006,
+      "medium": 0.240707,
+      "small": 0.481619,
+      "zero": 0.237614
+    }
+  },
+  "schema_version": "campus-pulse-forum-realism-benchmark-v2",
+  "status": "pass",
+  "worlds": [
+    {
+      "action_distribution": {
+        "governance_message": 0.078947,
+        "post": 0.105263,
+        "reply": 0.802632,
+        "seek_help": 0.013158
+      },
+      "activated_profile_reply_function_distribution": {
+        "complaint": 0.0,
+        "discussion": 0.130435,
+        "emotional_vent": 0.130435,
+        "experience_share_or_ask": 0.0,
+        "help_request": 0.028986,
+        "information_share": 0.289855,
+        "other": 0.0,
+        "question": 0.347826,
+        "request": 0.072464
+      },
+      "branch": "D",
+      "compound_speech_and_engagement_turns": 57,
+      "final_tick": 10,
+      "interaction_count": 105,
+      "interaction_counts": {
+        "like": 100,
+        "report": 0,
+        "repost": 5
+      },
+      "mature_reply_bearing_thread_share": 1.0,
+      "mature_thread_count": 8,
+      "mature_thread_definition": "final_tick - created_tick >= 2",
+      "mature_thread_size_counts": {
+        "large": 3,
+        "medium": 2,
+        "small": 3,
+        "zero": 0
+      },
+      "mature_thread_size_distribution": {
+        "large": 0.375,
+        "medium": 0.25,
+        "small": 0.375,
+        "zero": 0.0
+      },
+      "mature_top_10pct_thread_message_share": 0.210526,
+      "message_count": 76,
+      "messages_missing_public_profile": 1,
+      "multi_kind_engagement_turns": 5,
+      "reply_bearing_thread_share": 1.0,
+      "resident_message_count": 70,
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "semantic_schedule": "hero_tick_by_tick",
+      "source_label": "forum-hero-result-through-T10",
+      "thread_count": 8,
+      "thread_size_counts": {
+        "large": 3,
+        "medium": 2,
+        "small": 3,
+        "zero": 0
+      },
+      "thread_size_distribution": {
+        "large": 0.375,
+        "medium": 0.25,
+        "small": 0.375,
+        "zero": 0.0
+      },
+      "top_10pct_thread_message_share": 0.210526,
+      "unique_resident_speakers": 37,
+      "world_id": "forum-hero-result-through-T10:governance_legitimacy_dispute:20260722:D"
+    },
+    {
+      "action_distribution": {
+        "post": 0.205479,
+        "reply": 0.780822,
+        "seek_help": 0.013699
+      },
+      "activated_profile_reply_function_distribution": {
+        "complaint": 0.0,
+        "discussion": 0.069444,
+        "emotional_vent": 0.152778,
+        "experience_share_or_ask": 0.0,
+        "help_request": 0.055556,
+        "information_share": 0.194444,
+        "other": 0.0,
+        "question": 0.416667,
+        "request": 0.111111
+      },
+      "branch": "Natural",
+      "compound_speech_and_engagement_turns": 57,
+      "final_tick": 10,
+      "interaction_count": 114,
+      "interaction_counts": {
+        "like": 110,
+        "report": 0,
+        "repost": 4
+      },
+      "mature_reply_bearing_thread_share": 0.866667,
+      "mature_thread_count": 15,
+      "mature_thread_definition": "final_tick - created_tick >= 2",
+      "mature_thread_size_counts": {
+        "large": 0,
+        "medium": 6,
+        "small": 7,
+        "zero": 2
+      },
+      "mature_thread_size_distribution": {
+        "large": 0.0,
+        "medium": 0.4,
+        "small": 0.466667,
+        "zero": 0.133333
+      },
+      "mature_top_10pct_thread_message_share": 0.25,
+      "message_count": 73,
+      "messages_missing_public_profile": 1,
+      "multi_kind_engagement_turns": 4,
+      "reply_bearing_thread_share": 0.8125,
+      "resident_message_count": 73,
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "semantic_schedule": "hero_tick_by_tick",
+      "source_label": "forum-hero-result-through-T10",
+      "thread_count": 16,
+      "thread_size_counts": {
+        "large": 0,
+        "medium": 6,
+        "small": 7,
+        "zero": 3
+      },
+      "thread_size_distribution": {
+        "large": 0.0,
+        "medium": 0.375,
+        "small": 0.4375,
+        "zero": 0.1875
+      },
+      "top_10pct_thread_message_share": 0.246575,
+      "unique_resident_speakers": 43,
+      "world_id": "forum-hero-result-through-T10:governance_legitimacy_dispute:20260722:Natural"
+    },
+    {
+      "action_distribution": {
+        "post": 0.315789,
+        "reply": 0.657895,
+        "seek_help": 0.026316
+      },
+      "activated_profile_reply_function_distribution": {
+        "complaint": 0.0,
+        "discussion": 0.090909,
+        "emotional_vent": 0.090909,
+        "experience_share_or_ask": 0.0,
+        "help_request": 0.060606,
+        "information_share": 0.181818,
+        "other": 0.0,
+        "question": 0.454545,
+        "request": 0.121212
+      },
+      "branch": "Natural",
+      "compound_speech_and_engagement_turns": 25,
+      "final_tick": 6,
+      "interaction_count": 29,
+      "interaction_counts": {
+        "like": 29,
+        "report": 0,
+        "repost": 0
+      },
+      "mature_reply_bearing_thread_share": 0.583333,
+      "mature_thread_count": 12,
+      "mature_thread_definition": "final_tick - created_tick >= 2",
+      "mature_thread_size_counts": {
+        "large": 0,
+        "medium": 3,
+        "small": 4,
+        "zero": 5
+      },
+      "mature_thread_size_distribution": {
+        "large": 0.0,
+        "medium": 0.25,
+        "small": 0.333333,
+        "zero": 0.416667
+      },
+      "mature_top_10pct_thread_message_share": 0.405405,
+      "message_count": 38,
+      "messages_missing_public_profile": 5,
+      "multi_kind_engagement_turns": 0,
+      "reply_bearing_thread_share": 0.538462,
+      "resident_message_count": 38,
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "semantic_schedule": "hero_tick_by_tick",
+      "source_label": "Natural.result",
+      "thread_count": 13,
+      "thread_size_counts": {
+        "large": 0,
+        "medium": 3,
+        "small": 4,
+        "zero": 6
+      },
+      "thread_size_distribution": {
+        "large": 0.0,
+        "medium": 0.230769,
+        "small": 0.307692,
+        "zero": 0.461538
+      },
+      "top_10pct_thread_message_share": 0.394737,
+      "unique_resident_speakers": 21,
+      "world_id": "Natural.result:governance_legitimacy_dispute:20260722:Natural"
+    },
+    {
+      "action_distribution": {
+        "governance_message": 0.06383,
+        "post": 0.255319,
+        "reply": 0.659574,
+        "seek_help": 0.021277
+      },
+      "activated_profile_reply_function_distribution": {
+        "complaint": 0.0,
+        "discussion": 0.1,
+        "emotional_vent": 0.075,
+        "experience_share_or_ask": 0.0,
+        "help_request": 0.075,
+        "information_share": 0.2,
+        "other": 0.0,
+        "question": 0.4,
+        "request": 0.15
+      },
+      "branch": "D",
+      "compound_speech_and_engagement_turns": 32,
+      "final_tick": 6,
+      "interaction_count": 37,
+      "interaction_counts": {
+        "like": 37,
+        "report": 0,
+        "repost": 0
+      },
+      "mature_reply_bearing_thread_share": 0.692308,
+      "mature_thread_count": 13,
+      "mature_thread_definition": "final_tick - created_tick >= 2",
+      "mature_thread_size_counts": {
+        "large": 0,
+        "medium": 3,
+        "small": 6,
+        "zero": 4
+      },
+      "mature_thread_size_distribution": {
+        "large": 0.0,
+        "medium": 0.230769,
+        "small": 0.461538,
+        "zero": 0.307692
+      },
+      "mature_top_10pct_thread_message_share": 0.382979,
+      "message_count": 47,
+      "messages_missing_public_profile": 4,
+      "multi_kind_engagement_turns": 0,
+      "reply_bearing_thread_share": 0.692308,
+      "resident_message_count": 44,
+      "scenario_id": "governance_legitimacy_dispute",
+      "seed": 20260722,
+      "semantic_schedule": "hero_tick_by_tick",
+      "source_label": "D.result",
+      "thread_count": 13,
+      "thread_size_counts": {
+        "large": 0,
+        "medium": 3,
+        "small": 6,
+        "zero": 4
+      },
+      "thread_size_distribution": {
+        "large": 0.0,
+        "medium": 0.230769,
+        "small": 0.461538,
+        "zero": 0.307692
+      },
+      "top_10pct_thread_message_share": 0.382979,
+      "unique_resident_speakers": 20,
+      "world_id": "D.result:governance_legitimacy_dispute:20260722:D"
+    }
+  ]
+}

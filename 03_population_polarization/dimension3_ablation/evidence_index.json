@@ -1,0 +1,8 @@
+{
+  "publication_authority": "../../publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "source_results": [
+    "runs/dimension3_campuspulse_ablation/frozen-20260815-v1/formal_report_v2_ordinary_moments/dimension3_ablation_metrics.json",
+    "runs/dimension3_campuspulse_ablation/frozen-20260815-v1/formal_report_v2_ordinary_moments/dimension3_ablation_report.md"
+  ],
+  "status": "packaged_and_final_plan_registered"
+}

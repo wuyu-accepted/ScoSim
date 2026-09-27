@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://campuspulse.local/schemas/unified-output-v1.1.0.schema.json",
+  "title": "CampusPulse AAMAS 2027 unified experiment output with native assimilation",
+  "description": "One immutable JSONL record per agent and tick. CampusPulse state-bearing successful turns require a native post_state linked to an assimilation sidecar; unsupported cross-method fields are null, never zero-filled.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "protocol_version", "experiment_id", "run_id",
+    "method", "variant", "seed", "agent_id", "tick", "profile_id",
+    "interest_group", "visible_context", "pre_state", "post_state",
+    "particles", "particle_weights", "generated_text", "action", "emotion",
+    "public_stance", "public_or_private", "model_status", "assimilation_sidecar_id"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1.0"},
+    "protocol_version": {"enum": ["1.0.0", "1.1.0", "1.2.0"]},
+    "experiment_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "method": {
+      "enum": ["campuspulse", "belief_engine", "generative_agents", "chuang_opinion_dynamics"]
+    },
+    "variant": {"type": "string", "minLength": 1},
+    "seed": {"type": "integer", "minimum": 0},
+    "agent_id": {"type": "string", "minLength": 1},
+    "tick": {"type": "integer", "minimum": 0, "maximum": 9},
+    "profile_id": {"type": ["string", "null"], "minLength": 1},
+    "interest_group": {"type": ["string", "null"], "minLength": 1},
+    "visible_context": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/context_item"}
+    },
+    "pre_state": {"anyOf": [{"$ref": "#/$defs/state"}, {"type": "null"}]},
+    "post_state": {"anyOf": [{"$ref": "#/$defs/state"}, {"type": "null"}]},
+    "particles": {
+      "type": ["array", "null"],
+      "items": {"$ref": "#/$defs/state"},
+      "minItems": 1
+    },
+    "particle_weights": {
+      "type": ["array", "null"],
+      "items": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+      "minItems": 1
+    },
+    "generated_text": {"type": ["string", "null"]},
+    "action": {"type": ["string", "null"]},
+    "emotion": {"type": ["string", "null"]},
+    "public_stance": {"type": ["number", "null"], "minimum": -1.0, "maximum": 1.0},
+    "public_or_private": {"enum": ["public", "private", "none"]},
+    "model_status": {
+      "enum": ["success", "schema_repaired", "transport_failed", "schema_failed", "skipped", "not_applicable"]
+    },
+    "failure": {"anyOf": [{"$ref": "#/$defs/failure"}, {"type": "null"}]},
+    "source_record_id": {"type": ["string", "null"]},
+    "assimilation_sidecar_id": {"type": ["string", "null"], "minLength": 1}
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "method": {"const": "campuspulse"},
+          "variant": {"enum": ["state_only", "full"]},
+          "model_status": {"const": "success"}
+        },
+        "required": ["method", "variant", "model_status"]
+      },
+      "then": {
+        "properties": {
+          "pre_state": {"$ref": "#/$defs/state"},
+          "post_state": {"$ref": "#/$defs/state"},
+          "particles": {"type": "array", "items": {"$ref": "#/$defs/state"}, "minItems": 10, "maxItems": 10},
+          "particle_weights": {"type": "array", "items": {"type": "number", "minimum": 0.0, "maximum": 1.0}, "minItems": 10, "maxItems": 10},
+          "assimilation_sidecar_id": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attention", "concern", "trust", "satisfaction", "support", "opposition",
+        "activity", "voice", "service_strain", "rumor_belief", "verified_belief",
+        "evidence_acceptance"
+      ],
+      "properties": {
+        "attention": {"type": "number"},
+        "concern": {"type": "number"},
+        "trust": {"type": "number"},
+        "satisfaction": {"type": "number"},
+        "support": {"type": "number"},
+        "opposition": {"type": "number"},
+        "activity": {"type": "number"},
+        "voice": {"type": "number"},
+        "service_strain": {"type": "number"},
+        "rumor_belief": {"type": "number"},
+        "verified_belief": {"type": "number"},
+        "evidence_acceptance": {"type": "number"}
+      }
+    },
+    "context_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["message_id", "author_id", "text", "visibility"],
+      "properties": {
+        "message_id": {"type": "string", "minLength": 1},
+        "author_id": {"type": ["string", "null"]},
+        "text": {"type": "string"},
+        "visibility": {"enum": ["public", "private", "system"]},
+        "tick": {"type": ["integer", "null"], "minimum": 0, "maximum": 9}
+      }
+    },
+    "failure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage", "code", "message", "attempts"],
+      "properties": {
+        "stage": {"enum": ["transport", "generation", "schema", "adapter"]},
+        "code": {"type": "string", "minLength": 1},
+        "message": {"type": "string"},
+        "attempts": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

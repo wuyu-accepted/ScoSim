@@ -1,0 +1,50 @@
+{
+  "cost_status": "NA_price_not_frozen",
+  "experiment": "04_governance_response/housing_natural_vs_D",
+  "files": [
+    {
+      "bytes": 779,
+      "path": "CASE_AND_DATA.md",
+      "sha256": "8436d6438001837140297e94be95a0d914fa0ac8a1883966f1f0af11ff8c5412"
+    },
+    {
+      "bytes": 389,
+      "path": "cost_by_method_and_call_type.csv",
+      "sha256": "f3fcc86fb0466e7180731f7a36adf33a0377e357698ab00ebd420823e5d01622"
+    },
+    {
+      "bytes": 221,
+      "path": "COST_SCOPE.md",
+      "sha256": "db9cb0f56ba2b4f7e0a4f2f4332014571cc33e1836c80124426d6a17aec26b63"
+    },
+    {
+      "bytes": 297,
+      "path": "evidence_index.json",
+      "sha256": "a597d0c5035262c47489baefe0876a0afe3daad5c2be6e5e7fcc8a7a6efdcd1e"
+    },
+    {
+      "bytes": 3218,
+      "path": "metrics/dimensions-1-4-readonly-recompute-v1.json",
+      "sha256": "4811254b3c5b47ed90e9e8f4e0bcc07243558a642c7d914dc2707d12ba49ddbe"
+    },
+    {
+      "bytes": 485,
+      "path": "parameters.json",
+      "sha256": "a84d8f9075180976e5cbf64e21d86c93ca44bf06cf68307c834d18749b8ca9e0"
+    },
+    {
+      "bytes": 12441,
+      "path": "raw_or_sufficient_statistics/public-summary-v1.json",
+      "sha256": "17a7efabcdab2c817ba215d86dc628738d572300f22ee5638e0625b545e2d9af"
+    },
+    {
+      "bytes": 1414,
+      "path": "report/DIMENSION4_READONLY_REPORT.md",
+      "sha256": "76085d8356b97aafb5faa4ee8dbbb3fbfbf41e92b2ad46940dcbd2ed5aa4686e"
+    }
+  ],
+  "publication_authority": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "publication_authority_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8",
+  "recomputed_during_completion": false,
+  "schema_version": "aamas2027-experiment-provenance-v1"
+}

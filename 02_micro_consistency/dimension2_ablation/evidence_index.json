@@ -1,0 +1,8 @@
+{
+  "canonical_table": "metrics/publication_canonical_table.json",
+  "publication_authority": "../../publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "source_results": [
+    "runs/dimension2_longitudinal_ablation/formal-20260920-v1/report_v1.6.0/dimension2_longitudinal_ablation_report.md"
+  ],
+  "status": "packaged_and_final_plan_registered"
+}

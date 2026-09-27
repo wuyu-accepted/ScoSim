@@ -1,0 +1,2 @@
+﻿dimension,experiment,method,call_type,network_success_calls,cache_hit_events,failed_attempt_events,input_tokens,output_tokens,total_tokens,price_version,cost_original_currency,cost_cny
+dimensions1_and_4,formal_paired_forum_run,campuspulse,mixed_resident_and_governance_calls,1126,0,0,NA_not_archived,NA_not_archived,6337189,NA_price_not_frozen,NA_price_not_frozen,NA_price_not_frozen

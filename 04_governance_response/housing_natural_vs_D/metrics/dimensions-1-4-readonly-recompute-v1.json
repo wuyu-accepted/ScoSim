@@ -1,0 +1,83 @@
+{
+  "dimension1": {
+    "bucket_order": [
+      "zero",
+      "small",
+      "medium",
+      "large"
+    ],
+    "mature_thread_definition": "final_tick - created_tick >= 2",
+    "not_a_simulation_replay": true,
+    "reference_distribution": {
+      "large": 0.04006,
+      "medium": 0.240707,
+      "small": 0.481619,
+      "zero": 0.237614
+    },
+    "reference_reply_bearing_share": 0.762386,
+    "reference_thread_count": 131604,
+    "reply_bearing_absolute_error": 0.008447,
+    "schema_version": "campus-pulse-dimension1-readonly-recompute-v1",
+    "simulation_distribution": {
+      "large": 0.0625,
+      "medium": 0.291667,
+      "small": 0.416667,
+      "zero": 0.229167
+    },
+    "simulation_mature_thread_count": 48,
+    "simulation_reply_bearing_share": 0.770833,
+    "simulation_world_count": 4,
+    "source_kind": "frozen_privacy_safe_sufficient_statistics",
+    "thread_size_js_divergence_base2": 0.005298,
+    "thread_size_js_divergence_natural_log": 0.003672
+  },
+  "dimension4": {
+    "D": {
+      "cross_group_exposure_gap": 0.950413,
+      "direct_governance_question_denominator": 6,
+      "direct_governance_question_numerator": 3,
+      "direct_governance_question_rate": 0.5,
+      "direct_reply_count": 61.0,
+      "help_backlog_and_sla_risk": 0.0,
+      "population_trust": 0.374527,
+      "public_message_count": 76.0,
+      "unsupported_claim_velocity": 0.0
+    },
+    "D_minus_Natural": {
+      "cross_group_exposure_gap": 0.039302,
+      "direct_reply_count": 4.0,
+      "help_backlog_and_sla_risk": -0.7,
+      "population_trust": -0.054479,
+      "public_message_count": 3.0,
+      "unsupported_claim_velocity": -0.111111
+    },
+    "Natural": {
+      "cross_group_exposure_gap": 0.911111,
+      "direct_reply_count": 57.0,
+      "help_backlog_and_sla_risk": 0.7,
+      "population_trust": 0.429006,
+      "public_message_count": 73.0,
+      "unsupported_claim_velocity": 0.111111
+    },
+    "comparison_design": "paired_branch_final_value_difference",
+    "direct_governance_question_rate_difference": null,
+    "direct_governance_question_rate_note": "Natural has no governance messages, so the rate is undefined there and no ordinary D-Natural difference is reported.",
+    "not_standard_difference_in_differences": true,
+    "schema_version": "campus-pulse-dimension4-readonly-recompute-v1",
+    "shared_through_tick": 3
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core\\scenario\\housing_allocation\\reference_evidence\\four-dimension-v5-formal-v1\\public-summary-v1.json",
+      "sha256": "17a7efabcdab2c817ba215d86dc628738d572300f22ee5638e0625b545e2d9af"
+    },
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core\\scenario\\housing_allocation\\reference_evidence\\four-dimension-v5-formal-v1\\forum-ecology-benchmark-v2.json",
+      "sha256": "8e68939f08ef594ed16a935754b03cbef8cb16c8d1c0c65d316031dd394b4598"
+    }
+  ],
+  "model_calls": 0,
+  "network_calls": 0,
+  "result_sha256": "b68c745238bd74e12f680f847b96847bbf54ce76eebbdf8e452fddbafdaec328",
+  "schema_version": "campus-pulse-dimensions-1-4-readonly-recompute-v1"
+}

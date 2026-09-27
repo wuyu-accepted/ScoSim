@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://campuspulse.local/schemas/dimension2-predecision-snapshot-v1.0.0.schema.json",
+  "title": "Identity-bound CampusPulse dimension-2 predecision particle snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "scenario_id", "seed", "tick", "stance_proposition", "source_run_primary_slots", "source_provenance", "agents"],
+  "properties": {
+    "schema_version": {"const": "campuspulse-d2-predecision-snapshot-v1.0.0"},
+    "scenario_id": {"const": "governance_legitimacy_dispute"},
+    "seed": {"type": "integer"},
+    "tick": {"type": "integer"},
+    "stance_proposition": {"const": "The currently announced housing-allocation process is legitimate and acceptable."},
+    "source_run_primary_slots": {"const": 366},
+    "source_provenance": {"type": "object"},
+    "agents": {
+      "type": "array", "minItems": 12, "maxItems": 12,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["agent_id", "particles", "particle_weights"],
+        "properties": {
+          "agent_id": {"type": "string", "minLength": 1},
+          "particles": {
+            "type": "array", "minItems": 10, "maxItems": 10,
+            "items": {
+              "type": "object", "additionalProperties": false,
+              "required": ["attention", "concern", "trust", "satisfaction", "support", "opposition", "activity", "voice", "service_strain", "rumor_belief", "verified_belief", "evidence_acceptance"],
+              "properties": {
+                "attention": {"type": "number", "minimum": 0, "maximum": 1}, "concern": {"type": "number", "minimum": 0, "maximum": 1}, "trust": {"type": "number", "minimum": 0, "maximum": 1}, "satisfaction": {"type": "number", "minimum": 0, "maximum": 1}, "support": {"type": "number", "minimum": 0, "maximum": 1}, "opposition": {"type": "number", "minimum": 0, "maximum": 1}, "activity": {"type": "number", "minimum": 0, "maximum": 1}, "voice": {"type": "number", "minimum": 0, "maximum": 1}, "service_strain": {"type": "number", "minimum": 0, "maximum": 1}, "rumor_belief": {"type": "number", "minimum": 0, "maximum": 1}, "verified_belief": {"type": "number", "minimum": 0, "maximum": 1}, "evidence_acceptance": {"type": "number", "minimum": 0, "maximum": 1}
+              }
+            }
+          },
+          "particle_weights": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"type": "number", "minimum": 0}}
+        }
+      }
+    }
+  }
+}

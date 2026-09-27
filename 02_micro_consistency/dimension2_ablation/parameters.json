@@ -1,0 +1,26 @@
+{
+  "schema_version": "campus-pulse-dimension2-paper-parameters-v1",
+  "scenario_id": "governance_legitimacy_dispute",
+  "horizontal_common_observations": 512,
+  "horizontal_methods": [
+    "campuspulse",
+    "belief_engine",
+    "generative_agents",
+    "chuang_opinion_dynamics"
+  ],
+  "ablation_conditions": [
+    "context_only",
+    "profile_only",
+    "state_only",
+    "full"
+  ],
+  "representative_agents": 12,
+  "frozen_warmup_ticks": [0, 1, 2],
+  "paired_decision_tick": 3,
+  "condition_classifier": "SVM",
+  "validation": "leave_one_agent_out",
+  "permutation_count": 999,
+  "language_style_deduplicate_exact_text": true,
+  "not_applicable_policy": "NA_not_zero",
+  "protocol_version": "1.3.0"
+}

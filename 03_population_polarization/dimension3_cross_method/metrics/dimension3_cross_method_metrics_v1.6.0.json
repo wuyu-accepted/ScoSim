@@ -1,0 +1,278 @@
+{
+  "definitions": {
+    "analysis_unit": "one equally weighted parent agent",
+    "entropy_bin_count": 20,
+    "entropy_degenerate_variance_threshold": 1e-10,
+    "entropy_edges": [
+      -1.0,
+      -0.9,
+      -0.8,
+      -0.7,
+      -0.6,
+      -0.5,
+      -0.4,
+      -0.3,
+      -0.2,
+      -0.1,
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "entropy_log_base": "natural",
+    "entropy_normalization": "divide by ln(20)",
+    "kde": "scipy gaussian_kde Scott bandwidth over 1024 points in [-1,1]; peaks require prominence >= 5% of maximum density",
+    "permutation_p": "one-sided add-one empirical p=(1+count(permuted_R2>=observed_R2))/(199+1)",
+    "permutation_seed": "20260722 + tick",
+    "sarle": "(ordinary central-moment skewness^2 + 1) / ordinary central-moment Pearson kurtosis; NA when variance < 1e-10",
+    "sarle_threshold": 0.555,
+    "sd_ddof": 0,
+    "stake_group_r_squared": "one-dimensional between-group sum of squares / total sum of squares on net stance; exactly two frozen labels",
+    "stance_vector_shape": [
+      1000
+    ]
+  },
+  "definitions_version": "1.6.0",
+  "groups": [
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": null,
+      "method": "belief_engine",
+      "net_stance": {
+        "kde_peak_count": null,
+        "mean": 0.0,
+        "sarle_bimodality": null,
+        "sd_ddof_0": 0.0
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": null,
+      "stake_group_r_squared_1d": null,
+      "tick": 0,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": -0.0,
+        "raw": -0.0
+      },
+      "method": "belief_engine",
+      "net_stance": {
+        "kde_peak_count": 1,
+        "mean": -0.03284542429282796,
+        "sarle_bimodality": 0.37893960742802396,
+        "sd_ddof_0": 0.004090797181193243
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 0.02,
+      "stake_group_r_squared_1d": 0.006477006031849165,
+      "tick": 3,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": -0.0,
+        "raw": -0.0
+      },
+      "method": "belief_engine",
+      "net_stance": {
+        "kde_peak_count": 1,
+        "mean": -0.030965070363844965,
+        "sarle_bimodality": 0.5980760711534276,
+        "sd_ddof_0": 0.00021715984472280535
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 0.82,
+      "stake_group_r_squared_1d": 6.496530986861141e-05,
+      "tick": 9,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": null,
+      "method": "campuspulse",
+      "net_stance": {
+        "kde_peak_count": null,
+        "mean": -1.6391276724814218e-11,
+        "sarle_bimodality": null,
+        "sd_ddof_0": 3.988080540876498e-09
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": null,
+      "stake_group_r_squared_1d": null,
+      "tick": 0,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": 0.2355808419718897,
+        "raw": 0.7057371313262125
+      },
+      "method": "campuspulse",
+      "net_stance": {
+        "kde_peak_count": 2,
+        "mean": 0.3085077389525314,
+        "sarle_bimodality": 0.6124681850808968,
+        "sd_ddof_0": 0.0471938721423173
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 0.005,
+      "stake_group_r_squared_1d": 0.058251340555170866,
+      "tick": 3,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": 0.6768112664323673,
+        "raw": 2.0275453539563917
+      },
+      "method": "campuspulse",
+      "net_stance": {
+        "kde_peak_count": 2,
+        "mean": 0.13580867208430247,
+        "sarle_bimodality": 0.6297563363225073,
+        "sd_ddof_0": 0.21711462150711502
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 0.005,
+      "stake_group_r_squared_1d": 0.03157131281670511,
+      "tick": 9,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": null,
+      "method": "chuang_opinion_dynamics",
+      "net_stance": {
+        "kde_peak_count": null,
+        "mean": 0.0,
+        "sarle_bimodality": null,
+        "sd_ddof_0": 0.0
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": null,
+      "stake_group_r_squared_1d": null,
+      "tick": 0,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": 0.0048159226341879914,
+        "raw": 0.014427214862176116
+      },
+      "method": "chuang_opinion_dynamics",
+      "net_stance": {
+        "kde_peak_count": 1,
+        "mean": -0.001,
+        "sarle_bimodality": 1.0000000000000004,
+        "sd_ddof_0": 0.022338307903688678
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 1.0,
+      "stake_group_r_squared_1d": 8.006161910336255e-05,
+      "tick": 3,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": 0.0048159226341879914,
+        "raw": 0.014427214862176116
+      },
+      "method": "chuang_opinion_dynamics",
+      "net_stance": {
+        "kde_peak_count": 1,
+        "mean": -0.001,
+        "sarle_bimodality": 1.0000000000000004,
+        "sd_ddof_0": 0.022338307903688678
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 1.0,
+      "stake_group_r_squared_1d": 8.006161910336255e-05,
+      "tick": 9,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": 0.013145802898004601,
+        "raw": 0.039381306003331965
+      },
+      "method": "generative_agents",
+      "net_stance": {
+        "kde_peak_count": 1,
+        "mean": -0.002,
+        "sarle_bimodality": 0.4403856796994124,
+        "sd_ddof_0": 0.038678159211627434
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 0.005,
+      "stake_group_r_squared_1d": 0.007998211151243943,
+      "tick": 0,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": 0.04144361388000372,
+        "raw": 0.12415397163303728
+      },
+      "method": "generative_agents",
+      "net_stance": {
+        "kde_peak_count": 1,
+        "mean": -0.0135,
+        "sarle_bimodality": 1.0000000000000007,
+        "sd_ddof_0": 0.08104165595544058
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 0.195,
+      "stake_group_r_squared_1d": 0.002351903937189894,
+      "tick": 3,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "discrete_stance_entropy": {
+        "normalized": 0.002639506601453175,
+        "raw": 0.007907255112232087
+      },
+      "method": "generative_agents",
+      "net_stance": {
+        "kde_peak_count": 1,
+        "mean": -0.0005,
+        "sarle_bimodality": 1.0,
+        "sd_ddof_0": 0.01580348062927911
+      },
+      "sarle_threshold": 0.555,
+      "seed": 20260815,
+      "stake_group_permutation_p": 1.0,
+      "stake_group_r_squared_1d": 0.0006729137163919771,
+      "tick": 9,
+      "variant": "full"
+    }
+  ],
+  "permutation_count": 199,
+  "schema_version": "dimension-3-cross-method-v1.6.0"
+}

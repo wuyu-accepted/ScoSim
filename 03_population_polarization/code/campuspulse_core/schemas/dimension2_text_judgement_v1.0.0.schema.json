@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://campuspulse.local/schemas/dimension2-text-judgement-v1.0.0.schema.json",
+  "title": "Dimension-2 method-blind text judgement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "case_id", "context_uptake", "unsupported_fact",
+    "unsupported_spans", "nearest_source_ids", "expression_stance",
+    "confidence", "brief_reason"
+  ],
+  "properties": {
+    "schema_version": {"const": "dimension2-text-judgement-v1.0.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "context_uptake": {"enum": ["yes", "no", "insufficient_evidence"]},
+    "unsupported_fact": {"enum": ["yes", "no", "insufficient_evidence"]},
+    "unsupported_spans": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "nearest_source_ids": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "expression_stance": {
+      "enum": ["strong_oppose", "weak_oppose", "neutral_or_mixed", "weak_support", "strong_support", "insufficient_evidence"]
+    },
+    "confidence": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+    "brief_reason": {"type": "string", "minLength": 1, "maxLength": 240}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"unsupported_fact": {"const": "yes"}}},
+      "then": {"properties": {"unsupported_spans": {"minItems": 1}}},
+      "else": {"properties": {"unsupported_spans": {"maxItems": 0}}}
+    }
+  ]
+}

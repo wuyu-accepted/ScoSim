@@ -1,0 +1,44 @@
+{
+  "copy_only": true,
+  "dimension": "04_governance_response",
+  "files": [
+    {
+      "bytes": 30854,
+      "sha256": "115fc22d1309b6bc9effb53fb341e63f1ea0c65831b3acf9b65f55a69e509312",
+      "snapshot": "campuspulse_core/legacy_evaluation/analyze_forum_resource_policy_result.py",
+      "source": "campuspulse_core/legacy_evaluation/analyze_forum_resource_policy_result.py"
+    },
+    {
+      "bytes": 30988,
+      "sha256": "1829f46dfd40484c95abb23b380f2ebc84013499940e0037633889318542ecec",
+      "snapshot": "campuspulse_core/legacy_evaluation/analyze_resource_flagship_result.py",
+      "source": "campuspulse_core/legacy_evaluation/analyze_resource_flagship_result.py"
+    },
+    {
+      "bytes": 11735,
+      "sha256": "bc327a10d087dcef9c56a9f7842e2b5dd30139381b052d9b79c55220ad31e4e1",
+      "snapshot": "campuspulse_core/scripts/recompute_dimensions_1_4_readonly.py",
+      "source": "campuspulse_core/scripts/recompute_dimensions_1_4_readonly.py"
+    },
+    {
+      "bytes": 22090,
+      "sha256": "332de1f734a9be8067d2764022d3c37a04866908c486b489f651487d009ad5ae",
+      "snapshot": "campuspulse_core/src/campuspulse_core/forum_risk.py",
+      "source": "campuspulse_core/src/campuspulse_core/forum_risk.py"
+    },
+    {
+      "bytes": 77278,
+      "sha256": "3728e75039e2bc6b42d2e2e8df120e860dbb7da5a2807a64685b455ef341ed9d",
+      "snapshot": "campuspulse_core/src/campuspulse_core/governance_arena.py",
+      "source": "campuspulse_core/src/campuspulse_core/governance_arena.py"
+    },
+    {
+      "bytes": 212661,
+      "sha256": "ccd14c9b04142f6690e8c61f6fb8fbe473b64792be48486131ddc879f4fc26eb",
+      "snapshot": "campuspulse_core/src/campuspulse_core/governance_arena_v2.py",
+      "source": "campuspulse_core/src/campuspulse_core/governance_arena_v2.py"
+    }
+  ],
+  "schema_version": "aamas2027-dimension-code-snapshot-v1",
+  "source_root": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core"
+}

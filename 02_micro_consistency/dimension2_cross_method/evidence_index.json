@@ -1,0 +1,8 @@
+{
+  "canonical_table": "metrics/publication_canonical_table.json",
+  "publication_authority": "../../publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "source_results": [
+    "runs/dimension2_cross_method/formal_20260919/final_report_time_aligned/FINAL_REPORT.md"
+  ],
+  "status": "packaged_and_final_plan_registered"
+}

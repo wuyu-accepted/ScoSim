@@ -1,0 +1,70 @@
+{
+  "cost_status": "NA_price_not_frozen",
+  "experiment": "02_micro_consistency/dimension2_cross_method",
+  "files": [
+    {
+      "bytes": 1800,
+      "path": "CASE_AND_DATA.md",
+      "sha256": "34619dda31b03f80597e9711d8e0225e52d5e9a5577f95d30108ccf332052827"
+    },
+    {
+      "bytes": 1573,
+      "path": "cost_by_method_and_call_type.csv",
+      "sha256": "5332291e2e6d75c2e595b9ee13958a9bdefe2cddf2f5b303193f9a7211c6b977"
+    },
+    {
+      "bytes": 341,
+      "path": "evidence_index.json",
+      "sha256": "2bdc65b8cfdfed0b36bedca2500a13d8cac8070b03d9c7501ba063a7a5075d73"
+    },
+    {
+      "bytes": 5847,
+      "path": "metrics/dimension2_cross_method.json",
+      "sha256": "5cd83500e7660250a8e3c9090df6eb596b98d8f0b8ebbb6d8c6ab5e64fa80288"
+    },
+    {
+      "bytes": 1464,
+      "path": "metrics/judge_reliability.json",
+      "sha256": "15cef240b02188ad04efa70644a1593ffd86bb03649d6711d77f984f3e9384f6"
+    },
+    {
+      "bytes": 332,
+      "path": "metrics/publication_canonical_table.csv",
+      "sha256": "0289f50f39780626af8bf65c6535a7b4ff732eea5d2bd69d2ffee24ac97bce5d"
+    },
+    {
+      "bytes": 671,
+      "path": "metrics/publication_canonical_table.json",
+      "sha256": "65e1374e0fa99f8e215600702f2363edc51d81dc95d8473fbf7cda05048d2829"
+    },
+    {
+      "bytes": 732,
+      "path": "parameters.json",
+      "sha256": "b2d5ec5bcab40f1702b7a429747f7c81fddc606df13d3d24a76300dfd5d181de"
+    },
+    {
+      "bytes": 1126043,
+      "path": "raw_or_sufficient_statistics/blind_judgements.jsonl",
+      "sha256": "764e64700d560637f88587bdd9e0408b5d7e2401789ccf10049dc18f3e62568f"
+    },
+    {
+      "bytes": 16533,
+      "path": "raw_or_sufficient_statistics/independent_blind_review_answers.csv",
+      "sha256": "525d7ef7571966cbad8db20c54e1709b13a84596fa6aa85e71e452a957d07de0"
+    },
+    {
+      "bytes": 6015829,
+      "path": "raw_or_sufficient_statistics/unified_records_2048.jsonl",
+      "sha256": "a1540396812aacd021b689c30fde4958aa7a087d62f837a6ec34177f79a60400"
+    },
+    {
+      "bytes": 6735,
+      "path": "report/DIMENSION2_CROSS_METHOD_REPORT.md",
+      "sha256": "2437be8f179f9f27aabc267ff95cf0ea7d2c1fefcfff4f09210909de46442cd5"
+    }
+  ],
+  "publication_authority": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "publication_authority_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8",
+  "recomputed_during_completion": false,
+  "schema_version": "aamas2027-experiment-provenance-v1"
+}

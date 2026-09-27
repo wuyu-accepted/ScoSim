@@ -1,0 +1,45 @@
+{
+  "cost_status": "NA_price_not_frozen",
+  "experiment": "03_population_polarization/dimension3_cross_method",
+  "files": [
+    {
+      "bytes": 1973,
+      "path": "CASE_AND_DATA.md",
+      "sha256": "5f542eb7d1363caef122366970828f1bdb6b2fd2bd142f06390c8c790ffa08a9"
+    },
+    {
+      "bytes": 1291,
+      "path": "cost_by_method_and_call_type.csv",
+      "sha256": "af5c617954d287e8c2e326e3e75a6a74d3ba2fdc1f3edbfcdb1a70962c90e847"
+    },
+    {
+      "bytes": 289,
+      "path": "evidence_index.json",
+      "sha256": "d01a6b847a197b3c8fce80b6357b1cc34c055f57b992dcb5af49394d89528ff9"
+    },
+    {
+      "bytes": 7991,
+      "path": "metrics/dimension3_cross_method_metrics_v1.6.0.json",
+      "sha256": "cdd0f9064b6fa8d237a42d3030822f57f99e7a558401f3d61aee631bb9b48db7"
+    },
+    {
+      "bytes": 795,
+      "path": "parameters.json",
+      "sha256": "451a4e9aab3396c8a0e059e809dace6b62c4579e2e9bb8671ee7003d947fc5bf"
+    },
+    {
+      "bytes": 3965314,
+      "path": "raw_or_sufficient_statistics/population_states.jsonl",
+      "sha256": "c2011f86d40298bb100b7d9cd576bc9a5152519fb30bb1c8125cc68daabfa8a8"
+    },
+    {
+      "bytes": 9490,
+      "path": "report/DIMENSION3_CROSS_METHOD_REPORT.md",
+      "sha256": "51a6facb65bff198ac767f51f49526ae147a59254e47c94587e2033e10516774"
+    }
+  ],
+  "publication_authority": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "publication_authority_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8",
+  "recomputed_during_completion": false,
+  "schema_version": "aamas2027-experiment-provenance-v1"
+}

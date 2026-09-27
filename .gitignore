@@ -1,0 +1,17 @@
+# Never commit local credentials or provider material.
+*credential*.json
+*api_key*.json
+*api-key*.json
+.env
+.env.*
+raw_responses/
+cache/
+__pycache__/
+*.py[cod]
+*.log
+
+# Local editor and OS files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+﻿metric,context_only,profile_only,state_only,full
+上下文承接率,0.9863256565659,0.9922959565959,0.9975490196078431,1.0
+虚假事实编造率,0.009615384615384616,0.012254901960784314,0.014705882352941176,0.0084985835694051
+表达与前序状态吻合率,,,0.22941176470588234,0.24112747875354106
+决策后状态—表达自洽率,,,0.8235294117647059,0.7713696883852692
+去重后语言风格一致性,0.8061124085904002,0.7609056678673356,0.806637274951973,0.7984056607855539
+LOAO-SVM four_condition accuracy,0.46728515625,,,
+LOAO-SVM four_condition macro-F1,0.4595878843742671,,,
+LOAO-SVM four_condition permutation p,0.001,,,
+LOAO-SVM profile_factor accuracy,0.71875,,,
+LOAO-SVM profile_factor macro-F1,0.7152828664027179,,,
+LOAO-SVM profile_factor permutation p,0.001,,,
+LOAO-SVM state_factor accuracy,0.61572265625,,,
+LOAO-SVM state_factor macro-F1,0.6155685831995865,,,
+LOAO-SVM state_factor permutation p,0.001,,,

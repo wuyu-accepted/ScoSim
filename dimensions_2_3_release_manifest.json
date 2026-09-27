@@ -1,0 +1,140 @@
+{
+  "excluded": [
+    "provider_state/cache",
+    "provider_state/raw_responses",
+    "prompt_audit",
+    "API credentials"
+  ],
+  "files": [
+    {
+      "bytes": 866545,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/dimension2_longitudinal_ablation.json",
+      "sha256": "577a943cb6cad7588e5ea02028f49fee302890a20ff7f26e292b6addb37db3d8"
+    },
+    {
+      "bytes": 942,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/dimension2_longitudinal_ablation_table.csv",
+      "sha256": "733cff296c94db7806f3fc4692c0668f3ad268712f93fe0587aef84e80ed8e6c"
+    },
+    {
+      "bytes": 312,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/publication_canonical_table.csv",
+      "sha256": "b556c059fdec09b758f5ee430a3346eb00b09f8cc671f1ab216f9e46ff55a197"
+    },
+    {
+      "bytes": 650,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/publication_canonical_table.json",
+      "sha256": "7b873015b5a77e2e9c8b7c330b77f17ba495d0d560b5f42ebbebb31520b3f932"
+    },
+    {
+      "bytes": 6156670,
+      "path": "02_micro_consistency/dimension2_ablation/raw_or_sufficient_statistics/assimilation_sidecar.state_and_full.jsonl",
+      "sha256": "1a4e405c9d34fe781137e66c1a9375145f1dca60561c4d77c1d338d2b14c43b3"
+    },
+    {
+      "bytes": 1109454,
+      "path": "02_micro_consistency/dimension2_ablation/raw_or_sufficient_statistics/blind_judgements.jsonl",
+      "sha256": "261ef9a23a6aff7c5a3cec6aabf3a24f9bf9a8aa2f06e8a570a14fdb6fedee47"
+    },
+    {
+      "bytes": 8595543,
+      "path": "02_micro_consistency/dimension2_ablation/raw_or_sufficient_statistics/unified_ablation_records.jsonl",
+      "sha256": "6404cdd9d6cd04c1f2e6ac587fdba9636376bf4e45dc207d83ca14a0c6eed219"
+    },
+    {
+      "bytes": 7253,
+      "path": "02_micro_consistency/dimension2_ablation/report/DIMENSION2_ABLATION_REPORT.md",
+      "sha256": "811c047049b42a45f5a15405efcf19c1026695b3e951cbdcb83d2fbafedd8cea"
+    },
+    {
+      "bytes": 5847,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/dimension2_cross_method.json",
+      "sha256": "5cd83500e7660250a8e3c9090df6eb596b98d8f0b8ebbb6d8c6ab5e64fa80288"
+    },
+    {
+      "bytes": 878,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/dimension2_cross_method_table.csv",
+      "sha256": "df23024be46d94e4d5c39c2fe3e8174e6011c0c2b7570ff54bdf089696ed525e"
+    },
+    {
+      "bytes": 1464,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/judge_reliability.json",
+      "sha256": "15cef240b02188ad04efa70644a1593ffd86bb03649d6711d77f984f3e9384f6"
+    },
+    {
+      "bytes": 332,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/publication_canonical_table.csv",
+      "sha256": "0289f50f39780626af8bf65c6535a7b4ff732eea5d2bd69d2ffee24ac97bce5d"
+    },
+    {
+      "bytes": 671,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/publication_canonical_table.json",
+      "sha256": "65e1374e0fa99f8e215600702f2363edc51d81dc95d8473fbf7cda05048d2829"
+    },
+    {
+      "bytes": 1126043,
+      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/blind_judgements.jsonl",
+      "sha256": "764e64700d560637f88587bdd9e0408b5d7e2401789ccf10049dc18f3e62568f"
+    },
+    {
+      "bytes": 16533,
+      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/independent_blind_review_answers.csv",
+      "sha256": "525d7ef7571966cbad8db20c54e1709b13a84596fa6aa85e71e452a957d07de0"
+    },
+    {
+      "bytes": 6015829,
+      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/unified_records_2048.jsonl",
+      "sha256": "a1540396812aacd021b689c30fde4958aa7a087d62f837a6ec34177f79a60400"
+    },
+    {
+      "bytes": 6735,
+      "path": "02_micro_consistency/dimension2_cross_method/report/DIMENSION2_CROSS_METHOD_REPORT.md",
+      "sha256": "2437be8f179f9f27aabc267ff95cf0ea7d2c1fefcfff4f09210909de46442cd5"
+    },
+    {
+      "bytes": 38179,
+      "path": "03_population_polarization/dimension3_ablation/metrics/dimension3_ablation_metrics.json",
+      "sha256": "61f86e1db84de6a0445a2b2ebfddb31f1e40185eceb87801c00fe7823dc4a24b"
+    },
+    {
+      "bytes": 33769597,
+      "path": "03_population_polarization/dimension3_ablation/raw_or_sufficient_statistics/combined_population_states.jsonl",
+      "sha256": "d7abea1a087c2aa02eaf365ea7aee390647e8fc10bc3c58494b9dcaefecb6540"
+    },
+    {
+      "bytes": 9694,
+      "path": "03_population_polarization/dimension3_ablation/report/DIMENSION3_ABLATION_REPORT.md",
+      "sha256": "f052f098b88960a356905a600450bdee123e8596740b739ce2fdf2d327af587c"
+    },
+    {
+      "bytes": 7991,
+      "path": "03_population_polarization/dimension3_cross_method/metrics/dimension3_cross_method_metrics_v1.6.0.json",
+      "sha256": "cdd0f9064b6fa8d237a42d3030822f57f99e7a558401f3d61aee631bb9b48db7"
+    },
+    {
+      "bytes": 3965314,
+      "path": "03_population_polarization/dimension3_cross_method/raw_or_sufficient_statistics/population_states.jsonl",
+      "sha256": "c2011f86d40298bb100b7d9cd576bc9a5152519fb30bb1c8125cc68daabfa8a8"
+    },
+    {
+      "bytes": 9490,
+      "path": "03_population_polarization/dimension3_cross_method/report/DIMENSION3_CROSS_METHOD_REPORT.md",
+      "sha256": "51a6facb65bff198ac767f51f49526ae147a59254e47c94587e2033e10516774"
+    },
+    {
+      "bytes": 37404,
+      "path": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+      "sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8"
+    },
+    {
+      "bytes": 1606,
+      "path": "publication_authority/FINAL_RESULT_REGISTRY.json",
+      "sha256": "1cbc545f3107f7dc3bbc99b6e65d3773f3c5f1bfcc594404b57e9d2746168705"
+    }
+  ],
+  "final_result_registry": "publication_authority/FINAL_RESULT_REGISTRY.json",
+  "model_calls": 0,
+  "network_calls": 0,
+  "publication_authority": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "schema_version": "campus-pulse-dimensions-2-3-public-evidence-v1"
+}

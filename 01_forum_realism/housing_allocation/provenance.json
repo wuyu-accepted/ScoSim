@@ -1,0 +1,55 @@
+{
+  "cost_status": "NA_price_not_frozen",
+  "experiment": "01_forum_realism/housing_allocation",
+  "files": [
+    {
+      "bytes": 779,
+      "path": "CASE_AND_DATA.md",
+      "sha256": "8436d6438001837140297e94be95a0d914fa0ac8a1883966f1f0af11ff8c5412"
+    },
+    {
+      "bytes": 389,
+      "path": "cost_by_method_and_call_type.csv",
+      "sha256": "f3fcc86fb0466e7180731f7a36adf33a0377e357698ab00ebd420823e5d01622"
+    },
+    {
+      "bytes": 221,
+      "path": "COST_SCOPE.md",
+      "sha256": "db9cb0f56ba2b4f7e0a4f2f4332014571cc33e1836c80124426d6a17aec26b63"
+    },
+    {
+      "bytes": 306,
+      "path": "evidence_index.json",
+      "sha256": "4d6a8589efd396b4a1c56b90ad8fbbc17c3918fba419ee5301b6f5d91d7fd584"
+    },
+    {
+      "bytes": 3218,
+      "path": "metrics/dimensions-1-4-readonly-recompute-v1.json",
+      "sha256": "4811254b3c5b47ed90e9e8f4e0bcc07243558a642c7d914dc2707d12ba49ddbe"
+    },
+    {
+      "bytes": 485,
+      "path": "parameters.json",
+      "sha256": "a84d8f9075180976e5cbf64e21d86c93ca44bf06cf68307c834d18749b8ca9e0"
+    },
+    {
+      "bytes": 11496,
+      "path": "raw_or_sufficient_statistics/forum-ecology-benchmark-v2.json",
+      "sha256": "8e68939f08ef594ed16a935754b03cbef8cb16c8d1c0c65d316031dd394b4598"
+    },
+    {
+      "bytes": 4019,
+      "path": "raw_or_sufficient_statistics/reply-count-detail-v2.json",
+      "sha256": "930fba06967007f29a8f85c00f9db772bafb3e65e46a524429502798f36066a8"
+    },
+    {
+      "bytes": 1260,
+      "path": "report/DIMENSION1_READONLY_REPORT.md",
+      "sha256": "1f19d704dce67f52f70eb8f63e337f94ffea6237baa28ddffd189cc8fe3b2c84"
+    }
+  ],
+  "publication_authority": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "publication_authority_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8",
+  "recomputed_during_completion": false,
+  "schema_version": "aamas2027-experiment-provenance-v1"
+}

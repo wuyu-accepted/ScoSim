@@ -1,0 +1,14 @@
+{
+  "schema_version": "dimension2-ablation-publication-table-v1",
+  "authority": "docs/Comparative_Experiment_Plan_v2(2).md",
+  "recomputed_in_this_step": false,
+  "conditions": ["context_only", "profile_only", "state_only", "full"],
+  "metrics": {
+    "direct_context_uptake": [0.986, 0.992, 0.975, 1.0],
+    "unsupported_fact_fabrication": [0.010, 0.012, 0.015, 0.008],
+    "expression_pre_state_agreement": [null, null, 0.229, 0.241],
+    "decision_post_state_expression_consistency": [null, null, 0.924, 0.771],
+    "deduplicated_language_style_consistency": [0.806, 0.761, 0.807, 0.798]
+  },
+  "legacy_computed_artifacts_are_audit_only": true
+}

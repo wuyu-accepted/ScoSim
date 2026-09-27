@@ -1,0 +1,32 @@
+{
+  "copy_only": true,
+  "dimension": "01_forum_realism",
+  "files": [
+    {
+      "bytes": 11398,
+      "sha256": "aee517f0898dad13dcf3478aaf12df9e7f31c100e0a670165ec663720761ec70",
+      "snapshot": "campuspulse_core/legacy_evaluation/analyze_forum_ecology_fidelity.py",
+      "source": "campuspulse_core/legacy_evaluation/analyze_forum_ecology_fidelity.py"
+    },
+    {
+      "bytes": 37353,
+      "sha256": "cd76ada248fcbd0082d927ce16b286b67e0ed12986e1598554d69f6cdc396b1d",
+      "snapshot": "campuspulse_core/legacy_evaluation/evaluate_forum_fidelity_v2.py",
+      "source": "campuspulse_core/legacy_evaluation/evaluate_forum_fidelity_v2.py"
+    },
+    {
+      "bytes": 11735,
+      "sha256": "bc327a10d087dcef9c56a9f7842e2b5dd30139381b052d9b79c55220ad31e4e1",
+      "snapshot": "campuspulse_core/scripts/recompute_dimensions_1_4_readonly.py",
+      "source": "campuspulse_core/scripts/recompute_dimensions_1_4_readonly.py"
+    },
+    {
+      "bytes": 62610,
+      "sha256": "d8e942526eec2e317262df429a56f5bcdaae8ee33d7586d4520b7e3f273b6de1",
+      "snapshot": "campuspulse_core/src/campuspulse_core/forum_realism.py",
+      "source": "campuspulse_core/src/campuspulse_core/forum_realism.py"
+    }
+  ],
+  "schema_version": "aamas2027-dimension-code-snapshot-v1",
+  "source_root": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core"
+}

@@ -1,0 +1,206 @@
+{
+  "definitions_version": "1.3.0",
+  "methods": {
+    "belief_engine": {
+      "language_style_consistency": {
+        "bootstrap_95pct_interval": [
+          0.7829624149157101,
+          0.8187503130718593
+        ],
+        "eligible_agent_count": 30,
+        "eligible_expression_count": 405,
+        "status": "ok",
+        "value": 0.8009481461235605
+      },
+      "model_status": {
+        "success": 512
+      },
+      "record_count": 512,
+      "text_metrics": {
+        "direct_context_uptake": {
+          "bootstrap_95pct_interval": [
+            1.0,
+            1.0
+          ],
+          "eligible_count": 405,
+          "rate": 1.0,
+          "status": "ok"
+        },
+        "expression_pre_state_agreement": {
+          "applicable_record_count": 512,
+          "bootstrap_95pct_interval": [
+            0.20923603421144657,
+            0.3460915294238365
+          ],
+          "confusion": {
+            "neutral->neutral": 17,
+            "neutral->oppose": 273,
+            "neutral->support": 14,
+            "oppose->oppose": 96,
+            "oppose->support": 5
+          },
+          "eligible_count": 405,
+          "expression_coverage_rate": 0.791015625,
+          "rate": 0.27901234567901234,
+          "status": "ok"
+        },
+        "unsupported_fact_fabrication": {
+          "bootstrap_95pct_interval": [
+            0.09559800664451827,
+            0.20861925045247456
+          ],
+          "eligible_count": 405,
+          "rate": 0.1506172839506173,
+          "status": "ok"
+        }
+      }
+    },
+    "campuspulse": {
+      "language_style_consistency": {
+        "bootstrap_95pct_interval": [
+          0.7777496456906673,
+          0.8032753281181139
+        ],
+        "eligible_agent_count": 29,
+        "eligible_expression_count": 353,
+        "status": "ok",
+        "value": 0.7904056607855539
+      },
+      "model_status": {
+        "success": 512
+      },
+      "record_count": 512,
+      "text_metrics": {
+        "direct_context_uptake": {
+          "bootstrap_95pct_interval": [
+            1.0,
+            1.0
+          ],
+          "eligible_count": 353,
+          "rate": 1.0,
+          "status": "ok"
+        },
+        "expression_pre_state_agreement": {
+          "applicable_record_count": 512,
+          "bootstrap_95pct_interval": [
+            0.16817063641362545,
+            0.3054915840705721
+          ],
+          "confusion": {
+            "neutral->neutral": 19,
+            "neutral->oppose": 210,
+            "neutral->support": 47,
+            "oppose->neutral": 4,
+            "oppose->oppose": 66,
+            "oppose->support": 7
+          },
+          "eligible_count": 353,
+          "expression_coverage_rate": 0.689453125,
+          "rate": 0.24079320113314448,
+          "status": "ok"
+        },
+        "unsupported_fact_fabrication": {
+          "bootstrap_95pct_interval": [
+            0.0,
+            0.01971830985915493
+          ],
+          "eligible_count": 353,
+          "rate": 0.0084985835694051,
+          "status": "ok"
+        }
+      }
+    },
+    "chuang_opinion_dynamics": {
+      "language_style_consistency": {
+        "bootstrap_95pct_interval": [
+          0.7925460038003478,
+          0.8691151512917052
+        ],
+        "eligible_agent_count": 20,
+        "eligible_expression_count": 327,
+        "status": "ok",
+        "value": 0.8303654199479016
+      },
+      "model_status": {
+        "success": 512
+      },
+      "record_count": 512,
+      "text_metrics": {
+        "direct_context_uptake": {
+          "bootstrap_95pct_interval": [
+            1.0,
+            1.0
+          ],
+          "eligible_count": 327,
+          "rate": 1.0,
+          "status": "ok"
+        },
+        "expression_pre_state_agreement": {
+          "applicable_record_count": 0,
+          "bootstrap_95pct_interval": null,
+          "confusion": {},
+          "eligible_count": 0,
+          "expression_coverage_rate": 0.638671875,
+          "rate": null,
+          "status": "NA_no_eligible_agreement_labels"
+        },
+        "unsupported_fact_fabrication": {
+          "bootstrap_95pct_interval": [
+            0.006269592476489028,
+            0.044642857142857144
+          ],
+          "eligible_count": 327,
+          "rate": 0.024464831804281346,
+          "status": "ok"
+        }
+      }
+    },
+    "generative_agents": {
+      "language_style_consistency": {
+        "bootstrap_95pct_interval": [
+          0.8809169176758618,
+          0.9281413658778608
+        ],
+        "eligible_agent_count": 30,
+        "eligible_expression_count": 408,
+        "status": "ok",
+        "value": 0.9039747145228625
+      },
+      "model_status": {
+        "success": 512
+      },
+      "record_count": 512,
+      "text_metrics": {
+        "direct_context_uptake": {
+          "bootstrap_95pct_interval": [
+            1.0,
+            1.0
+          ],
+          "eligible_count": 408,
+          "rate": 1.0,
+          "status": "ok"
+        },
+        "expression_pre_state_agreement": {
+          "applicable_record_count": 0,
+          "bootstrap_95pct_interval": null,
+          "confusion": {},
+          "eligible_count": 0,
+          "expression_coverage_rate": 0.796875,
+          "rate": null,
+          "status": "NA_no_eligible_agreement_labels"
+        },
+        "unsupported_fact_fabrication": {
+          "bootstrap_95pct_interval": [
+            0.036841732518264496,
+            0.13488372093023257
+          ],
+          "eligible_count": 408,
+          "rate": 0.08333333333333333,
+          "status": "ok"
+        }
+      }
+    }
+  },
+  "paired_key_count": 512,
+  "schema_version": "dimension-2-cross-method-v1.3.0"
+}

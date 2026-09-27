@@ -1,0 +1,70 @@
+{
+  "cost_status": "NA_price_not_frozen",
+  "experiment": "02_micro_consistency/dimension2_ablation",
+  "files": [
+    {
+      "bytes": 1800,
+      "path": "CASE_AND_DATA.md",
+      "sha256": "34619dda31b03f80597e9711d8e0225e52d5e9a5577f95d30108ccf332052827"
+    },
+    {
+      "bytes": 547,
+      "path": "cost_by_method_and_call_type.csv",
+      "sha256": "9c3e400117c3e498470749789728c3e64e906906ca7c45c5ef3fdef31226306e"
+    },
+    {
+      "bytes": 368,
+      "path": "evidence_index.json",
+      "sha256": "2c85281590b638a6ecc21d0f14d6a4d39aff1c3ee38aaa4bb05a917b77a45bf4"
+    },
+    {
+      "bytes": 866545,
+      "path": "metrics/dimension2_longitudinal_ablation.json",
+      "sha256": "577a943cb6cad7588e5ea02028f49fee302890a20ff7f26e292b6addb37db3d8"
+    },
+    {
+      "bytes": 942,
+      "path": "metrics/dimension2_longitudinal_ablation_table.csv",
+      "sha256": "733cff296c94db7806f3fc4692c0668f3ad268712f93fe0587aef84e80ed8e6c"
+    },
+    {
+      "bytes": 312,
+      "path": "metrics/publication_canonical_table.csv",
+      "sha256": "b556c059fdec09b758f5ee430a3346eb00b09f8cc671f1ab216f9e46ff55a197"
+    },
+    {
+      "bytes": 650,
+      "path": "metrics/publication_canonical_table.json",
+      "sha256": "7b873015b5a77e2e9c8b7c330b77f17ba495d0d560b5f42ebbebb31520b3f932"
+    },
+    {
+      "bytes": 732,
+      "path": "parameters.json",
+      "sha256": "b2d5ec5bcab40f1702b7a429747f7c81fddc606df13d3d24a76300dfd5d181de"
+    },
+    {
+      "bytes": 6156670,
+      "path": "raw_or_sufficient_statistics/assimilation_sidecar.state_and_full.jsonl",
+      "sha256": "1a4e405c9d34fe781137e66c1a9375145f1dca60561c4d77c1d338d2b14c43b3"
+    },
+    {
+      "bytes": 1109454,
+      "path": "raw_or_sufficient_statistics/blind_judgements.jsonl",
+      "sha256": "261ef9a23a6aff7c5a3cec6aabf3a24f9bf9a8aa2f06e8a570a14fdb6fedee47"
+    },
+    {
+      "bytes": 8595543,
+      "path": "raw_or_sufficient_statistics/unified_ablation_records.jsonl",
+      "sha256": "6404cdd9d6cd04c1f2e6ac587fdba9636376bf4e45dc207d83ca14a0c6eed219"
+    },
+    {
+      "bytes": 7253,
+      "path": "report/DIMENSION2_ABLATION_REPORT.md",
+      "sha256": "811c047049b42a45f5a15405efcf19c1026695b3e951cbdcb83d2fbafedd8cea"
+    }
+  ],
+  "publication_authority": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "publication_authority_sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8",
+  "recomputed_during_completion": false,
+  "schema_version": "aamas2027-experiment-provenance-v1"
+}

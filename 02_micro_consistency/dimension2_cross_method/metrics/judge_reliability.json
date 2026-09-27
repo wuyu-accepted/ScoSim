@@ -1,0 +1,54 @@
+{
+  "audited_case_count": 410,
+  "metrics": {
+    "context_uptake": {
+      "agreement": 1.0,
+      "cohens_kappa": 1.0,
+      "cohens_kappa_status": "ok",
+      "disagreement_count": 0,
+      "human_label_distribution": {
+        "insufficient_evidence": 111,
+        "yes": 299
+      },
+      "model_label_distribution": {
+        "insufficient_evidence": 111,
+        "yes": 299
+      }
+    },
+    "expression_stance": {
+      "agreement": 0.8585365853658536,
+      "cohens_kappa": 0.7411644335114776,
+      "cohens_kappa_status": "ok",
+      "disagreement_count": 58,
+      "human_label_distribution": {
+        "insufficient_evidence": 111,
+        "neutral_or_mixed": 34,
+        "weak_oppose": 264,
+        "weak_support": 1
+      },
+      "model_label_distribution": {
+        "insufficient_evidence": 111,
+        "neutral_or_mixed": 15,
+        "strong_oppose": 8,
+        "weak_oppose": 240,
+        "weak_support": 36
+      }
+    },
+    "unsupported_fact": {
+      "agreement": 0.9560975609756097,
+      "cohens_kappa": 0.8971571906354514,
+      "cohens_kappa_status": "ok",
+      "disagreement_count": 18,
+      "human_label_distribution": {
+        "insufficient_evidence": 111,
+        "no": 299
+      },
+      "model_label_distribution": {
+        "insufficient_evidence": 111,
+        "no": 281,
+        "yes": 18
+      }
+    }
+  },
+  "schema_version": "dimension2-judge-reliability-v1.0.0"
+}

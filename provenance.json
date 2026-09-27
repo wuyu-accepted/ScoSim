@@ -1,0 +1,955 @@
+{
+  "cost_status": "usage_aggregated_price_not_frozen",
+  "model_calls": 0,
+  "network_calls": 0,
+  "produced_files": [
+    {
+      "bytes": 11398,
+      "path": "01_forum_realism/code/campuspulse_core/legacy_evaluation/analyze_forum_ecology_fidelity.py",
+      "sha256": "aee517f0898dad13dcf3478aaf12df9e7f31c100e0a670165ec663720761ec70"
+    },
+    {
+      "bytes": 37353,
+      "path": "01_forum_realism/code/campuspulse_core/legacy_evaluation/evaluate_forum_fidelity_v2.py",
+      "sha256": "cd76ada248fcbd0082d927ce16b286b67e0ed12986e1598554d69f6cdc396b1d"
+    },
+    {
+      "bytes": 11735,
+      "path": "01_forum_realism/code/campuspulse_core/scripts/recompute_dimensions_1_4_readonly.py",
+      "sha256": "bc327a10d087dcef9c56a9f7842e2b5dd30139381b052d9b79c55220ad31e4e1"
+    },
+    {
+      "bytes": 62610,
+      "path": "01_forum_realism/code/campuspulse_core/src/campuspulse_core/forum_realism.py",
+      "sha256": "d8e942526eec2e317262df429a56f5bcdaae8ee33d7586d4520b7e3f273b6de1"
+    },
+    {
+      "bytes": 758,
+      "path": "01_forum_realism/code/README.md",
+      "sha256": "ffeda1d7f2ee556311a3f00e9d25aca540eedf4b4e473c6fa0128bcef9071250"
+    },
+    {
+      "bytes": 1377,
+      "path": "01_forum_realism/code/SOURCE_MANIFEST.json",
+      "sha256": "e24b7c276a702fbbcdce3fc0bfee771b080c5bf12090aa457adc15d1028c6e32"
+    },
+    {
+      "bytes": 779,
+      "path": "01_forum_realism/housing_allocation/CASE_AND_DATA.md",
+      "sha256": "8436d6438001837140297e94be95a0d914fa0ac8a1883966f1f0af11ff8c5412"
+    },
+    {
+      "bytes": 389,
+      "path": "01_forum_realism/housing_allocation/cost_by_method_and_call_type.csv",
+      "sha256": "f3fcc86fb0466e7180731f7a36adf33a0377e357698ab00ebd420823e5d01622"
+    },
+    {
+      "bytes": 221,
+      "path": "01_forum_realism/housing_allocation/COST_SCOPE.md",
+      "sha256": "db9cb0f56ba2b4f7e0a4f2f4332014571cc33e1836c80124426d6a17aec26b63"
+    },
+    {
+      "bytes": 306,
+      "path": "01_forum_realism/housing_allocation/evidence_index.json",
+      "sha256": "4d6a8589efd396b4a1c56b90ad8fbbc17c3918fba419ee5301b6f5d91d7fd584"
+    },
+    {
+      "bytes": 3218,
+      "path": "01_forum_realism/housing_allocation/metrics/dimensions-1-4-readonly-recompute-v1.json",
+      "sha256": "4811254b3c5b47ed90e9e8f4e0bcc07243558a642c7d914dc2707d12ba49ddbe"
+    },
+    {
+      "bytes": 485,
+      "path": "01_forum_realism/housing_allocation/parameters.json",
+      "sha256": "a84d8f9075180976e5cbf64e21d86c93ca44bf06cf68307c834d18749b8ca9e0"
+    },
+    {
+      "bytes": 1966,
+      "path": "01_forum_realism/housing_allocation/provenance.json",
+      "sha256": "a056eb71f89615fe51ba6bf281881073f414f0e6036a80c6e4e68ca14dc04682"
+    },
+    {
+      "bytes": 11496,
+      "path": "01_forum_realism/housing_allocation/raw_or_sufficient_statistics/forum-ecology-benchmark-v2.json",
+      "sha256": "8e68939f08ef594ed16a935754b03cbef8cb16c8d1c0c65d316031dd394b4598"
+    },
+    {
+      "bytes": 4019,
+      "path": "01_forum_realism/housing_allocation/raw_or_sufficient_statistics/reply-count-detail-v2.json",
+      "sha256": "930fba06967007f29a8f85c00f9db772bafb3e65e46a524429502798f36066a8"
+    },
+    {
+      "bytes": 1260,
+      "path": "01_forum_realism/housing_allocation/report/DIMENSION1_READONLY_REPORT.md",
+      "sha256": "1f19d704dce67f52f70eb8f63e337f94ffea6237baa28ddffd189cc8fe3b2c84"
+    },
+    {
+      "bytes": 1777,
+      "path": "02_micro_consistency/CASE_AND_DATA.md",
+      "sha256": "a531de604aa94bcfd57cf31458603394030c6a79fbb9ca28a39505b0d9abf3a1"
+    },
+    {
+      "bytes": 481,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/__init__.py",
+      "sha256": "a88975a1f7513ac79ef203fab8981f9ed296028b6ddfb0bb30599e989ff8db86"
+    },
+    {
+      "bytes": 374,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/adapters/__init__.py",
+      "sha256": "9e4ffc71e092df185785d35337aa1070533716dcb8676939027b6b585d9f6a10"
+    },
+    {
+      "bytes": 9469,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/adapters/belief_engine.py",
+      "sha256": "2ee2476b76684f21077117f004b42ee6a7b8106fe805c23131e3a035fea3ff35"
+    },
+    {
+      "bytes": 4365,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/adapters/campuspulse.py",
+      "sha256": "e64a66ee6c085e9e5b6f069631c3f14ac53199e1216488349a60ef7f3c2acfd9"
+    },
+    {
+      "bytes": 5674,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/adapters/chuang.py",
+      "sha256": "e0776efedd4a31ebe015e69083f20aaeafecb666a141efd9fdc7749d2bcb01ac"
+    },
+    {
+      "bytes": 6743,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/adapters/generative_agents.py",
+      "sha256": "579a54a4e075d3920cdbb8f940a277f0beffca656ef4ffb26aa3e729087ec019"
+    },
+    {
+      "bytes": 3046,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/audit.py",
+      "sha256": "219feb39e96bc7767ce1469f4628582258640c1298b43ced064bc8b1e6e0d8e0"
+    },
+    {
+      "bytes": 2459,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/auxiliary.py",
+      "sha256": "0daf558441e32d9dc673534593f048b0c814fc8e6d93ada2d3479bb6c6d244c8"
+    },
+    {
+      "bytes": 7533,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/campuspulse_assimilation.py",
+      "sha256": "da4e3531d915e66ee82506c971281f5cf17cc00dfcde742d3993b34ef0e01263"
+    },
+    {
+      "bytes": 4410,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/contracts.py",
+      "sha256": "8d1fd9fb85e0430f4bd3d4104240d209627a2a1e7289485d003ae818f543a321"
+    },
+    {
+      "bytes": 5254,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/dimension3_belief_network.py",
+      "sha256": "ec679f5e09a067f1b083397e4629f6db293d10fb8039a42a660bea01aab760c5"
+    },
+    {
+      "bytes": 5110,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/fair_initialization.py",
+      "sha256": "956797109a16d7c675dfe3a96fc1604ce63bbf7c486f9771c4ba5e12968eeed0"
+    },
+    {
+      "bytes": 12519,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/fake_executor.py",
+      "sha256": "72a4f8024f371c075970a004c06598807a27e120dda4285a3853fe112c797fa6"
+    },
+    {
+      "bytes": 16171,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/offline_trace.py",
+      "sha256": "f3146d719d5b4512cecb9daf0bfeebdb3f15a1ba85a78ab0dfceedcb082b4ec6"
+    },
+    {
+      "bytes": 4573,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/prompting.py",
+      "sha256": "64bf2bd113868b53cfb1546fa38e003bd14a54ecf2e93ace7195721cdbd77e28"
+    },
+    {
+      "bytes": 35154,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/real_provider.py",
+      "sha256": "ffb67c5ec34c5b9d296c253ae00891e040197076dea2e0d72a396d13691dd0c4"
+    },
+    {
+      "bytes": 8372,
+      "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/real_runtime.py",
+      "sha256": "1ae6666e9aeb5e4a9c975c05a71dd387bf6e8059fdec4d65e8162fa0f0ff05b8"
+    },
+    {
+      "bytes": 29209,
+      "path": "02_micro_consistency/code/campuspulse_core/evaluation/dimension2.py",
+      "sha256": "6b3457c55151a7d42003683978e59cba1ea313bf22cce6116287089235c41f5a"
+    },
+    {
+      "bytes": 13548,
+      "path": "02_micro_consistency/code/campuspulse_core/evaluation/text_judge.py",
+      "sha256": "4a0bddaef78ccabd299c297030c05a583a4713fe85861df355738635a79b6ceb"
+    },
+    {
+      "bytes": 4163,
+      "path": "02_micro_consistency/code/campuspulse_core/schemas/campuspulse_assimilation_sidecar_v1.0.0.schema.json",
+      "sha256": "cf1942f35187ccf208aaa4cc6eba331a2615ff03cada4228728165627a53c7d3"
+    },
+    {
+      "bytes": 2535,
+      "path": "02_micro_consistency/code/campuspulse_core/schemas/dimension2_predecision_snapshot_v1.0.0.schema.json",
+      "sha256": "fb59dd765273b8ac682bb2a993e44f6179b06659d9845fa63ce190d89b5b0a8f"
+    },
+    {
+      "bytes": 3255,
+      "path": "02_micro_consistency/code/campuspulse_core/schemas/dimension2_predecision_snapshot_v1.1.0.schema.json",
+      "sha256": "3431d9bc70b75c96e72f2138c4ed42929f38b5bd7c7a811005ca92c8dc576d3e"
+    },
+    {
+      "bytes": 1553,
+      "path": "02_micro_consistency/code/campuspulse_core/schemas/dimension2_text_judgement_v1.0.0.schema.json",
+      "sha256": "b3912df9d8ea3580d9b27a61b0733e8b85bba9ba2696f1596632b9e263194fb9"
+    },
+    {
+      "bytes": 4239,
+      "path": "02_micro_consistency/code/campuspulse_core/schemas/unified_output_v1.0.0.schema.json",
+      "sha256": "7502a4cff524c47d90b63b624d18f37cdf6d0a513433c600c00b21e99972002f"
+    },
+    {
+      "bytes": 5270,
+      "path": "02_micro_consistency/code/campuspulse_core/schemas/unified_output_v1.1.0.schema.json",
+      "sha256": "7f6b67a0019ef2d5cdbaf096ac79bb4977efb6980ae157e39c235af9c17fd354"
+    },
+    {
+      "bytes": 4905,
+      "path": "02_micro_consistency/code/campuspulse_core/schemas/validate_unified_output.py",
+      "sha256": "980622d88a93d00e85018d42f6b252a256600360ad7da0c308fbc6d00a41fc06"
+    },
+    {
+      "bytes": 4938,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/build_campuspulse_dimension2_judge_cases.py",
+      "sha256": "97752f7b924f2db646257f1f564016b4c44127626005f63273bffecc46ec2715"
+    },
+    {
+      "bytes": 6715,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/build_dimension2_cross_method_judge_cases.py",
+      "sha256": "71536addad86132dd183c5d8b1ca5d2fbdd3647fa4e15100cfdb7e8ccee7ce22"
+    },
+    {
+      "bytes": 12738,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/build_dimension2_longitudinal_ablation_panel.py",
+      "sha256": "11c21b18135e4d22c1672c421eefb404c6ae441c98cc148284ef0037d4668d1d"
+    },
+    {
+      "bytes": 5763,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/build_dimension2_longitudinal_judge_cases.py",
+      "sha256": "20beb5192d74a9202f8fc25d5a5539f744d5c47259ed4e9ca74f9187d8e408bd"
+    },
+    {
+      "bytes": 6332,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/build_dimension2_warmup_snapshot.py",
+      "sha256": "ef11b0866afecfd69a9d21b9fa9608b7b6c165f4a64e3f9178ecd87911c1065c"
+    },
+    {
+      "bytes": 1370,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/combine_dimension2_records.py",
+      "sha256": "ec216a4f014be64628325d347276d0234951c4a8405fe578e3b0ee0500e578c7"
+    },
+    {
+      "bytes": 3996,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/extract_dimension2_predecision_snapshot.py",
+      "sha256": "01d4d7654f6cb9c83bec457363f3e49f609c45ae5c2d91ed4985dfb097142407"
+    },
+    {
+      "bytes": 4105,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/materialize_campuspulse_dimension2_assimilation.py",
+      "sha256": "64958f0b8da9f7a56b60d4c7cbe8c0e0477ca18a994c7347f4948aa4489dc327"
+    },
+    {
+      "bytes": 5006,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/merge_dimension2_judge_results.py",
+      "sha256": "9a97cdfe3a5f9fd729d575280fa00992796e9e2259881693d5fbd89a28725314"
+    },
+    {
+      "bytes": 5135,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/preflight_dimension2_cross_method.py",
+      "sha256": "87a5b06542edb68199355c8812c47465ebf558978258a9873b3b43bbaab79af5"
+    },
+    {
+      "bytes": 7863,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/reconstruct_belief_preobservation_state.py",
+      "sha256": "811a47b66a4f3d3dc9505e429da18d2ef0831ef96cbfb4ca50414fe8a12f8fd7"
+    },
+    {
+      "bytes": 5853,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/render_dimension2_cross_method_report.py",
+      "sha256": "bcbdd55e7411b129ad694afcc25804e84bd15c035734594e59bb325cc6ea9623"
+    },
+    {
+      "bytes": 11112,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/render_dimension2_longitudinal_report.py",
+      "sha256": "e1098f9266d730af2dc8d1b95af075f81b5de4bfe5eddbbed0c5c35c9e5fc2a5"
+    },
+    {
+      "bytes": 18555,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/render_dimension2_real_report.py",
+      "sha256": "18b28bf8314b0c51b1fc7ecfaab8676ab4dac3bffd69045a5b768eed1b9de681"
+    },
+    {
+      "bytes": 12259,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/run_real_baseline_experiment.py",
+      "sha256": "358770187bc40a1caf00dbc77bfecffeb056b5cb9a46ac7175dc5e9e6d1672fe"
+    },
+    {
+      "bytes": 20473,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/run_real_campuspulse_cross_method.py",
+      "sha256": "3982d621d1b0eb672228b6a105ec11cb368ddde5240bc24def9fa5698eee24f6"
+    },
+    {
+      "bytes": 22210,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/run_real_campuspulse_dimension2_ablation.py",
+      "sha256": "1fb6af4c731a3d8a0a34c1373b32980ff6b66c7e3951eec4ee266056864cc3ec"
+    },
+    {
+      "bytes": 13108,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/run_real_campuspulse_dimension2_warmup.py",
+      "sha256": "9971ac9afce501558ca9d908cd55cac830c4dd46829dade39eb6a29d9fc4611e"
+    },
+    {
+      "bytes": 4224,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/run_real_dimension2_judge.py",
+      "sha256": "b8ca63374673ea71becafcd36897e13fe3c274e946ec467637bca8bf921103f0"
+    },
+    {
+      "bytes": 3602,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/run_real_stance_probe.py",
+      "sha256": "110140d2b5f53ed3d1c6da99841a653df01f63f07111ebdc68f8c87817136870"
+    },
+    {
+      "bytes": 9311,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/run_secondary_model_blind_review.py",
+      "sha256": "74bede948f74fb9a5d6f677e4d7f76b53c0c15cc109b3fa52424728e7c4673b4"
+    },
+    {
+      "bytes": 2586,
+      "path": "02_micro_consistency/code/campuspulse_core/scripts/shard_dimension2_judge_cases.py",
+      "sha256": "3d5c0eaa1410f1e5a7d3c5b4f1a5567920b20bb7aac58b61de8fc655de2db7c2"
+    },
+    {
+      "bytes": 1054,
+      "path": "02_micro_consistency/code/campuspulse_core/tests/test_adapter.py",
+      "sha256": "c40c43e0778b897508dde75fe102ac161a100b5317dafb227d2d3f0bee0c5077"
+    },
+    {
+      "bytes": 7948,
+      "path": "02_micro_consistency/code/campuspulse_core/tests/test_comparison_harness.py",
+      "sha256": "3cb3801d0ce8a3cbd96b9b07d64136437820f7b419bb342589568d08f63a5006"
+    },
+    {
+      "bytes": 7037,
+      "path": "02_micro_consistency/code/campuspulse_core/tests/test_dimension2_cross_method_artifacts.py",
+      "sha256": "a14e6ae466ead8086a5175c44d1cd4cf299b402c3fbea7fe40f77fdcc6f6d88b"
+    },
+    {
+      "bytes": 1465,
+      "path": "02_micro_consistency/code/campuspulse_core/tests/test_dimension2_style_deduplication.py",
+      "sha256": "9db6f4f6aa3a6d447756f5c6c33f366d461738eb56424e3e85748dc79be7bf95"
+    },
+    {
+      "bytes": 10487,
+      "path": "02_micro_consistency/code/campuspulse_core/tests/test_real_provider.py",
+      "sha256": "b70d216818291961b1b1c316836695c84cfb0acc7dd92448252b8ab8725ded5e"
+    },
+    {
+      "bytes": 758,
+      "path": "02_micro_consistency/code/README.md",
+      "sha256": "ffeda1d7f2ee556311a3f00e9d25aca540eedf4b4e473c6fa0128bcef9071250"
+    },
+    {
+      "bytes": 15175,
+      "path": "02_micro_consistency/code/SOURCE_MANIFEST.json",
+      "sha256": "32cee12436370bf72dd7829e138078206d8c7b0b8080858ba0260cac95b3a86d"
+    },
+    {
+      "bytes": 1800,
+      "path": "02_micro_consistency/dimension2_ablation/CASE_AND_DATA.md",
+      "sha256": "34619dda31b03f80597e9711d8e0225e52d5e9a5577f95d30108ccf332052827"
+    },
+    {
+      "bytes": 547,
+      "path": "02_micro_consistency/dimension2_ablation/cost_by_method_and_call_type.csv",
+      "sha256": "9c3e400117c3e498470749789728c3e64e906906ca7c45c5ef3fdef31226306e"
+    },
+    {
+      "bytes": 368,
+      "path": "02_micro_consistency/dimension2_ablation/evidence_index.json",
+      "sha256": "2c85281590b638a6ecc21d0f14d6a4d39aff1c3ee38aaa4bb05a917b77a45bf4"
+    },
+    {
+      "bytes": 866545,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/dimension2_longitudinal_ablation.json",
+      "sha256": "577a943cb6cad7588e5ea02028f49fee302890a20ff7f26e292b6addb37db3d8"
+    },
+    {
+      "bytes": 942,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/dimension2_longitudinal_ablation_table.csv",
+      "sha256": "733cff296c94db7806f3fc4692c0668f3ad268712f93fe0587aef84e80ed8e6c"
+    },
+    {
+      "bytes": 312,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/publication_canonical_table.csv",
+      "sha256": "b556c059fdec09b758f5ee430a3346eb00b09f8cc671f1ab216f9e46ff55a197"
+    },
+    {
+      "bytes": 650,
+      "path": "02_micro_consistency/dimension2_ablation/metrics/publication_canonical_table.json",
+      "sha256": "7b873015b5a77e2e9c8b7c330b77f17ba495d0d560b5f42ebbebb31520b3f932"
+    },
+    {
+      "bytes": 732,
+      "path": "02_micro_consistency/dimension2_ablation/parameters.json",
+      "sha256": "b2d5ec5bcab40f1702b7a429747f7c81fddc606df13d3d24a76300dfd5d181de"
+    },
+    {
+      "bytes": 2577,
+      "path": "02_micro_consistency/dimension2_ablation/provenance.json",
+      "sha256": "050e7b0d8061bef873b6c8a075488a95dff75a475c81f48d3f046ad099bb9119"
+    },
+    {
+      "bytes": 6156670,
+      "path": "02_micro_consistency/dimension2_ablation/raw_or_sufficient_statistics/assimilation_sidecar.state_and_full.jsonl",
+      "sha256": "1a4e405c9d34fe781137e66c1a9375145f1dca60561c4d77c1d338d2b14c43b3"
+    },
+    {
+      "bytes": 1109454,
+      "path": "02_micro_consistency/dimension2_ablation/raw_or_sufficient_statistics/blind_judgements.jsonl",
+      "sha256": "261ef9a23a6aff7c5a3cec6aabf3a24f9bf9a8aa2f06e8a570a14fdb6fedee47"
+    },
+    {
+      "bytes": 8595543,
+      "path": "02_micro_consistency/dimension2_ablation/raw_or_sufficient_statistics/unified_ablation_records.jsonl",
+      "sha256": "6404cdd9d6cd04c1f2e6ac587fdba9636376bf4e45dc207d83ca14a0c6eed219"
+    },
+    {
+      "bytes": 7253,
+      "path": "02_micro_consistency/dimension2_ablation/report/DIMENSION2_ABLATION_REPORT.md",
+      "sha256": "811c047049b42a45f5a15405efcf19c1026695b3e951cbdcb83d2fbafedd8cea"
+    },
+    {
+      "bytes": 1800,
+      "path": "02_micro_consistency/dimension2_cross_method/CASE_AND_DATA.md",
+      "sha256": "34619dda31b03f80597e9711d8e0225e52d5e9a5577f95d30108ccf332052827"
+    },
+    {
+      "bytes": 1573,
+      "path": "02_micro_consistency/dimension2_cross_method/cost_by_method_and_call_type.csv",
+      "sha256": "5332291e2e6d75c2e595b9ee13958a9bdefe2cddf2f5b303193f9a7211c6b977"
+    },
+    {
+      "bytes": 341,
+      "path": "02_micro_consistency/dimension2_cross_method/evidence_index.json",
+      "sha256": "2bdc65b8cfdfed0b36bedca2500a13d8cac8070b03d9c7501ba063a7a5075d73"
+    },
+    {
+      "bytes": 5847,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/dimension2_cross_method.json",
+      "sha256": "5cd83500e7660250a8e3c9090df6eb596b98d8f0b8ebbb6d8c6ab5e64fa80288"
+    },
+    {
+      "bytes": 1464,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/judge_reliability.json",
+      "sha256": "15cef240b02188ad04efa70644a1593ffd86bb03649d6711d77f984f3e9384f6"
+    },
+    {
+      "bytes": 332,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/publication_canonical_table.csv",
+      "sha256": "0289f50f39780626af8bf65c6535a7b4ff732eea5d2bd69d2ffee24ac97bce5d"
+    },
+    {
+      "bytes": 671,
+      "path": "02_micro_consistency/dimension2_cross_method/metrics/publication_canonical_table.json",
+      "sha256": "65e1374e0fa99f8e215600702f2363edc51d81dc95d8473fbf7cda05048d2829"
+    },
+    {
+      "bytes": 732,
+      "path": "02_micro_consistency/dimension2_cross_method/parameters.json",
+      "sha256": "b2d5ec5bcab40f1702b7a429747f7c81fddc606df13d3d24a76300dfd5d181de"
+    },
+    {
+      "bytes": 2545,
+      "path": "02_micro_consistency/dimension2_cross_method/provenance.json",
+      "sha256": "c54b7cca654b34cf9c3fd04c9bf611a435e074462a1de1ae7ea579dcc1f7faba"
+    },
+    {
+      "bytes": 1126043,
+      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/blind_judgements.jsonl",
+      "sha256": "764e64700d560637f88587bdd9e0408b5d7e2401789ccf10049dc18f3e62568f"
+    },
+    {
+      "bytes": 16533,
+      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/independent_blind_review_answers.csv",
+      "sha256": "525d7ef7571966cbad8db20c54e1709b13a84596fa6aa85e71e452a957d07de0"
+    },
+    {
+      "bytes": 6015829,
+      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/unified_records_2048.jsonl",
+      "sha256": "a1540396812aacd021b689c30fde4958aa7a087d62f837a6ec34177f79a60400"
+    },
+    {
+      "bytes": 6735,
+      "path": "02_micro_consistency/dimension2_cross_method/report/DIMENSION2_CROSS_METHOD_REPORT.md",
+      "sha256": "2437be8f179f9f27aabc267ff95cf0ea7d2c1fefcfff4f09210909de46442cd5"
+    },
+    {
+      "bytes": 706,
+      "path": "02_micro_consistency/parameters.json",
+      "sha256": "b6016cdafcad2da9de7708a974b4c2cae09bcdbbd92e08963f45266a9dca32d4"
+    },
+    {
+      "bytes": 1948,
+      "path": "03_population_polarization/CASE_AND_DATA.md",
+      "sha256": "dd36c79610a5624570e901cbbf99b126fbb3d665521695a86df5e1f727623531"
+    },
+    {
+      "bytes": 481,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/__init__.py",
+      "sha256": "a88975a1f7513ac79ef203fab8981f9ed296028b6ddfb0bb30599e989ff8db86"
+    },
+    {
+      "bytes": 374,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/adapters/__init__.py",
+      "sha256": "9e4ffc71e092df185785d35337aa1070533716dcb8676939027b6b585d9f6a10"
+    },
+    {
+      "bytes": 9469,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/adapters/belief_engine.py",
+      "sha256": "2ee2476b76684f21077117f004b42ee6a7b8106fe805c23131e3a035fea3ff35"
+    },
+    {
+      "bytes": 4365,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/adapters/campuspulse.py",
+      "sha256": "e64a66ee6c085e9e5b6f069631c3f14ac53199e1216488349a60ef7f3c2acfd9"
+    },
+    {
+      "bytes": 5674,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/adapters/chuang.py",
+      "sha256": "e0776efedd4a31ebe015e69083f20aaeafecb666a141efd9fdc7749d2bcb01ac"
+    },
+    {
+      "bytes": 6743,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/adapters/generative_agents.py",
+      "sha256": "579a54a4e075d3920cdbb8f940a277f0beffca656ef4ffb26aa3e729087ec019"
+    },
+    {
+      "bytes": 3046,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/audit.py",
+      "sha256": "219feb39e96bc7767ce1469f4628582258640c1298b43ced064bc8b1e6e0d8e0"
+    },
+    {
+      "bytes": 2459,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/auxiliary.py",
+      "sha256": "0daf558441e32d9dc673534593f048b0c814fc8e6d93ada2d3479bb6c6d244c8"
+    },
+    {
+      "bytes": 7533,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/campuspulse_assimilation.py",
+      "sha256": "da4e3531d915e66ee82506c971281f5cf17cc00dfcde742d3993b34ef0e01263"
+    },
+    {
+      "bytes": 4410,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/contracts.py",
+      "sha256": "8d1fd9fb85e0430f4bd3d4104240d209627a2a1e7289485d003ae818f543a321"
+    },
+    {
+      "bytes": 5254,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/dimension3_belief_network.py",
+      "sha256": "ec679f5e09a067f1b083397e4629f6db293d10fb8039a42a660bea01aab760c5"
+    },
+    {
+      "bytes": 5110,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/fair_initialization.py",
+      "sha256": "956797109a16d7c675dfe3a96fc1604ce63bbf7c486f9771c4ba5e12968eeed0"
+    },
+    {
+      "bytes": 12519,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/fake_executor.py",
+      "sha256": "72a4f8024f371c075970a004c06598807a27e120dda4285a3853fe112c797fa6"
+    },
+    {
+      "bytes": 16171,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/offline_trace.py",
+      "sha256": "f3146d719d5b4512cecb9daf0bfeebdb3f15a1ba85a78ab0dfceedcb082b4ec6"
+    },
+    {
+      "bytes": 4573,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/prompting.py",
+      "sha256": "64bf2bd113868b53cfb1546fa38e003bd14a54ecf2e93ace7195721cdbd77e28"
+    },
+    {
+      "bytes": 35154,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/real_provider.py",
+      "sha256": "ffb67c5ec34c5b9d296c253ae00891e040197076dea2e0d72a396d13691dd0c4"
+    },
+    {
+      "bytes": 8372,
+      "path": "03_population_polarization/code/campuspulse_core/comparison_harness/real_runtime.py",
+      "sha256": "1ae6666e9aeb5e4a9c975c05a71dd387bf6e8059fdec4d65e8162fa0f0ff05b8"
+    },
+    {
+      "bytes": 12471,
+      "path": "03_population_polarization/code/campuspulse_core/evaluation/dimension3.py",
+      "sha256": "2656212e0642a2209bf4ae89832c2f7aa8b7bec13e6d23f5c2664f1af658bfc5"
+    },
+    {
+      "bytes": 4163,
+      "path": "03_population_polarization/code/campuspulse_core/schemas/campuspulse_assimilation_sidecar_v1.0.0.schema.json",
+      "sha256": "cf1942f35187ccf208aaa4cc6eba331a2615ff03cada4228728165627a53c7d3"
+    },
+    {
+      "bytes": 2535,
+      "path": "03_population_polarization/code/campuspulse_core/schemas/dimension2_predecision_snapshot_v1.0.0.schema.json",
+      "sha256": "fb59dd765273b8ac682bb2a993e44f6179b06659d9845fa63ce190d89b5b0a8f"
+    },
+    {
+      "bytes": 3255,
+      "path": "03_population_polarization/code/campuspulse_core/schemas/dimension2_predecision_snapshot_v1.1.0.schema.json",
+      "sha256": "3431d9bc70b75c96e72f2138c4ed42929f38b5bd7c7a811005ca92c8dc576d3e"
+    },
+    {
+      "bytes": 1553,
+      "path": "03_population_polarization/code/campuspulse_core/schemas/dimension2_text_judgement_v1.0.0.schema.json",
+      "sha256": "b3912df9d8ea3580d9b27a61b0733e8b85bba9ba2696f1596632b9e263194fb9"
+    },
+    {
+      "bytes": 4239,
+      "path": "03_population_polarization/code/campuspulse_core/schemas/unified_output_v1.0.0.schema.json",
+      "sha256": "7502a4cff524c47d90b63b624d18f37cdf6d0a513433c600c00b21e99972002f"
+    },
+    {
+      "bytes": 5270,
+      "path": "03_population_polarization/code/campuspulse_core/schemas/unified_output_v1.1.0.schema.json",
+      "sha256": "7f6b67a0019ef2d5cdbaf096ac79bb4977efb6980ae157e39c235af9c17fd354"
+    },
+    {
+      "bytes": 4905,
+      "path": "03_population_polarization/code/campuspulse_core/schemas/validate_unified_output.py",
+      "sha256": "980622d88a93d00e85018d42f6b252a256600360ad7da0c308fbc6d00a41fc06"
+    },
+    {
+      "bytes": 10733,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/bind_campuspulse_dimension3_particles.py",
+      "sha256": "8b8a754d580d3973be9d93fff4b2abbc8331d6d69c37ebd5249daa60b0486c78"
+    },
+    {
+      "bytes": 8892,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/build_dimension3_common_population_replay.py",
+      "sha256": "556d1c181ce9fc5934f6437235fe9ccda5c77df4c52580b0e6cd2b140f7fceed"
+    },
+    {
+      "bytes": 12204,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/build_dimension3_method_projection.py",
+      "sha256": "44fe66b5a6387c03a8892a1901684da0b0aa3a351caac3ae8f12b08ce77cd5f6"
+    },
+    {
+      "bytes": 4663,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/freeze_dimension3_belief_event_arguments.py",
+      "sha256": "25afa17d63c3da35ee00bdfcacf41a55a55f17bceb2754524c3346de35c11507"
+    },
+    {
+      "bytes": 5926,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/report_dimension3_ablation.py",
+      "sha256": "902e8e779b836cccd406acf7596a272cbbf7848190a2cc39e746378b7bfb07da"
+    },
+    {
+      "bytes": 5443,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/run_dimension3_belief_formal.py",
+      "sha256": "aa2fc8e202e3f20ed6e33a5d2f0a4c93e2373b9acc54bd522dfea6b79c55c493"
+    },
+    {
+      "bytes": 7065,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/run_dimension3_belief_network_conformance.py",
+      "sha256": "30a29600e35c70e8e230f1a54eb84e48e2f8c970f3a7d8397f25da0713b45f89"
+    },
+    {
+      "bytes": 20027,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/run_dimension3_campuspulse_ablation.py",
+      "sha256": "f0c5a515ce1fac985a3d8ea05d849dbd2ab29b63b58215b409ea7dc679a3de78"
+    },
+    {
+      "bytes": 21981,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/run_dimension3_chuang_formal.py",
+      "sha256": "94fe32ea376399df40e94228967d01981bc0597edf93f2f8dcf7a65f37744518"
+    },
+    {
+      "bytes": 24361,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/run_dimension3_generative_agents_formal.py",
+      "sha256": "8cd35a06a47bc281a7389e79b043da45a3ad55f8500851fd2872b048bac4991e"
+    },
+    {
+      "bytes": 8572,
+      "path": "03_population_polarization/code/campuspulse_core/scripts/run_dimension3_longitudinal_conformance.py",
+      "sha256": "fdb97b1868505754c84f131d716e1976d058c083d3335f1e6805a96e4a8c0d5b"
+    },
+    {
+      "bytes": 7948,
+      "path": "03_population_polarization/code/campuspulse_core/tests/test_comparison_harness.py",
+      "sha256": "3cb3801d0ce8a3cbd96b9b07d64136437820f7b419bb342589568d08f63a5006"
+    },
+    {
+      "bytes": 2022,
+      "path": "03_population_polarization/code/campuspulse_core/tests/test_dimension3_ablation_reporting.py",
+      "sha256": "17a54889f2dd2f5ba5741d24e158af81451670796820171ea506eb527515bb8c"
+    },
+    {
+      "bytes": 2818,
+      "path": "03_population_polarization/code/campuspulse_core/tests/test_dimension3_belief_network.py",
+      "sha256": "911a25a75def078e406ec9b8e9851b560da3367b5d456484e8d2ced825a19e0e"
+    },
+    {
+      "bytes": 5405,
+      "path": "03_population_polarization/code/campuspulse_core/tests/test_dimension3_campuspulse_solver_kernel.py",
+      "sha256": "d53fe9e331a3bd9780e22a5b89cf8dd71ca177098f872f7821c32dbfc3df37bb"
+    },
+    {
+      "bytes": 10487,
+      "path": "03_population_polarization/code/campuspulse_core/tests/test_real_provider.py",
+      "sha256": "b70d216818291961b1b1c316836695c84cfb0acc7dd92448252b8ab8725ded5e"
+    },
+    {
+      "bytes": 758,
+      "path": "03_population_polarization/code/README.md",
+      "sha256": "ffeda1d7f2ee556311a3f00e9d25aca540eedf4b4e473c6fa0128bcef9071250"
+    },
+    {
+      "bytes": 11796,
+      "path": "03_population_polarization/code/SOURCE_MANIFEST.json",
+      "sha256": "1b2d814e8c96738257c89a9948721a7102d93c1c18286d2a76a0814d47c47b94"
+    },
+    {
+      "bytes": 1973,
+      "path": "03_population_polarization/dimension3_ablation/CASE_AND_DATA.md",
+      "sha256": "5f542eb7d1363caef122366970828f1bdb6b2fd2bd142f06390c8c790ffa08a9"
+    },
+    {
+      "bytes": 732,
+      "path": "03_population_polarization/dimension3_ablation/cost_by_method_and_call_type.csv",
+      "sha256": "0ca90849f53cbee90419ce67ee276a3f6aec5424db1c8222df0e8e07ee708739"
+    },
+    {
+      "bytes": 439,
+      "path": "03_population_polarization/dimension3_ablation/evidence_index.json",
+      "sha256": "b155233ac1c860c8c6595dad11d1a714e04ce32bea2857e1412a32931f2e3c9e"
+    },
+    {
+      "bytes": 38179,
+      "path": "03_population_polarization/dimension3_ablation/metrics/dimension3_ablation_metrics.json",
+      "sha256": "61f86e1db84de6a0445a2b2ebfddb31f1e40185eceb87801c00fe7823dc4a24b"
+    },
+    {
+      "bytes": 795,
+      "path": "03_population_polarization/dimension3_ablation/parameters.json",
+      "sha256": "451a4e9aab3396c8a0e059e809dace6b62c4579e2e9bb8671ee7003d947fc5bf"
+    },
+    {
+      "bytes": 1627,
+      "path": "03_population_polarization/dimension3_ablation/provenance.json",
+      "sha256": "2eecd279776c6b1c5dec7ec755c2be4eba95e6c2aa35dbd520cf5d08a541fbd4"
+    },
+    {
+      "bytes": 33769597,
+      "path": "03_population_polarization/dimension3_ablation/raw_or_sufficient_statistics/combined_population_states.jsonl",
+      "sha256": "d7abea1a087c2aa02eaf365ea7aee390647e8fc10bc3c58494b9dcaefecb6540"
+    },
+    {
+      "bytes": 9694,
+      "path": "03_population_polarization/dimension3_ablation/report/DIMENSION3_ABLATION_REPORT.md",
+      "sha256": "f052f098b88960a356905a600450bdee123e8596740b739ce2fdf2d327af587c"
+    },
+    {
+      "bytes": 1973,
+      "path": "03_population_polarization/dimension3_cross_method/CASE_AND_DATA.md",
+      "sha256": "5f542eb7d1363caef122366970828f1bdb6b2fd2bd142f06390c8c790ffa08a9"
+    },
+    {
+      "bytes": 1291,
+      "path": "03_population_polarization/dimension3_cross_method/cost_by_method_and_call_type.csv",
+      "sha256": "af5c617954d287e8c2e326e3e75a6a74d3ba2fdc1f3edbfcdb1a70962c90e847"
+    },
+    {
+      "bytes": 289,
+      "path": "03_population_polarization/dimension3_cross_method/evidence_index.json",
+      "sha256": "d01a6b847a197b3c8fce80b6357b1cc34c055f57b992dcb5af49394d89528ff9"
+    },
+    {
+      "bytes": 7991,
+      "path": "03_population_polarization/dimension3_cross_method/metrics/dimension3_cross_method_metrics_v1.6.0.json",
+      "sha256": "cdd0f9064b6fa8d237a42d3030822f57f99e7a558401f3d61aee631bb9b48db7"
+    },
+    {
+      "bytes": 795,
+      "path": "03_population_polarization/dimension3_cross_method/parameters.json",
+      "sha256": "451a4e9aab3396c8a0e059e809dace6b62c4579e2e9bb8671ee7003d947fc5bf"
+    },
+    {
+      "bytes": 1636,
+      "path": "03_population_polarization/dimension3_cross_method/provenance.json",
+      "sha256": "93144f93437458cdb04fc0b0c439495c0c5bbc72b549cde732ac5d17930da0fb"
+    },
+    {
+      "bytes": 3965314,
+      "path": "03_population_polarization/dimension3_cross_method/raw_or_sufficient_statistics/population_states.jsonl",
+      "sha256": "c2011f86d40298bb100b7d9cd576bc9a5152519fb30bb1c8125cc68daabfa8a8"
+    },
+    {
+      "bytes": 9490,
+      "path": "03_population_polarization/dimension3_cross_method/report/DIMENSION3_CROSS_METHOD_REPORT.md",
+      "sha256": "51a6facb65bff198ac767f51f49526ae147a59254e47c94587e2033e10516774"
+    },
+    {
+      "bytes": 766,
+      "path": "03_population_polarization/parameters.json",
+      "sha256": "0ddb39906feb29844294d775278c8c20ce89c8a89287d7ff00b27dcdbae9f5ba"
+    },
+    {
+      "bytes": 30854,
+      "path": "04_governance_response/code/campuspulse_core/legacy_evaluation/analyze_forum_resource_policy_result.py",
+      "sha256": "115fc22d1309b6bc9effb53fb341e63f1ea0c65831b3acf9b65f55a69e509312"
+    },
+    {
+      "bytes": 30988,
+      "path": "04_governance_response/code/campuspulse_core/legacy_evaluation/analyze_resource_flagship_result.py",
+      "sha256": "1829f46dfd40484c95abb23b380f2ebc84013499940e0037633889318542ecec"
+    },
+    {
+      "bytes": 11735,
+      "path": "04_governance_response/code/campuspulse_core/scripts/recompute_dimensions_1_4_readonly.py",
+      "sha256": "bc327a10d087dcef9c56a9f7842e2b5dd30139381b052d9b79c55220ad31e4e1"
+    },
+    {
+      "bytes": 22090,
+      "path": "04_governance_response/code/campuspulse_core/src/campuspulse_core/forum_risk.py",
+      "sha256": "332de1f734a9be8067d2764022d3c37a04866908c486b489f651487d009ad5ae"
+    },
+    {
+      "bytes": 77278,
+      "path": "04_governance_response/code/campuspulse_core/src/campuspulse_core/governance_arena.py",
+      "sha256": "3728e75039e2bc6b42d2e2e8df120e860dbb7da5a2807a64685b455ef341ed9d"
+    },
+    {
+      "bytes": 212661,
+      "path": "04_governance_response/code/campuspulse_core/src/campuspulse_core/governance_arena_v2.py",
+      "sha256": "ccd14c9b04142f6690e8c61f6fb8fbe473b64792be48486131ddc879f4fc26eb"
+    },
+    {
+      "bytes": 758,
+      "path": "04_governance_response/code/README.md",
+      "sha256": "ffeda1d7f2ee556311a3f00e9d25aca540eedf4b4e473c6fa0128bcef9071250"
+    },
+    {
+      "bytes": 1968,
+      "path": "04_governance_response/code/SOURCE_MANIFEST.json",
+      "sha256": "ddb760c526c5542954f00ba75206110a459a85bb2f8ecfc7aab3de61a4f85d8e"
+    },
+    {
+      "bytes": 779,
+      "path": "04_governance_response/housing_natural_vs_D/CASE_AND_DATA.md",
+      "sha256": "8436d6438001837140297e94be95a0d914fa0ac8a1883966f1f0af11ff8c5412"
+    },
+    {
+      "bytes": 389,
+      "path": "04_governance_response/housing_natural_vs_D/cost_by_method_and_call_type.csv",
+      "sha256": "f3fcc86fb0466e7180731f7a36adf33a0377e357698ab00ebd420823e5d01622"
+    },
+    {
+      "bytes": 221,
+      "path": "04_governance_response/housing_natural_vs_D/COST_SCOPE.md",
+      "sha256": "db9cb0f56ba2b4f7e0a4f2f4332014571cc33e1836c80124426d6a17aec26b63"
+    },
+    {
+      "bytes": 297,
+      "path": "04_governance_response/housing_natural_vs_D/evidence_index.json",
+      "sha256": "a597d0c5035262c47489baefe0876a0afe3daad5c2be6e5e7fcc8a7a6efdcd1e"
+    },
+    {
+      "bytes": 3218,
+      "path": "04_governance_response/housing_natural_vs_D/metrics/dimensions-1-4-readonly-recompute-v1.json",
+      "sha256": "4811254b3c5b47ed90e9e8f4e0bcc07243558a642c7d914dc2707d12ba49ddbe"
+    },
+    {
+      "bytes": 485,
+      "path": "04_governance_response/housing_natural_vs_D/parameters.json",
+      "sha256": "a84d8f9075180976e5cbf64e21d86c93ca44bf06cf68307c834d18749b8ca9e0"
+    },
+    {
+      "bytes": 1770,
+      "path": "04_governance_response/housing_natural_vs_D/provenance.json",
+      "sha256": "165fea67a2293a0fa475e41437e2d88cf0bf42038e01e552f5540e19cd9b2673"
+    },
+    {
+      "bytes": 12441,
+      "path": "04_governance_response/housing_natural_vs_D/raw_or_sufficient_statistics/public-summary-v1.json",
+      "sha256": "17a7efabcdab2c817ba215d86dc628738d572300f22ee5638e0625b545e2d9af"
+    },
+    {
+      "bytes": 1414,
+      "path": "04_governance_response/housing_natural_vs_D/report/DIMENSION4_READONLY_REPORT.md",
+      "sha256": "76085d8356b97aafb5faa4ee8dbbb3fbfbf41e92b2ad46940dcbd2ed5aa4686e"
+    },
+    {
+      "bytes": 2255,
+      "path": "CODE_VERSION_MANIFEST.md",
+      "sha256": "ab84a1faca55cfbd2c6685776b321bf9b3aea9a067afa393e8c9674fd0508835"
+    },
+    {
+      "bytes": 6163,
+      "path": "dimensions_2_3_release_manifest.json",
+      "sha256": "337fdf6ede401707968be0a83bec20ba38cedca00252d3c57d13389032cac281"
+    },
+    {
+      "bytes": 37404,
+      "path": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
+      "sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8"
+    },
+    {
+      "bytes": 1606,
+      "path": "publication_authority/FINAL_RESULT_REGISTRY.json",
+      "sha256": "1cbc545f3107f7dc3bbc99b6e65d3773f3c5f1bfcc594404b57e9d2746168705"
+    },
+    {
+      "bytes": 676,
+      "path": "README.md",
+      "sha256": "f361c0f8bce8ba87ba20ba78fe40a7f4658340b5b7ebe90d1fd9a429904192d8"
+    },
+    {
+      "bytes": 3776,
+      "path": "usage/usage_by_method_and_call_type.csv",
+      "sha256": "fb80e81415b1eda5af0ebb9a8d83c07b3e95af281a3e468501ee1e563c9a0e0d"
+    },
+    {
+      "bytes": 1661,
+      "path": "usage/USAGE_LEDGER_REPORT.md",
+      "sha256": "c719cf0b5f07fd6a571417b141d811b1a31bf508c196841924d817cc49e5e7b5"
+    },
+    {
+      "bytes": 18407,
+      "path": "usage/usage_ledger_v1.json",
+      "sha256": "be22aabdf7f7c9c387ce74e1b1226ba6c0145ca225c79ea4ad6ad1a36428d973"
+    }
+  ],
+  "schema_version": "campus-pulse-paper-evidence-manifest-v1",
+  "source_files": [
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core\\scenario\\housing_allocation\\reference_evidence\\four-dimension-v5-formal-v1\\forum-ecology-benchmark-v2.json",
+      "sha256": "8e68939f08ef594ed16a935754b03cbef8cb16c8d1c0c65d316031dd394b4598"
+    },
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core\\scenario\\housing_allocation\\reference_evidence\\four-dimension-v5-formal-v1\\public-summary-v1.json",
+      "sha256": "17a7efabcdab2c817ba215d86dc628738d572300f22ee5638e0625b545e2d9af"
+    },
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core\\scenario\\housing_allocation\\reference_evidence\\four-dimension-v5-formal-v1\\reply-count-detail-v2.json",
+      "sha256": "930fba06967007f29a8f85c00f9db772bafb3e65e46a524429502798f36066a8"
+    },
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\results\\dimensions_1_4_readonly_recompute_20260927\\DIMENSIONS_1_4_READONLY_REPORT.md",
+      "sha256": "89aedafc43347f0dd299d8ca6a7d9e50449f8c4458e315b3e21d28ef0003e279"
+    },
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\results\\dimensions_1_4_readonly_recompute_20260927\\dimensions-1-4-readonly-recompute-v1.json",
+      "sha256": "4811254b3c5b47ed90e9e8f4e0bcc07243558a642c7d914dc2707d12ba49ddbe"
+    }
+  ]
+}

@@ -1,0 +1,1177 @@
+{
+  "definitions": {
+    "effective_rank": "entropy of normalized singular values of centered 1000x12 parent-state matrix",
+    "entropy_edges": [
+      -1.0,
+      -0.9,
+      -0.8,
+      -0.7,
+      -0.6,
+      -0.5,
+      -0.4,
+      -0.3,
+      -0.2,
+      -0.1,
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "kde_prominence": "5% of maximum density",
+    "sarle": "ordinary central-moment skewness and Pearson kurtosis",
+    "sd_ddof": 0
+  },
+  "definitions_version": "1.4.0",
+  "groups": [
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": null,
+        "kde_peak_count": null,
+        "mean": -1.6391276724814218e-11,
+        "sarle_bimodality": null,
+        "sd_ddof_0": 3.988080540876498e-09
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.0008488922163836615,
+      "stake_group_permutation_p": 0.455,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499995529652,
+          "sarle_bimodality": 0.7389124825469292,
+          "sd_ddof_0": 0.11192809323051561
+        },
+        "attention": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499996066094,
+          "sarle_bimodality": 0.7389124833386973,
+          "sd_ddof_0": 0.11192809325317726
+        },
+        "concern": {
+          "kde_peak_count": null,
+          "mean": 0.30000001181960106,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.929651663707941e-09
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.6529279943943025,
+          "sarle_bimodality": 0.9999999999999566,
+          "sd_ddof_0": 0.05151687536484585
+        },
+        "opposition": {
+          "kde_peak_count": null,
+          "mean": 0.30000001191794873,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.7492525307776256e-09
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.16401440454274416,
+          "sarle_bimodality": 0.9107822801820693,
+          "sd_ddof_0": 0.0001481084017723162
+        },
+        "satisfaction": {
+          "kde_peak_count": null,
+          "mean": 0.49999999998211864,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 4.580224287782022e-09
+        },
+        "service_strain": {
+          "kde_peak_count": null,
+          "mean": 0.2360000014729798,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.2733125517567325e-09
+        },
+        "support": {
+          "kde_peak_count": null,
+          "mean": 0.30000001190155745,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.826051873974116e-09
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.7863979641795158,
+          "sarle_bimodality": 0.9999993095133783,
+          "sd_ddof_0": 0.09906857243921387
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.3230079900562763,
+          "sarle_bimodality": 0.9999999999999344,
+          "sd_ddof_0": 0.021795594284102764
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.4058275000050664,
+          "sarle_bimodality": 0.738912491070374,
+          "sd_ddof_0": 0.06156044807995826
+        }
+      },
+      "state_matrix_effective_rank": 1.9704620210136008,
+      "tick": 0,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.2355808419718897,
+          "raw": 0.7057371313262125
+        },
+        "kde_peak_count": 2,
+        "mean": 0.3085077389525314,
+        "sarle_bimodality": 0.6124681850808968,
+        "sd_ddof_0": 0.0471938721423173
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.05653959128073733,
+      "stake_group_permutation_p": 0.005,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 1,
+          "mean": 0.31372170500602203,
+          "sarle_bimodality": 0.3927574542927912,
+          "sd_ddof_0": 0.04520510639628808
+        },
+        "attention": {
+          "kde_peak_count": 1,
+          "mean": 0.4546827401849673,
+          "sarle_bimodality": 0.5315810851346238,
+          "sd_ddof_0": 0.07964011658211805
+        },
+        "concern": {
+          "kde_peak_count": 1,
+          "mean": 0.34565014198858157,
+          "sarle_bimodality": 0.3723401028052745,
+          "sd_ddof_0": 0.040634035644903234
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.6224412905355655,
+          "sarle_bimodality": 0.9910759858279949,
+          "sd_ddof_0": 0.05170257631772597
+        },
+        "opposition": {
+          "kde_peak_count": 1,
+          "mean": 0.3036054045496487,
+          "sarle_bimodality": 0.4699373799003515,
+          "sd_ddof_0": 0.01978267434349576
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.1483770259853543,
+          "sarle_bimodality": 0.2951158120724625,
+          "sd_ddof_0": 0.012234842984174423
+        },
+        "satisfaction": {
+          "kde_peak_count": 2,
+          "mean": 0.3845810541738838,
+          "sarle_bimodality": 0.5550799291347387,
+          "sd_ddof_0": 0.01514754421430599
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.31624774427378644,
+          "sarle_bimodality": 0.42284183557600896,
+          "sd_ddof_0": 0.010768734116922706
+        },
+        "support": {
+          "kde_peak_count": 2,
+          "mean": 0.61211314350218,
+          "sarle_bimodality": 0.7550280917072953,
+          "sd_ddof_0": 0.028319141730117854
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.676928030851676,
+          "sarle_bimodality": 0.9855579307882153,
+          "sd_ddof_0": 0.07992780814511932
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.2332756876760478,
+          "sarle_bimodality": 0.3955101494961338,
+          "sd_ddof_0": 0.017301781814711658
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.3062938656331087,
+          "sarle_bimodality": 0.7371166507971548,
+          "sd_ddof_0": 0.04948259152261072
+        }
+      },
+      "state_matrix_effective_rank": 5.513062371055745,
+      "tick": 3,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.6768112664323673,
+          "raw": 2.0275453539563917
+        },
+        "kde_peak_count": 2,
+        "mean": 0.13580867208430247,
+        "sarle_bimodality": 0.6297563363225073,
+        "sd_ddof_0": 0.21711462150711502
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.06795999265113188,
+      "stake_group_permutation_p": 0.005,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 1,
+          "mean": 0.4820645524357227,
+          "sarle_bimodality": 0.4082415600985786,
+          "sd_ddof_0": 0.09482338546107898
+        },
+        "attention": {
+          "kde_peak_count": 1,
+          "mean": 0.7093564573154545,
+          "sarle_bimodality": 0.4677478694611247,
+          "sd_ddof_0": 0.16131328329942543
+        },
+        "concern": {
+          "kde_peak_count": 1,
+          "mean": 0.36845531953763944,
+          "sarle_bimodality": 0.4626512524797692,
+          "sd_ddof_0": 0.1966679983838978
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.5296940366361924,
+          "sarle_bimodality": 0.6633987765411317,
+          "sd_ddof_0": 0.14312298825440903
+        },
+        "opposition": {
+          "kde_peak_count": 2,
+          "mean": 0.3712603727215046,
+          "sarle_bimodality": 0.5331824731831151,
+          "sd_ddof_0": 0.09340331827931923
+        },
+        "rumor_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.06339877346227643,
+          "sarle_bimodality": 0.47281328153253366,
+          "sd_ddof_0": 0.06685293178610123
+        },
+        "satisfaction": {
+          "kde_peak_count": 1,
+          "mean": 0.08058265023685313,
+          "sarle_bimodality": 0.7179623578365436,
+          "sd_ddof_0": 0.09637771291238632
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.5686075722103078,
+          "sarle_bimodality": 0.40002645727842595,
+          "sd_ddof_0": 0.0996335356707166
+        },
+        "support": {
+          "kde_peak_count": 2,
+          "mean": 0.5070690448058071,
+          "sarle_bimodality": 0.7087542578670841,
+          "sd_ddof_0": 0.12537500496831253
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.43913935097924206,
+          "sarle_bimodality": 0.7214221664885232,
+          "sd_ddof_0": 0.15362915819311004
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.1845137158666122,
+          "sarle_bimodality": 0.7329324835364056,
+          "sd_ddof_0": 0.16168146522788593
+        },
+        "voice": {
+          "kde_peak_count": 2,
+          "mean": 0.16048782218009064,
+          "sarle_bimodality": 0.6726983816516277,
+          "sd_ddof_0": 0.05894262758240891
+        }
+      },
+      "state_matrix_effective_rank": 4.916239517078603,
+      "tick": 9,
+      "variant": "full"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": null,
+        "kde_peak_count": null,
+        "mean": -2.1159648666557728e-10,
+        "sarle_bimodality": null,
+        "sd_ddof_0": 4.035942030999699e-09
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.0008487992296722198,
+      "stake_group_permutation_p": 0.42,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499995961786,
+          "sarle_bimodality": 0.7389124839299425,
+          "sd_ddof_0": 0.11192809310077292
+        },
+        "attention": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499996080995,
+          "sarle_bimodality": 0.7389124822969039,
+          "sd_ddof_0": 0.11192809328464891
+        },
+        "concern": {
+          "kde_peak_count": null,
+          "mean": 0.3000000119075179,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.806375293839524e-09
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.6529279945135117,
+          "sarle_bimodality": 0.9999999999999585,
+          "sd_ddof_0": 0.051516875489504906
+        },
+        "opposition": {
+          "kde_peak_count": null,
+          "mean": 0.3000000120535493,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.8230048348531974e-09
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.16401607424020767,
+          "sarle_bimodality": 0.9200073917617297,
+          "sd_ddof_0": 0.0002048991340957633
+        },
+        "satisfaction": {
+          "kde_peak_count": null,
+          "mean": 0.5000000000149012,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 4.323879480628517e-09
+        },
+        "service_strain": {
+          "kde_peak_count": null,
+          "mean": 0.23600000142902136,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.147008098611553e-09
+        },
+        "support": {
+          "kde_peak_count": null,
+          "mean": 0.30000001184195285,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 2.8771942905681473e-09
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.7863971537947655,
+          "sarle_bimodality": 0.9999991547055282,
+          "sd_ddof_0": 0.09906764518708618
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.32300799021869897,
+          "sarle_bimodality": 0.9999999999999342,
+          "sd_ddof_0": 0.021795594310911676
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.4058274997055531,
+          "sarle_bimodality": 0.7389124908345868,
+          "sd_ddof_0": 0.06156044840574512
+        }
+      },
+      "state_matrix_effective_rank": 1.9732164681457272,
+      "tick": 0,
+      "variant": "no_profile"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.2825677155687706,
+          "raw": 0.8464972249937905
+        },
+        "kde_peak_count": 1,
+        "mean": 0.21293733913686413,
+        "sarle_bimodality": 0.4288003511416093,
+        "sd_ddof_0": 0.04950796617716475
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.00040275026457989863,
+      "stake_group_permutation_p": 0.68,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 2,
+          "mean": 0.4542935512644119,
+          "sarle_bimodality": 0.6644947036615413,
+          "sd_ddof_0": 0.0196745797596662
+        },
+        "attention": {
+          "kde_peak_count": 2,
+          "mean": 0.6134800012707711,
+          "sarle_bimodality": 1.0000000000000027,
+          "sd_ddof_0": 0.01477463482456998
+        },
+        "concern": {
+          "kde_peak_count": 1,
+          "mean": 0.3540465501488968,
+          "sarle_bimodality": 0.3739490226856719,
+          "sd_ddof_0": 0.022319435364886977
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.5500747300624793,
+          "sarle_bimodality": 0.9724580706282223,
+          "sd_ddof_0": 0.04847617783943472
+        },
+        "opposition": {
+          "kde_peak_count": 1,
+          "mean": 0.3258254060747671,
+          "sarle_bimodality": 0.4025802233131935,
+          "sd_ddof_0": 0.02549025491288981
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.09403450873432524,
+          "sarle_bimodality": 0.49752026129357096,
+          "sd_ddof_0": 0.01235177830317405
+        },
+        "satisfaction": {
+          "kde_peak_count": 2,
+          "mean": 0.2547713002292669,
+          "sarle_bimodality": 0.7450017831219772,
+          "sd_ddof_0": 0.023531251071042217
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.29107144211034147,
+          "sarle_bimodality": 0.34360284413585557,
+          "sd_ddof_0": 0.006578929751306934
+        },
+        "support": {
+          "kde_peak_count": 2,
+          "mean": 0.5387627452116314,
+          "sarle_bimodality": 0.5573281387780799,
+          "sd_ddof_0": 0.02614656882010125
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.4991072134372845,
+          "sarle_bimodality": 0.9208854294037354,
+          "sd_ddof_0": 0.0559676920693552
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.12048931283452836,
+          "sarle_bimodality": 0.6501524342522309,
+          "sd_ddof_0": 0.008768055627038756
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.17354560876844977,
+          "sarle_bimodality": 0.7227074071409441,
+          "sd_ddof_0": 0.025810916637591087
+        }
+      },
+      "state_matrix_effective_rank": 6.634904273154928,
+      "tick": 3,
+      "variant": "no_profile"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.2919825977252703,
+          "raw": 0.8747016913217243
+        },
+        "kde_peak_count": 1,
+        "mean": -0.13176906408321243,
+        "sarle_bimodality": 0.43231948072665194,
+        "sd_ddof_0": 0.0469348270991142
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.00036916022561112575,
+      "stake_group_permutation_p": 0.61,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 2,
+          "mean": 0.4191112300961496,
+          "sarle_bimodality": 0.9531860854874454,
+          "sd_ddof_0": 0.15248044570065378
+        },
+        "attention": {
+          "kde_peak_count": 2,
+          "mean": 0.5960399919152259,
+          "sarle_bimodality": 1.0000000000000018,
+          "sd_ddof_0": 0.019604050916303534
+        },
+        "concern": {
+          "kde_peak_count": 2,
+          "mean": 0.5254786843079928,
+          "sarle_bimodality": 0.5160521182801663,
+          "sd_ddof_0": 0.038902389649586984
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.3315796157827492,
+          "sarle_bimodality": 0.8782117952236836,
+          "sd_ddof_0": 0.030596394589878683
+        },
+        "opposition": {
+          "kde_peak_count": 1,
+          "mean": 0.4840661472411833,
+          "sarle_bimodality": 0.45525702954688013,
+          "sd_ddof_0": 0.030188631771201242
+        },
+        "rumor_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.11653114194149673,
+          "sarle_bimodality": 0.538129603477461,
+          "sd_ddof_0": 0.03951758289300577
+        },
+        "satisfaction": {
+          "kde_peak_count": null,
+          "mean": 0.0,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.4573205589432638,
+          "sarle_bimodality": 0.5224508210998937,
+          "sd_ddof_0": 0.030924926743170027
+        },
+        "support": {
+          "kde_peak_count": 1,
+          "mean": 0.35229708315797087,
+          "sarle_bimodality": 0.39221151482943517,
+          "sd_ddof_0": 0.017176009828025363
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.20144089683272268,
+          "sarle_bimodality": 0.7048311179672395,
+          "sd_ddof_0": 0.01933090166708856
+        },
+        "verified_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.017382776126815398,
+          "sarle_bimodality": 0.36683220043182485,
+          "sd_ddof_0": 0.003577545313131858
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.09102884841286647,
+          "sarle_bimodality": 0.3330989231892656,
+          "sd_ddof_0": 0.005748954487249248
+        }
+      },
+      "state_matrix_effective_rank": 4.71059402512432,
+      "tick": 9,
+      "variant": "no_profile"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": null,
+        "kde_peak_count": null,
+        "mean": 0.0,
+        "sarle_bimodality": null,
+        "sd_ddof_0": 0.0
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.0008487992867889917,
+      "stake_group_permutation_p": 0.42,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499995648861,
+          "sarle_bimodality": 0.7389124827647454,
+          "sd_ddof_0": 0.11192809321269721
+        },
+        "attention": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499995648861,
+          "sarle_bimodality": 0.7389124827647454,
+          "sd_ddof_0": 0.11192809321269721
+        },
+        "concern": {
+          "kde_peak_count": null,
+          "mean": 0.30000001192092896,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.6529279942512513,
+          "sarle_bimodality": 0.9999999999999993,
+          "sd_ddof_0": 0.05151687535724088
+        },
+        "opposition": {
+          "kde_peak_count": null,
+          "mean": 0.30000001192092896,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.16401607429981233,
+          "sarle_bimodality": 0.920007863717166,
+          "sd_ddof_0": 0.00020489904587281814
+        },
+        "satisfaction": {
+          "kde_peak_count": null,
+          "mean": 0.5,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "service_strain": {
+          "kde_peak_count": null,
+          "mean": 0.23600000144541264,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 4.709804245614741e-10
+        },
+        "support": {
+          "kde_peak_count": null,
+          "mean": 0.30000001192092896,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.786397154033184,
+          "sarle_bimodality": 0.9999991546828972,
+          "sd_ddof_0": 0.09906764519604927
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.32300799012184145,
+          "sarle_bimodality": 1.0,
+          "sd_ddof_0": 0.021795594299119415
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.4058274998962879,
+          "sarle_bimodality": 0.738912490422629,
+          "sd_ddof_0": 0.061560448151604885
+        }
+      },
+      "state_matrix_effective_rank": 1.9732137163695074,
+      "tick": 0,
+      "variant": "no_profile_no_smc"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.2950973405278337,
+          "raw": 0.8840326268591835
+        },
+        "kde_peak_count": 3,
+        "mean": 0.19637937429547309,
+        "sarle_bimodality": 0.47989790000998717,
+        "sd_ddof_0": 0.05546254193284048
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.00028965614430448037,
+      "stake_group_permutation_p": 0.815,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 1,
+          "mean": 0.4483525514900684,
+          "sarle_bimodality": 0.54286919428697,
+          "sd_ddof_0": 0.00883538068440889
+        },
+        "attention": {
+          "kde_peak_count": 2,
+          "mean": 0.5841599855422973,
+          "sarle_bimodality": 1.0000000000000024,
+          "sd_ddof_0": 0.012210428328317577
+        },
+        "concern": {
+          "kde_peak_count": 1,
+          "mean": 0.342191877245903,
+          "sarle_bimodality": 0.5213729927391277,
+          "sd_ddof_0": 0.018819792145958317
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.5502499876022339,
+          "sarle_bimodality": 0.9961535548990819,
+          "sd_ddof_0": 0.04831235521625152
+        },
+        "opposition": {
+          "kde_peak_count": 2,
+          "mean": 0.3369968694150448,
+          "sarle_bimodality": 0.5561957550473248,
+          "sd_ddof_0": 0.030989227420976224
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.09405676461011171,
+          "sarle_bimodality": 0.5417555054846654,
+          "sd_ddof_0": 0.012055077205780492
+        },
+        "satisfaction": {
+          "kde_peak_count": 2,
+          "mean": 0.25615475298464296,
+          "sarle_bimodality": 0.8343980772096042,
+          "sd_ddof_0": 0.022665645024428867
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.28994989484548567,
+          "sarle_bimodality": 0.5412647797055926,
+          "sd_ddof_0": 0.004527574933353533
+        },
+        "support": {
+          "kde_peak_count": 2,
+          "mean": 0.5333762437105178,
+          "sarle_bimodality": 0.5310371879633498,
+          "sd_ddof_0": 0.0270090324307588
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.4996476584970951,
+          "sarle_bimodality": 0.9343475021411073,
+          "sd_ddof_0": 0.055545716076279186
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.12056210416555405,
+          "sarle_bimodality": 0.9999999999999996,
+          "sd_ddof_0": 0.00813516595271778
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.17239291709661483,
+          "sarle_bimodality": 0.7458509596544394,
+          "sd_ddof_0": 0.025231993265476767
+        }
+      },
+      "state_matrix_effective_rank": 4.431024235317746,
+      "tick": 3,
+      "variant": "no_profile_no_smc"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.23813712749513152,
+          "raw": 0.7133950783686069
+        },
+        "kde_peak_count": 1,
+        "mean": -0.10420365777611733,
+        "sarle_bimodality": 0.3076596933652124,
+        "sd_ddof_0": 0.03403992203900097
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.0010966754101982723,
+      "stake_group_permutation_p": 0.28,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 2,
+          "mean": 0.3235110096782446,
+          "sarle_bimodality": 0.9467195380586773,
+          "sd_ddof_0": 0.11780428089158465
+        },
+        "attention": {
+          "kde_peak_count": 1,
+          "mean": 0.5709192688465119,
+          "sarle_bimodality": 0.945419904789709,
+          "sd_ddof_0": 0.04275326501061172
+        },
+        "concern": {
+          "kde_peak_count": 1,
+          "mean": 0.5049480727314949,
+          "sarle_bimodality": 0.3616352691302089,
+          "sd_ddof_0": 0.04388529909255065
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.33166372662782667,
+          "sarle_bimodality": 0.9539093675321505,
+          "sd_ddof_0": 0.030178804412525934
+        },
+        "opposition": {
+          "kde_peak_count": 1,
+          "mean": 0.46525801929831506,
+          "sarle_bimodality": 0.2977121249051319,
+          "sd_ddof_0": 0.021371766353147022
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.11623765241354704,
+          "sarle_bimodality": 0.5412835494511057,
+          "sd_ddof_0": 0.03954985845690039
+        },
+        "satisfaction": {
+          "kde_peak_count": null,
+          "mean": 0.0,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.449640141159296,
+          "sarle_bimodality": 0.5217103871915585,
+          "sd_ddof_0": 0.030463720146594035
+        },
+        "support": {
+          "kde_peak_count": 1,
+          "mean": 0.3610543615221977,
+          "sarle_bimodality": 0.33327825805984235,
+          "sd_ddof_0": 0.013032233877964703
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.20182290209829806,
+          "sarle_bimodality": 0.77568418305598,
+          "sd_ddof_0": 0.018756675462089183
+        },
+        "verified_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.016796002954244615,
+          "sarle_bimodality": 0.9999999999999998,
+          "sd_ddof_0": 0.001133344478299589
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.08724116915464401,
+          "sarle_bimodality": 0.3130827554149845,
+          "sd_ddof_0": 0.004460948764022168
+        }
+      },
+      "state_matrix_effective_rank": 4.904227884744936,
+      "tick": 9,
+      "variant": "no_profile_no_smc"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": null,
+        "kde_peak_count": null,
+        "mean": 0.0,
+        "sarle_bimodality": null,
+        "sd_ddof_0": 0.0
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.0008487992867889917,
+      "stake_group_permutation_p": 0.42,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499995648861,
+          "sarle_bimodality": 0.7389124827647454,
+          "sd_ddof_0": 0.11192809321269721
+        },
+        "attention": {
+          "kde_peak_count": 1,
+          "mean": 0.4360499995648861,
+          "sarle_bimodality": 0.7389124827647454,
+          "sd_ddof_0": 0.11192809321269721
+        },
+        "concern": {
+          "kde_peak_count": null,
+          "mean": 0.30000001192092896,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.6529279942512513,
+          "sarle_bimodality": 0.9999999999999993,
+          "sd_ddof_0": 0.05151687535724088
+        },
+        "opposition": {
+          "kde_peak_count": null,
+          "mean": 0.30000001192092896,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.16401607429981233,
+          "sarle_bimodality": 0.920007863717166,
+          "sd_ddof_0": 0.00020489904587281814
+        },
+        "satisfaction": {
+          "kde_peak_count": null,
+          "mean": 0.5,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "service_strain": {
+          "kde_peak_count": null,
+          "mean": 0.23600000144541264,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 4.709804245614741e-10
+        },
+        "support": {
+          "kde_peak_count": null,
+          "mean": 0.30000001192092896,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.786397154033184,
+          "sarle_bimodality": 0.9999991546828972,
+          "sd_ddof_0": 0.09906764519604927
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.32300799012184145,
+          "sarle_bimodality": 1.0,
+          "sd_ddof_0": 0.021795594299119415
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.4058274998962879,
+          "sarle_bimodality": 0.738912490422629,
+          "sd_ddof_0": 0.061560448151604885
+        }
+      },
+      "state_matrix_effective_rank": 1.9732137163695074,
+      "tick": 0,
+      "variant": "single_particle"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.2928716375163847,
+          "raw": 0.8773650165164393
+        },
+        "kde_peak_count": 2,
+        "mean": 0.24723079204559326,
+        "sarle_bimodality": 0.43458333155906126,
+        "sd_ddof_0": 0.04634247344919254
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.0020625068115656025,
+      "stake_group_permutation_p": 0.155,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 2,
+          "mean": 0.4402659073546529,
+          "sarle_bimodality": 0.48486163367517043,
+          "sd_ddof_0": 0.05086262215104924
+        },
+        "attention": {
+          "kde_peak_count": 2,
+          "mean": 0.5935417282283306,
+          "sarle_bimodality": 0.6092089769334712,
+          "sd_ddof_0": 0.03776909876603267
+        },
+        "concern": {
+          "kde_peak_count": 1,
+          "mean": 0.33349232663214207,
+          "sarle_bimodality": 0.23556063297914603,
+          "sd_ddof_0": 0.029972764120734723
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.5502499876022339,
+          "sarle_bimodality": 0.9961535548990819,
+          "sd_ddof_0": 0.04831235521625152
+        },
+        "opposition": {
+          "kde_peak_count": 1,
+          "mean": 0.3036741179823875,
+          "sarle_bimodality": 0.4360787332286427,
+          "sd_ddof_0": 0.02248572795332746
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.09405676461011171,
+          "sarle_bimodality": 0.5417555054846654,
+          "sd_ddof_0": 0.012055077205780492
+        },
+        "satisfaction": {
+          "kde_peak_count": 2,
+          "mean": 0.26071391826868057,
+          "sarle_bimodality": 0.6944848832495322,
+          "sd_ddof_0": 0.023637435952897377
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.2854205214381218,
+          "sarle_bimodality": 0.4798909533345764,
+          "sd_ddof_0": 0.0074864439033190885
+        },
+        "support": {
+          "kde_peak_count": 2,
+          "mean": 0.5509049100279808,
+          "sarle_bimodality": 0.5881317317321987,
+          "sd_ddof_0": 0.02553788350309559
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.4996476584970951,
+          "sarle_bimodality": 0.9343475021411073,
+          "sd_ddof_0": 0.055545716076279186
+        },
+        "verified_belief": {
+          "kde_peak_count": 2,
+          "mean": 0.12056210416555405,
+          "sarle_bimodality": 0.9999999999999996,
+          "sd_ddof_0": 0.00813516595271778
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.17416417279839516,
+          "sarle_bimodality": 0.7108575325354574,
+          "sd_ddof_0": 0.02668238122476541
+        }
+      },
+      "state_matrix_effective_rank": 6.208029030480202,
+      "tick": 3,
+      "variant": "single_particle"
+    },
+    {
+      "agent_count": 1000,
+      "method": "campuspulse",
+      "net_stance": {
+        "entropy": {
+          "normalized": 0.27649567869478786,
+          "raw": 0.8283070281641906
+        },
+        "kde_peak_count": 1,
+        "mean": -0.12025840660929679,
+        "sarle_bimodality": 0.4045572513061962,
+        "sd_ddof_0": 0.043845374674280964
+      },
+      "seed": 20260815,
+      "stake_group_multivariate_r_squared_12d": 0.000726055221526352,
+      "stake_group_permutation_p": 0.455,
+      "stake_group_status": "ok",
+      "state_dimensions": {
+        "activity": {
+          "kde_peak_count": 2,
+          "mean": 0.49871145348250867,
+          "sarle_bimodality": 0.9551165709296329,
+          "sd_ddof_0": 0.1355307274206602
+        },
+        "attention": {
+          "kde_peak_count": 2,
+          "mean": 0.5920731583237648,
+          "sarle_bimodality": 0.03516420608596586,
+          "sd_ddof_0": 0.02849162632818721
+        },
+        "concern": {
+          "kde_peak_count": 1,
+          "mean": 0.521565173625946,
+          "sarle_bimodality": 0.40296136719203085,
+          "sd_ddof_0": 0.04070512586379214
+        },
+        "evidence_acceptance": {
+          "kde_peak_count": 2,
+          "mean": 0.33166372662782667,
+          "sarle_bimodality": 0.9539093675321505,
+          "sd_ddof_0": 0.030178804412525934
+        },
+        "opposition": {
+          "kde_peak_count": 1,
+          "mean": 0.47633945286273954,
+          "sarle_bimodality": 0.4217713092830404,
+          "sd_ddof_0": 0.027846536766714263
+        },
+        "rumor_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.11623765241354704,
+          "sarle_bimodality": 0.5412835494511057,
+          "sd_ddof_0": 0.03954985845690039
+        },
+        "satisfaction": {
+          "kde_peak_count": null,
+          "mean": 0.0,
+          "sarle_bimodality": null,
+          "sd_ddof_0": 0.0
+        },
+        "service_strain": {
+          "kde_peak_count": 1,
+          "mean": 0.4529312537610531,
+          "sarle_bimodality": 0.526737533173791,
+          "sd_ddof_0": 0.030483748893636482
+        },
+        "support": {
+          "kde_peak_count": 1,
+          "mean": 0.3560810462534428,
+          "sarle_bimodality": 0.3716377581507009,
+          "sd_ddof_0": 0.016243773708521172
+        },
+        "trust": {
+          "kde_peak_count": 2,
+          "mean": 0.20182290209829806,
+          "sarle_bimodality": 0.77568418305598,
+          "sd_ddof_0": 0.018756675462089183
+        },
+        "verified_belief": {
+          "kde_peak_count": 1,
+          "mean": 0.016796002954244615,
+          "sarle_bimodality": 0.9999999999999998,
+          "sd_ddof_0": 0.001133344478299589
+        },
+        "voice": {
+          "kde_peak_count": 1,
+          "mean": 0.09098346304893494,
+          "sarle_bimodality": 0.3964112172055571,
+          "sd_ddof_0": 0.005095804269503338
+        }
+      },
+      "state_matrix_effective_rank": 4.729820108936252,
+      "tick": 9,
+      "variant": "single_particle"
+    }
+  ],
+  "input_inventory": [
+    {
+      "path": "C:\\Users\\admin\\Desktop\\AAMAS2027\\runs\\dimension3_campuspulse_ablation\\frozen-20260815-v1\\combined_population_states.jsonl",
+      "rows": 12000,
+      "sha256": "d7abea1a087c2aa02eaf365ea7aee390647e8fc10bc3c58494b9dcaefecb6540"
+    }
+  ],
+  "permutation_count": 199,
+  "schema_version": "dimension-3-ablation-v1.4.0",
+  "variant_contract": {
+    "full": "完整输入（Profile + 10 粒子 SMC）",
+    "no_profile": "无 Profile（10 粒子 SMC）",
+    "no_profile_no_smc": "双重消融（无 Profile，状态不向模型暴露）",
+    "single_particle": "单粒子点估计（Profile + 1 粒子，无重采样/扩散）"
+  }
+}

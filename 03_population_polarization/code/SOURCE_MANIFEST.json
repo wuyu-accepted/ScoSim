@@ -1,0 +1,254 @@
+{
+  "copy_only": true,
+  "dimension": "03_population_polarization",
+  "files": [
+    {
+      "bytes": 481,
+      "sha256": "a88975a1f7513ac79ef203fab8981f9ed296028b6ddfb0bb30599e989ff8db86",
+      "snapshot": "campuspulse_core/comparison_harness/__init__.py",
+      "source": "campuspulse_core/comparison_harness/__init__.py"
+    },
+    {
+      "bytes": 374,
+      "sha256": "9e4ffc71e092df185785d35337aa1070533716dcb8676939027b6b585d9f6a10",
+      "snapshot": "campuspulse_core/comparison_harness/adapters/__init__.py",
+      "source": "campuspulse_core/comparison_harness/adapters/__init__.py"
+    },
+    {
+      "bytes": 9469,
+      "sha256": "2ee2476b76684f21077117f004b42ee6a7b8106fe805c23131e3a035fea3ff35",
+      "snapshot": "campuspulse_core/comparison_harness/adapters/belief_engine.py",
+      "source": "campuspulse_core/comparison_harness/adapters/belief_engine.py"
+    },
+    {
+      "bytes": 4365,
+      "sha256": "e64a66ee6c085e9e5b6f069631c3f14ac53199e1216488349a60ef7f3c2acfd9",
+      "snapshot": "campuspulse_core/comparison_harness/adapters/campuspulse.py",
+      "source": "campuspulse_core/comparison_harness/adapters/campuspulse.py"
+    },
+    {
+      "bytes": 5674,
+      "sha256": "e0776efedd4a31ebe015e69083f20aaeafecb666a141efd9fdc7749d2bcb01ac",
+      "snapshot": "campuspulse_core/comparison_harness/adapters/chuang.py",
+      "source": "campuspulse_core/comparison_harness/adapters/chuang.py"
+    },
+    {
+      "bytes": 6743,
+      "sha256": "579a54a4e075d3920cdbb8f940a277f0beffca656ef4ffb26aa3e729087ec019",
+      "snapshot": "campuspulse_core/comparison_harness/adapters/generative_agents.py",
+      "source": "campuspulse_core/comparison_harness/adapters/generative_agents.py"
+    },
+    {
+      "bytes": 3046,
+      "sha256": "219feb39e96bc7767ce1469f4628582258640c1298b43ced064bc8b1e6e0d8e0",
+      "snapshot": "campuspulse_core/comparison_harness/audit.py",
+      "source": "campuspulse_core/comparison_harness/audit.py"
+    },
+    {
+      "bytes": 2459,
+      "sha256": "0daf558441e32d9dc673534593f048b0c814fc8e6d93ada2d3479bb6c6d244c8",
+      "snapshot": "campuspulse_core/comparison_harness/auxiliary.py",
+      "source": "campuspulse_core/comparison_harness/auxiliary.py"
+    },
+    {
+      "bytes": 7533,
+      "sha256": "da4e3531d915e66ee82506c971281f5cf17cc00dfcde742d3993b34ef0e01263",
+      "snapshot": "campuspulse_core/comparison_harness/campuspulse_assimilation.py",
+      "source": "campuspulse_core/comparison_harness/campuspulse_assimilation.py"
+    },
+    {
+      "bytes": 4410,
+      "sha256": "8d1fd9fb85e0430f4bd3d4104240d209627a2a1e7289485d003ae818f543a321",
+      "snapshot": "campuspulse_core/comparison_harness/contracts.py",
+      "source": "campuspulse_core/comparison_harness/contracts.py"
+    },
+    {
+      "bytes": 5254,
+      "sha256": "ec679f5e09a067f1b083397e4629f6db293d10fb8039a42a660bea01aab760c5",
+      "snapshot": "campuspulse_core/comparison_harness/dimension3_belief_network.py",
+      "source": "campuspulse_core/comparison_harness/dimension3_belief_network.py"
+    },
+    {
+      "bytes": 5110,
+      "sha256": "956797109a16d7c675dfe3a96fc1604ce63bbf7c486f9771c4ba5e12968eeed0",
+      "snapshot": "campuspulse_core/comparison_harness/fair_initialization.py",
+      "source": "campuspulse_core/comparison_harness/fair_initialization.py"
+    },
+    {
+      "bytes": 12519,
+      "sha256": "72a4f8024f371c075970a004c06598807a27e120dda4285a3853fe112c797fa6",
+      "snapshot": "campuspulse_core/comparison_harness/fake_executor.py",
+      "source": "campuspulse_core/comparison_harness/fake_executor.py"
+    },
+    {
+      "bytes": 16171,
+      "sha256": "f3146d719d5b4512cecb9daf0bfeebdb3f15a1ba85a78ab0dfceedcb082b4ec6",
+      "snapshot": "campuspulse_core/comparison_harness/offline_trace.py",
+      "source": "campuspulse_core/comparison_harness/offline_trace.py"
+    },
+    {
+      "bytes": 4573,
+      "sha256": "64bf2bd113868b53cfb1546fa38e003bd14a54ecf2e93ace7195721cdbd77e28",
+      "snapshot": "campuspulse_core/comparison_harness/prompting.py",
+      "source": "campuspulse_core/comparison_harness/prompting.py"
+    },
+    {
+      "bytes": 35154,
+      "sha256": "ffb67c5ec34c5b9d296c253ae00891e040197076dea2e0d72a396d13691dd0c4",
+      "snapshot": "campuspulse_core/comparison_harness/real_provider.py",
+      "source": "campuspulse_core/comparison_harness/real_provider.py"
+    },
+    {
+      "bytes": 8372,
+      "sha256": "1ae6666e9aeb5e4a9c975c05a71dd387bf6e8059fdec4d65e8162fa0f0ff05b8",
+      "snapshot": "campuspulse_core/comparison_harness/real_runtime.py",
+      "source": "campuspulse_core/comparison_harness/real_runtime.py"
+    },
+    {
+      "bytes": 12471,
+      "sha256": "2656212e0642a2209bf4ae89832c2f7aa8b7bec13e6d23f5c2664f1af658bfc5",
+      "snapshot": "campuspulse_core/evaluation/dimension3.py",
+      "source": "campuspulse_core/evaluation/dimension3.py"
+    },
+    {
+      "bytes": 4163,
+      "sha256": "cf1942f35187ccf208aaa4cc6eba331a2615ff03cada4228728165627a53c7d3",
+      "snapshot": "campuspulse_core/schemas/campuspulse_assimilation_sidecar_v1.0.0.schema.json",
+      "source": "campuspulse_core/schemas/campuspulse_assimilation_sidecar_v1.0.0.schema.json"
+    },
+    {
+      "bytes": 2535,
+      "sha256": "fb59dd765273b8ac682bb2a993e44f6179b06659d9845fa63ce190d89b5b0a8f",
+      "snapshot": "campuspulse_core/schemas/dimension2_predecision_snapshot_v1.0.0.schema.json",
+      "source": "campuspulse_core/schemas/dimension2_predecision_snapshot_v1.0.0.schema.json"
+    },
+    {
+      "bytes": 3255,
+      "sha256": "3431d9bc70b75c96e72f2138c4ed42929f38b5bd7c7a811005ca92c8dc576d3e",
+      "snapshot": "campuspulse_core/schemas/dimension2_predecision_snapshot_v1.1.0.schema.json",
+      "source": "campuspulse_core/schemas/dimension2_predecision_snapshot_v1.1.0.schema.json"
+    },
+    {
+      "bytes": 1553,
+      "sha256": "b3912df9d8ea3580d9b27a61b0733e8b85bba9ba2696f1596632b9e263194fb9",
+      "snapshot": "campuspulse_core/schemas/dimension2_text_judgement_v1.0.0.schema.json",
+      "source": "campuspulse_core/schemas/dimension2_text_judgement_v1.0.0.schema.json"
+    },
+    {
+      "bytes": 4239,
+      "sha256": "7502a4cff524c47d90b63b624d18f37cdf6d0a513433c600c00b21e99972002f",
+      "snapshot": "campuspulse_core/schemas/unified_output_v1.0.0.schema.json",
+      "source": "campuspulse_core/schemas/unified_output_v1.0.0.schema.json"
+    },
+    {
+      "bytes": 5270,
+      "sha256": "7f6b67a0019ef2d5cdbaf096ac79bb4977efb6980ae157e39c235af9c17fd354",
+      "snapshot": "campuspulse_core/schemas/unified_output_v1.1.0.schema.json",
+      "source": "campuspulse_core/schemas/unified_output_v1.1.0.schema.json"
+    },
+    {
+      "bytes": 4905,
+      "sha256": "980622d88a93d00e85018d42f6b252a256600360ad7da0c308fbc6d00a41fc06",
+      "snapshot": "campuspulse_core/schemas/validate_unified_output.py",
+      "source": "campuspulse_core/schemas/validate_unified_output.py"
+    },
+    {
+      "bytes": 10733,
+      "sha256": "8b8a754d580d3973be9d93fff4b2abbc8331d6d69c37ebd5249daa60b0486c78",
+      "snapshot": "campuspulse_core/scripts/bind_campuspulse_dimension3_particles.py",
+      "source": "campuspulse_core/scripts/bind_campuspulse_dimension3_particles.py"
+    },
+    {
+      "bytes": 8892,
+      "sha256": "556d1c181ce9fc5934f6437235fe9ccda5c77df4c52580b0e6cd2b140f7fceed",
+      "snapshot": "campuspulse_core/scripts/build_dimension3_common_population_replay.py",
+      "source": "campuspulse_core/scripts/build_dimension3_common_population_replay.py"
+    },
+    {
+      "bytes": 12204,
+      "sha256": "44fe66b5a6387c03a8892a1901684da0b0aa3a351caac3ae8f12b08ce77cd5f6",
+      "snapshot": "campuspulse_core/scripts/build_dimension3_method_projection.py",
+      "source": "campuspulse_core/scripts/build_dimension3_method_projection.py"
+    },
+    {
+      "bytes": 4663,
+      "sha256": "25afa17d63c3da35ee00bdfcacf41a55a55f17bceb2754524c3346de35c11507",
+      "snapshot": "campuspulse_core/scripts/freeze_dimension3_belief_event_arguments.py",
+      "source": "campuspulse_core/scripts/freeze_dimension3_belief_event_arguments.py"
+    },
+    {
+      "bytes": 5926,
+      "sha256": "902e8e779b836cccd406acf7596a272cbbf7848190a2cc39e746378b7bfb07da",
+      "snapshot": "campuspulse_core/scripts/report_dimension3_ablation.py",
+      "source": "campuspulse_core/scripts/report_dimension3_ablation.py"
+    },
+    {
+      "bytes": 5443,
+      "sha256": "aa2fc8e202e3f20ed6e33a5d2f0a4c93e2373b9acc54bd522dfea6b79c55c493",
+      "snapshot": "campuspulse_core/scripts/run_dimension3_belief_formal.py",
+      "source": "campuspulse_core/scripts/run_dimension3_belief_formal.py"
+    },
+    {
+      "bytes": 7065,
+      "sha256": "30a29600e35c70e8e230f1a54eb84e48e2f8c970f3a7d8397f25da0713b45f89",
+      "snapshot": "campuspulse_core/scripts/run_dimension3_belief_network_conformance.py",
+      "source": "campuspulse_core/scripts/run_dimension3_belief_network_conformance.py"
+    },
+    {
+      "bytes": 20027,
+      "sha256": "f0c5a515ce1fac985a3d8ea05d849dbd2ab29b63b58215b409ea7dc679a3de78",
+      "snapshot": "campuspulse_core/scripts/run_dimension3_campuspulse_ablation.py",
+      "source": "campuspulse_core/scripts/run_dimension3_campuspulse_ablation.py"
+    },
+    {
+      "bytes": 21981,
+      "sha256": "94fe32ea376399df40e94228967d01981bc0597edf93f2f8dcf7a65f37744518",
+      "snapshot": "campuspulse_core/scripts/run_dimension3_chuang_formal.py",
+      "source": "campuspulse_core/scripts/run_dimension3_chuang_formal.py"
+    },
+    {
+      "bytes": 24361,
+      "sha256": "8cd35a06a47bc281a7389e79b043da45a3ad55f8500851fd2872b048bac4991e",
+      "snapshot": "campuspulse_core/scripts/run_dimension3_generative_agents_formal.py",
+      "source": "campuspulse_core/scripts/run_dimension3_generative_agents_formal.py"
+    },
+    {
+      "bytes": 8572,
+      "sha256": "fdb97b1868505754c84f131d716e1976d058c083d3335f1e6805a96e4a8c0d5b",
+      "snapshot": "campuspulse_core/scripts/run_dimension3_longitudinal_conformance.py",
+      "source": "campuspulse_core/scripts/run_dimension3_longitudinal_conformance.py"
+    },
+    {
+      "bytes": 7948,
+      "sha256": "3cb3801d0ce8a3cbd96b9b07d64136437820f7b419bb342589568d08f63a5006",
+      "snapshot": "campuspulse_core/tests/test_comparison_harness.py",
+      "source": "campuspulse_core/tests/test_comparison_harness.py"
+    },
+    {
+      "bytes": 2022,
+      "sha256": "17a54889f2dd2f5ba5741d24e158af81451670796820171ea506eb527515bb8c",
+      "snapshot": "campuspulse_core/tests/test_dimension3_ablation_reporting.py",
+      "source": "campuspulse_core/tests/test_dimension3_ablation_reporting.py"
+    },
+    {
+      "bytes": 2818,
+      "sha256": "911a25a75def078e406ec9b8e9851b560da3367b5d456484e8d2ced825a19e0e",
+      "snapshot": "campuspulse_core/tests/test_dimension3_belief_network.py",
+      "source": "campuspulse_core/tests/test_dimension3_belief_network.py"
+    },
+    {
+      "bytes": 5405,
+      "sha256": "d53fe9e331a3bd9780e22a5b89cf8dd71ca177098f872f7821c32dbfc3df37bb",
+      "snapshot": "campuspulse_core/tests/test_dimension3_campuspulse_solver_kernel.py",
+      "source": "campuspulse_core/tests/test_dimension3_campuspulse_solver_kernel.py"
+    },
+    {
+      "bytes": 10487,
+      "sha256": "b70d216818291961b1b1c316836695c84cfb0acc7dd92448252b8ab8725ded5e",
+      "snapshot": "campuspulse_core/tests/test_real_provider.py",
+      "source": "campuspulse_core/tests/test_real_provider.py"
+    }
+  ],
+  "schema_version": "aamas2027-dimension-code-snapshot-v1",
+  "source_root": "C:\\Users\\admin\\Desktop\\AAMAS2027\\campuspulse_core"
+}

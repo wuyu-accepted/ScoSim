@@ -1,0 +1,7 @@
+{
+  "source_results": [
+    "campuspulse_core/scenario/housing_allocation/reference_evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json",
+    "results/dimensions_1_4_readonly_recompute_20260927/dimensions-1-4-readonly-recompute-v1.json"
+  ],
+  "status": "packaged_and_recomputed"
+}

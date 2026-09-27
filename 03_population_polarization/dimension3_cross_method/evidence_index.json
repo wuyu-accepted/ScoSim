@@ -1,0 +1,7 @@
+{
+  "publication_authority": "../../publication_authority/Comparative_Experiment_Plan_FINAL.md",
+  "source_results": [
+    "runs/dimension3_cross_method_combined/frozen-20260815-v1/dimension3_cross_method_metrics_v1.6.0.json"
+  ],
+  "status": "packaged_and_final_plan_registered"
+}

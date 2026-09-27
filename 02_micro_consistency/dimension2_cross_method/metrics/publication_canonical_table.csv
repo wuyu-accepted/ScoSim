@@ -1,0 +1,6 @@
+metric,campuspulse,belief_engine,generative_agents,chuang_opinion_dynamics
+direct_context_uptake,1.0,1.0,1.0,1.0
+unsupported_fact_fabrication,0.008,0.151,0.083,0.024
+expression_pre_state_agreement,0.241,0.235,,
+decision_post_state_expression_consistency,0.771,0.756,,
+deduplicated_language_style_consistency,0.798,0.801,0.898,0.800
