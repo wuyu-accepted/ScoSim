@@ -89,6 +89,16 @@
       "sha256": "a531de604aa94bcfd57cf31458603394030c6a79fbb9ca28a39505b0d9abf3a1"
     },
     {
+      "bytes": 214,
+      "path": "02_micro_consistency/code/campuspulse_core/adapters/__init__.py",
+      "sha256": "8207dd03fae861e18a40b41f5c9f372bad23b02a0dccaa6b2171d9812895301e"
+    },
+    {
+      "bytes": 9402,
+      "path": "02_micro_consistency/code/campuspulse_core/adapters/campuspulse.py",
+      "sha256": "4d48de1162ffcacac3fb1fb6a46ff71bc00bafce4cd131d3b61b7153748de8bd"
+    },
+    {
       "bytes": 481,
       "path": "02_micro_consistency/code/campuspulse_core/comparison_harness/__init__.py",
       "sha256": "a88975a1f7513ac79ef203fab8981f9ed296028b6ddfb0bb30599e989ff8db86"
@@ -174,14 +184,49 @@
       "sha256": "1ae6666e9aeb5e4a9c975c05a71dd387bf6e8059fdec4d65e8162fa0f0ff05b8"
     },
     {
+      "bytes": 125,
+      "path": "02_micro_consistency/code/campuspulse_core/evaluation/__init__.py",
+      "sha256": "38b9f066f6f11965525c60fccde429dee770cc7b7b220205d48785f0d0c61028"
+    },
+    {
+      "bytes": 2107,
+      "path": "02_micro_consistency/code/campuspulse_core/evaluation/common.py",
+      "sha256": "deb85b0c3ded63ede8b879e5d2e91e3b445cecb990dfc1e3a08f261268b0ccca"
+    },
+    {
       "bytes": 29209,
       "path": "02_micro_consistency/code/campuspulse_core/evaluation/dimension2.py",
       "sha256": "6b3457c55151a7d42003683978e59cba1ea313bf22cce6116287089235c41f5a"
     },
     {
+      "bytes": 12471,
+      "path": "02_micro_consistency/code/campuspulse_core/evaluation/dimension3.py",
+      "sha256": "2656212e0642a2209bf4ae89832c2f7aa8b7bec13e6d23f5c2664f1af658bfc5"
+    },
+    {
+      "bytes": 3327,
+      "path": "02_micro_consistency/code/campuspulse_core/evaluation/inference.py",
+      "sha256": "25fef50cf9e71a6eedef7da765e9716715c80421d352c9ef53ef19caccfdd2b2"
+    },
+    {
       "bytes": 13548,
       "path": "02_micro_consistency/code/campuspulse_core/evaluation/text_judge.py",
       "sha256": "4a0bddaef78ccabd299c297030c05a583a4713fe85861df355738635a79b6ceb"
+    },
+    {
+      "bytes": 2675,
+      "path": "02_micro_consistency/code/campuspulse_core/protocol/locked_dimension3_cross_method_metrics_v1.4.0.json",
+      "sha256": "9e90af34af96d2a3e5eed9dbe12ac506b6e638789f3920dc651f374fcb82c4ea"
+    },
+    {
+      "bytes": 1034,
+      "path": "02_micro_consistency/code/campuspulse_core/protocol/locked_dimension3_cross_method_metrics_v1.5.0.json",
+      "sha256": "3d009f0adba0cfbf062a8aa8495931542551490074dfb82f630d4b0bc787660b"
+    },
+    {
+      "bytes": 1220,
+      "path": "02_micro_consistency/code/campuspulse_core/protocol/locked_dimension3_cross_method_metrics_v1.6.0.json",
+      "sha256": "2be76e2cff77e08aca9a57a192dea1cb4fcc2e86b64670af18db9d2c8cbc3010"
     },
     {
       "bytes": 4163,
@@ -329,6 +374,311 @@
       "sha256": "3d5c0eaa1410f1e5a7d3c5b4f1a5567920b20bb7aac58b61de8fc655de2db7c2"
     },
     {
+      "bytes": 344,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/__init__.py",
+      "sha256": "3dece502acad9d67a34873746a66afc1ca5ab0895ca24ca6bca38d0f83509b1a"
+    },
+    {
+      "bytes": 62,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/__main__.py",
+      "sha256": "c2ee4ddb093c9af060cafaf68219907f8a6b7b301ed3f8bea75db7555adec987"
+    },
+    {
+      "bytes": 9155,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/calibration.py",
+      "sha256": "3809d6e63523cdbc9eaa29505e0189400db4f4ff813222b2badf4ce63a1f7b74"
+    },
+    {
+      "bytes": 51685,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/cli.py",
+      "sha256": "618c0d9cb22bcd8602fc23ee1a79d36870de8c1c3b88c73ef435786a1c83e926"
+    },
+    {
+      "bytes": 9094,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/config.py",
+      "sha256": "e5daae995910c3774765502b1207c20a0a4971383a281e34d9975382116f9d6c"
+    },
+    {
+      "bytes": 19666,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/corpus_interaction.py",
+      "sha256": "a61355fc9ec3087cfa7fff8dc794cc4a6a2429b82176c81e9d3e51da78b1726e"
+    },
+    {
+      "bytes": 12662,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/corpus_provider.py",
+      "sha256": "2ddca8172358900804e0371720bc769f6370fd4cf324c164a7cf1a5d670ad811"
+    },
+    {
+      "bytes": 3517,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/entities.py",
+      "sha256": "1d931e8f4ec9c877db3b9e5ac3a000d98ca577b45d5cc9f068f96e8ce9da713c"
+    },
+    {
+      "bytes": 7857,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/experiment.py",
+      "sha256": "c7942bfa96731c7ecf7280b8896bfe1141d027be3c166578a07b3a63b9fde960"
+    },
+    {
+      "bytes": 32908,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/focus_evidence.py",
+      "sha256": "2b517fedbd30c81d07f6846f6d2655f6471f3b19b188ac8fa955514e4a687ae5"
+    },
+    {
+      "bytes": 32569,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_actor_execution.py",
+      "sha256": "8cb95f8af400f6454bd62f367c3247d1582b3b4e9fdd9b39b11168c48eaa5804"
+    },
+    {
+      "bytes": 74811,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_data.py",
+      "sha256": "de4b3de02ac5de8480869ebfd6ccc41ba2a19386081126beb18ddb4daa7b186f"
+    },
+    {
+      "bytes": 18281,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_ecology_calibration.py",
+      "sha256": "8b05e977d226d5b404391994a55f186e7a8439bd70da3f17e7212ab636118ee6"
+    },
+    {
+      "bytes": 25587,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_embedding.py",
+      "sha256": "7aa84d11bf849ae395de35d3547371a4a420344d28beee21ce504dea47d0d8d5"
+    },
+    {
+      "bytes": 46524,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_execution.py",
+      "sha256": "f1b036063eb70dc703d36a55ea5ee5a254b47cffaa58b50e6b11128d27905fda"
+    },
+    {
+      "bytes": 46460,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_expression.py",
+      "sha256": "cb0db8bb3935fe9cb5465540c9d8749211f73ec4e07591e25b9a8bb2856403e2"
+    },
+    {
+      "bytes": 72560,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_fidelity_v2.py",
+      "sha256": "fae397296fb4fb11bae9b1560dcb8bb09c4f90d2e1196c07bd6fa2dd2e18f34c"
+    },
+    {
+      "bytes": 27316,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_governance.py",
+      "sha256": "a303d7370bd0e6be9ae111d9363e55fbaa9faba77944e70b14ceabf48c1cc407"
+    },
+    {
+      "bytes": 281246,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_hero.py",
+      "sha256": "d74058e691ed55ffb89745cb61e2a8a29d5d9bcdbd18011590fd63381c75c147"
+    },
+    {
+      "bytes": 23315,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_persona_audit.py",
+      "sha256": "4c01aaa37e712da71c6adfb7bf8d012605c42c81f65ead07139a8e49e96b38c9"
+    },
+    {
+      "bytes": 62244,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_pilot.py",
+      "sha256": "515e5b943a1c85444e077056700aedd3e2dc84428b255e01f9e4922b35499b0f"
+    },
+    {
+      "bytes": 25533,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_quality.py",
+      "sha256": "7f3e100ddaa63ab6e1c3909ad7e09166f16ad92bf387bc2817ed53de364a4c64"
+    },
+    {
+      "bytes": 62610,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_realism.py",
+      "sha256": "d8e942526eec2e317262df429a56f5bcdaae8ee33d7586d4520b7e3f273b6de1"
+    },
+    {
+      "bytes": 24844,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_relationships.py",
+      "sha256": "437f76b5882af0366ebe6b58862499da6479c87ab21e7a0d8386fd3d455dd1bd"
+    },
+    {
+      "bytes": 22090,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_risk.py",
+      "sha256": "332de1f734a9be8067d2764022d3c37a04866908c486b489f651487d009ad5ae"
+    },
+    {
+      "bytes": 18938,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_sampling.py",
+      "sha256": "9825ddcd366003ae6a8ec8da9fc7fb7a56bc5adbec1ad41aad0d944adc408fe2"
+    },
+    {
+      "bytes": 30520,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_trace.py",
+      "sha256": "42ef56e8c65ac606ac1a0f7b41a8b07637503ec2204ee04802571230a02bf774"
+    },
+    {
+      "bytes": 207974,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_turns.py",
+      "sha256": "6cb2887b326ae39f5380158c8b4fde5fa231bc225c36a42965e785ebb40f8af7"
+    },
+    {
+      "bytes": 112559,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_twin.py",
+      "sha256": "7ad287d0f8bdefdae0efebf3532878835536f5636c3a9493166cba19a2aeeac8"
+    },
+    {
+      "bytes": 62089,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_v2_execution.py",
+      "sha256": "4e616ed8e1a8473e3ae9b06c7346b67214216d16984838db76698870bd2a3c59"
+    },
+    {
+      "bytes": 17322,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/forum_visibility.py",
+      "sha256": "b7127a8d3fb7d4187370b18f29617c41801ddbab77cc4caf2cf87c3f19782edb"
+    },
+    {
+      "bytes": 4251,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/generator.py",
+      "sha256": "3d1f4088b3bfc220396c0e9e75c642c651f6be3c0afba7e474ff42da907911fa"
+    },
+    {
+      "bytes": 77278,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/governance_arena.py",
+      "sha256": "3728e75039e2bc6b42d2e2e8df120e860dbb7da5a2807a64685b455ef341ed9d"
+    },
+    {
+      "bytes": 212661,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/governance_arena_v2.py",
+      "sha256": "ccd14c9b04142f6690e8c61f6fb8fbe473b64792be48486131ddc879f4fc26eb"
+    },
+    {
+      "bytes": 66997,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/lecture_thread_ecology.py",
+      "sha256": "893f7ec353f4d1efe6b0476aa475d66538052dfed67bd2b9dec96d0ded48ae05"
+    },
+    {
+      "bytes": 96599,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/llm_agents.py",
+      "sha256": "4993530438cb5e7222dd50253066e1e34941465c87d19f84665740f20918f50d"
+    },
+    {
+      "bytes": 88976,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/llm_population.py",
+      "sha256": "7b3c5598d8133547aedcf0131f0c84744d7af10e219909f1ae0b026b1ea404c1"
+    },
+    {
+      "bytes": 53959,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/mass_engine.py",
+      "sha256": "e95ac744713c954ba0af42040d8179615af841f6c5552bb62bafa44c4526145a"
+    },
+    {
+      "bytes": 26355,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/mass_population.py",
+      "sha256": "c967e79a30b207a850a48ebac52b7cbe2d61037c4313d918d6e537c24a6da859"
+    },
+    {
+      "bytes": 26346,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/mass_simulation.py",
+      "sha256": "57b3490c89f14dd979c7a59b88bb4f586aaa1f522d096227f1ea012b29658217"
+    },
+    {
+      "bytes": 7182,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/metrics.py",
+      "sha256": "5342b662f12a916d21c99882747a9d01076f633c6f110ff03a76e9e7e60771fd"
+    },
+    {
+      "bytes": 38900,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/pilot.py",
+      "sha256": "0ca3a5741d5287c4f418f1d21ba7cc897087898319b21a164327abcfdcf796d6"
+    },
+    {
+      "bytes": 10038,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/pilot_report.py",
+      "sha256": "d4576a22b42077a137be617cee9c7aa0a895d6dc088d2705261a2450cf8a076a"
+    },
+    {
+      "bytes": 1282,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/policies.py",
+      "sha256": "2ca9e74715cdf4e364cb6b4712a799a30f2dab4004346de71833e80a79649ef0"
+    },
+    {
+      "bytes": 4808,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/provenance.py",
+      "sha256": "99eee03c209f393e669f261446860fca5c1a6067595fa29de8a8a8606854ab2c"
+    },
+    {
+      "bytes": 22247,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/public_corpus.py",
+      "sha256": "ce95aa9b3a3577a8324bed3c2b0c225984558474f2990a255801947c04d6cadd"
+    },
+    {
+      "bytes": 5972,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/report.py",
+      "sha256": "5a0b9d59593c36641387c5e245db6b3461e7c6155a08aadcdfb0dde87ba0df17"
+    },
+    {
+      "bytes": 34562,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/representative_personas.py",
+      "sha256": "a93a345d82760774b33e9cf1f23307db590892790cf124d803b0559998755961"
+    },
+    {
+      "bytes": 18123,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/representative_release.py",
+      "sha256": "caf72ac1b292808ba9d7d1095e1048c710550493437683dc51f15dcc26e0a81d"
+    },
+    {
+      "bytes": 45399,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/representative_taxonomy.py",
+      "sha256": "f40ae3c762375138ec3e8c25f8d4ee9d9186ce8a8b7713a10d4ac2ca73a74f26"
+    },
+    {
+      "bytes": 18212,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/robustness.py",
+      "sha256": "4d638ba425f2814f5af65564886d84263ab659b6d5b9bf1245b995cbac101efe"
+    },
+    {
+      "bytes": 82145,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/semantic_population.py",
+      "sha256": "e7aede57b13a3aa8a85211f9ed8c8dd18011ef21d52b8657c8fe955b55ca6131"
+    },
+    {
+      "bytes": 69390,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/shock_replay.py",
+      "sha256": "271628540e00b9c77455304d15db0200aebc98a760db39426d76404295efdda7"
+    },
+    {
+      "bytes": 5713,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/simulation.py",
+      "sha256": "e3f055324cc75fefe54510dbaf4af7482302a259d998a88c33c6e75f6a98e4f6"
+    },
+    {
+      "bytes": 22700,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/validation.py",
+      "sha256": "762694df43cb6044c137eff9d563049e3c94aa75eb0360752885d06c2810345c"
+    },
+    {
+      "bytes": 11641,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/validation_report.py",
+      "sha256": "37d5db517b49925252c88d670b739fff6c6da7c2b9577d974bd623fa14f54b51"
+    },
+    {
+      "bytes": 14988,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/variant_gate_acceptance.py",
+      "sha256": "2fe8f848c6ea0a06894d1c5d4a75ff1e365c84caa226f8d8c8e4e4d8958e9d0c"
+    },
+    {
+      "bytes": 142066,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/windowed_sensing.py",
+      "sha256": "c217248014e43a490202f4c21515d8a1b987d8088cba01bf998cbf448ff0e4e5"
+    },
+    {
+      "bytes": 53064,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/windowed_sensing_parent_contract.py",
+      "sha256": "56fbac622156b235dfff80af87e7ba0d6f033427208780cc97f8752b2566c5d3"
+    },
+    {
+      "bytes": 65313,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/yulan_scale.py",
+      "sha256": "be4374a4d98e111306d3947ef65982832afe0c60364bb34e7a71bbd7941e5ff7"
+    },
+    {
+      "bytes": 135132,
+      "path": "02_micro_consistency/code/campuspulse_core/src/campuspulse_core/yulan_scale_engine.py",
+      "sha256": "c719d4cd557019ba85d7517a8eccb3205c9ff04cdea4de94ab0b4854055fbf6e"
+    },
+    {
       "bytes": 1054,
       "path": "02_micro_consistency/code/campuspulse_core/tests/test_adapter.py",
       "sha256": "c40c43e0778b897508dde75fe102ac161a100b5317dafb227d2d3f0bee0c5077"
@@ -354,14 +704,44 @@
       "sha256": "b70d216818291961b1b1c316836695c84cfb0acc7dd92448252b8ab8725ded5e"
     },
     {
+      "bytes": 1557,
+      "path": "02_micro_consistency/code/project_configs/campuspulse_action_assimilation_v1.0.0.yaml",
+      "sha256": "8b483a6f94e34ecbf77b5718a76f7f9f1c96b63340b131d0e388e915479d8a48"
+    },
+    {
+      "bytes": 110,
+      "path": "02_micro_consistency/code/project_configs/campuspulse_action_assimilation_v1.0.0.yaml.sha256",
+      "sha256": "fb0946b48b91a25ada4f2069c1be5341f851a67488550d080a7845be46690657"
+    },
+    {
+      "bytes": 24036,
+      "path": "02_micro_consistency/code/project_configs/evaluation_definitions.yaml",
+      "sha256": "243b995d4199a7b7c018d314ceb8194fddea22948a0a397424a6f5d2a3826939"
+    },
+    {
+      "bytes": 94,
+      "path": "02_micro_consistency/code/project_configs/evaluation_definitions.yaml.sha256",
+      "sha256": "1d9117f9bbded5305c44f8ac4dbae95fd8b8cfceb2cbc9d504e614ee9b5fa975"
+    },
+    {
+      "bytes": 7012,
+      "path": "02_micro_consistency/code/project_configs/locked_protocol.yaml",
+      "sha256": "1cc0678d116204cae61c3c26c4002058a1a48cad71553474ebdb95e416a2b915"
+    },
+    {
+      "bytes": 87,
+      "path": "02_micro_consistency/code/project_configs/locked_protocol.yaml.sha256",
+      "sha256": "8f74aa963af32763522b5770b3dfb1774839c9b3cdaa62132c0ed0b9c3bee98d"
+    },
+    {
       "bytes": 758,
       "path": "02_micro_consistency/code/README.md",
       "sha256": "ffeda1d7f2ee556311a3f00e9d25aca540eedf4b4e473c6fa0128bcef9071250"
     },
     {
-      "bytes": 15175,
+      "bytes": 35932,
       "path": "02_micro_consistency/code/SOURCE_MANIFEST.json",
-      "sha256": "32cee12436370bf72dd7829e138078206d8c7b0b8080858ba0260cac95b3a86d"
+      "sha256": "526f1fd872d2124e01c95f04a7525ba4744965c091bffc21e55a67be6ddf93e7"
     },
     {
       "bytes": 1800,
@@ -469,9 +849,9 @@
       "sha256": "b2d5ec5bcab40f1702b7a429747f7c81fddc606df13d3d24a76300dfd5d181de"
     },
     {
-      "bytes": 2545,
+      "bytes": 2546,
       "path": "02_micro_consistency/dimension2_cross_method/provenance.json",
-      "sha256": "c54b7cca654b34cf9c3fd04c9bf611a435e074462a1de1ae7ea579dcc1f7faba"
+      "sha256": "44a4b35feff5c2b97dc6cbed5d66013947971c93f134a9b9011aaca98e70dc2a"
     },
     {
       "bytes": 1126043,
@@ -480,7 +860,7 @@
     },
     {
       "bytes": 16533,
-      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/independent_blind_review_answers.csv",
+      "path": "02_micro_consistency/dimension2_cross_method/raw_or_sufficient_statistics/independent_blind_review_template.csv",
       "sha256": "525d7ef7571966cbad8db20c54e1709b13a84596fa6aa85e71e452a957d07de0"
     },
     {
@@ -502,6 +882,16 @@
       "bytes": 1948,
       "path": "03_population_polarization/CASE_AND_DATA.md",
       "sha256": "dd36c79610a5624570e901cbbf99b126fbb3d665521695a86df5e1f727623531"
+    },
+    {
+      "bytes": 214,
+      "path": "03_population_polarization/code/campuspulse_core/adapters/__init__.py",
+      "sha256": "8207dd03fae861e18a40b41f5c9f372bad23b02a0dccaa6b2171d9812895301e"
+    },
+    {
+      "bytes": 9402,
+      "path": "03_population_polarization/code/campuspulse_core/adapters/campuspulse.py",
+      "sha256": "4d48de1162ffcacac3fb1fb6a46ff71bc00bafce4cd131d3b61b7153748de8bd"
     },
     {
       "bytes": 481,
@@ -589,9 +979,49 @@
       "sha256": "1ae6666e9aeb5e4a9c975c05a71dd387bf6e8059fdec4d65e8162fa0f0ff05b8"
     },
     {
+      "bytes": 125,
+      "path": "03_population_polarization/code/campuspulse_core/evaluation/__init__.py",
+      "sha256": "38b9f066f6f11965525c60fccde429dee770cc7b7b220205d48785f0d0c61028"
+    },
+    {
+      "bytes": 2107,
+      "path": "03_population_polarization/code/campuspulse_core/evaluation/common.py",
+      "sha256": "deb85b0c3ded63ede8b879e5d2e91e3b445cecb990dfc1e3a08f261268b0ccca"
+    },
+    {
+      "bytes": 29209,
+      "path": "03_population_polarization/code/campuspulse_core/evaluation/dimension2.py",
+      "sha256": "6b3457c55151a7d42003683978e59cba1ea313bf22cce6116287089235c41f5a"
+    },
+    {
       "bytes": 12471,
       "path": "03_population_polarization/code/campuspulse_core/evaluation/dimension3.py",
       "sha256": "2656212e0642a2209bf4ae89832c2f7aa8b7bec13e6d23f5c2664f1af658bfc5"
+    },
+    {
+      "bytes": 3327,
+      "path": "03_population_polarization/code/campuspulse_core/evaluation/inference.py",
+      "sha256": "25fef50cf9e71a6eedef7da765e9716715c80421d352c9ef53ef19caccfdd2b2"
+    },
+    {
+      "bytes": 13548,
+      "path": "03_population_polarization/code/campuspulse_core/evaluation/text_judge.py",
+      "sha256": "4a0bddaef78ccabd299c297030c05a583a4713fe85861df355738635a79b6ceb"
+    },
+    {
+      "bytes": 2675,
+      "path": "03_population_polarization/code/campuspulse_core/protocol/locked_dimension3_cross_method_metrics_v1.4.0.json",
+      "sha256": "9e90af34af96d2a3e5eed9dbe12ac506b6e638789f3920dc651f374fcb82c4ea"
+    },
+    {
+      "bytes": 1034,
+      "path": "03_population_polarization/code/campuspulse_core/protocol/locked_dimension3_cross_method_metrics_v1.5.0.json",
+      "sha256": "3d009f0adba0cfbf062a8aa8495931542551490074dfb82f630d4b0bc787660b"
+    },
+    {
+      "bytes": 1220,
+      "path": "03_population_polarization/code/campuspulse_core/protocol/locked_dimension3_cross_method_metrics_v1.6.0.json",
+      "sha256": "2be76e2cff77e08aca9a57a192dea1cb4fcc2e86b64670af18db9d2c8cbc3010"
     },
     {
       "bytes": 4163,
@@ -684,6 +1114,311 @@
       "sha256": "fdb97b1868505754c84f131d716e1976d058c083d3335f1e6805a96e4a8c0d5b"
     },
     {
+      "bytes": 344,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/__init__.py",
+      "sha256": "3dece502acad9d67a34873746a66afc1ca5ab0895ca24ca6bca38d0f83509b1a"
+    },
+    {
+      "bytes": 62,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/__main__.py",
+      "sha256": "c2ee4ddb093c9af060cafaf68219907f8a6b7b301ed3f8bea75db7555adec987"
+    },
+    {
+      "bytes": 9155,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/calibration.py",
+      "sha256": "3809d6e63523cdbc9eaa29505e0189400db4f4ff813222b2badf4ce63a1f7b74"
+    },
+    {
+      "bytes": 51685,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/cli.py",
+      "sha256": "618c0d9cb22bcd8602fc23ee1a79d36870de8c1c3b88c73ef435786a1c83e926"
+    },
+    {
+      "bytes": 9094,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/config.py",
+      "sha256": "e5daae995910c3774765502b1207c20a0a4971383a281e34d9975382116f9d6c"
+    },
+    {
+      "bytes": 19666,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/corpus_interaction.py",
+      "sha256": "a61355fc9ec3087cfa7fff8dc794cc4a6a2429b82176c81e9d3e51da78b1726e"
+    },
+    {
+      "bytes": 12662,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/corpus_provider.py",
+      "sha256": "2ddca8172358900804e0371720bc769f6370fd4cf324c164a7cf1a5d670ad811"
+    },
+    {
+      "bytes": 3517,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/entities.py",
+      "sha256": "1d931e8f4ec9c877db3b9e5ac3a000d98ca577b45d5cc9f068f96e8ce9da713c"
+    },
+    {
+      "bytes": 7857,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/experiment.py",
+      "sha256": "c7942bfa96731c7ecf7280b8896bfe1141d027be3c166578a07b3a63b9fde960"
+    },
+    {
+      "bytes": 32908,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/focus_evidence.py",
+      "sha256": "2b517fedbd30c81d07f6846f6d2655f6471f3b19b188ac8fa955514e4a687ae5"
+    },
+    {
+      "bytes": 32569,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_actor_execution.py",
+      "sha256": "8cb95f8af400f6454bd62f367c3247d1582b3b4e9fdd9b39b11168c48eaa5804"
+    },
+    {
+      "bytes": 74811,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_data.py",
+      "sha256": "de4b3de02ac5de8480869ebfd6ccc41ba2a19386081126beb18ddb4daa7b186f"
+    },
+    {
+      "bytes": 18281,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_ecology_calibration.py",
+      "sha256": "8b05e977d226d5b404391994a55f186e7a8439bd70da3f17e7212ab636118ee6"
+    },
+    {
+      "bytes": 25587,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_embedding.py",
+      "sha256": "7aa84d11bf849ae395de35d3547371a4a420344d28beee21ce504dea47d0d8d5"
+    },
+    {
+      "bytes": 46524,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_execution.py",
+      "sha256": "f1b036063eb70dc703d36a55ea5ee5a254b47cffaa58b50e6b11128d27905fda"
+    },
+    {
+      "bytes": 46460,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_expression.py",
+      "sha256": "cb0db8bb3935fe9cb5465540c9d8749211f73ec4e07591e25b9a8bb2856403e2"
+    },
+    {
+      "bytes": 72560,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_fidelity_v2.py",
+      "sha256": "fae397296fb4fb11bae9b1560dcb8bb09c4f90d2e1196c07bd6fa2dd2e18f34c"
+    },
+    {
+      "bytes": 27316,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_governance.py",
+      "sha256": "a303d7370bd0e6be9ae111d9363e55fbaa9faba77944e70b14ceabf48c1cc407"
+    },
+    {
+      "bytes": 281246,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_hero.py",
+      "sha256": "d74058e691ed55ffb89745cb61e2a8a29d5d9bcdbd18011590fd63381c75c147"
+    },
+    {
+      "bytes": 23315,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_persona_audit.py",
+      "sha256": "4c01aaa37e712da71c6adfb7bf8d012605c42c81f65ead07139a8e49e96b38c9"
+    },
+    {
+      "bytes": 62244,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_pilot.py",
+      "sha256": "515e5b943a1c85444e077056700aedd3e2dc84428b255e01f9e4922b35499b0f"
+    },
+    {
+      "bytes": 25533,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_quality.py",
+      "sha256": "7f3e100ddaa63ab6e1c3909ad7e09166f16ad92bf387bc2817ed53de364a4c64"
+    },
+    {
+      "bytes": 62610,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_realism.py",
+      "sha256": "d8e942526eec2e317262df429a56f5bcdaae8ee33d7586d4520b7e3f273b6de1"
+    },
+    {
+      "bytes": 24844,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_relationships.py",
+      "sha256": "437f76b5882af0366ebe6b58862499da6479c87ab21e7a0d8386fd3d455dd1bd"
+    },
+    {
+      "bytes": 22090,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_risk.py",
+      "sha256": "332de1f734a9be8067d2764022d3c37a04866908c486b489f651487d009ad5ae"
+    },
+    {
+      "bytes": 18938,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_sampling.py",
+      "sha256": "9825ddcd366003ae6a8ec8da9fc7fb7a56bc5adbec1ad41aad0d944adc408fe2"
+    },
+    {
+      "bytes": 30520,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_trace.py",
+      "sha256": "42ef56e8c65ac606ac1a0f7b41a8b07637503ec2204ee04802571230a02bf774"
+    },
+    {
+      "bytes": 207974,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_turns.py",
+      "sha256": "6cb2887b326ae39f5380158c8b4fde5fa231bc225c36a42965e785ebb40f8af7"
+    },
+    {
+      "bytes": 112559,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_twin.py",
+      "sha256": "7ad287d0f8bdefdae0efebf3532878835536f5636c3a9493166cba19a2aeeac8"
+    },
+    {
+      "bytes": 62089,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_v2_execution.py",
+      "sha256": "4e616ed8e1a8473e3ae9b06c7346b67214216d16984838db76698870bd2a3c59"
+    },
+    {
+      "bytes": 17322,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/forum_visibility.py",
+      "sha256": "b7127a8d3fb7d4187370b18f29617c41801ddbab77cc4caf2cf87c3f19782edb"
+    },
+    {
+      "bytes": 4251,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/generator.py",
+      "sha256": "3d1f4088b3bfc220396c0e9e75c642c651f6be3c0afba7e474ff42da907911fa"
+    },
+    {
+      "bytes": 77278,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/governance_arena.py",
+      "sha256": "3728e75039e2bc6b42d2e2e8df120e860dbb7da5a2807a64685b455ef341ed9d"
+    },
+    {
+      "bytes": 212661,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/governance_arena_v2.py",
+      "sha256": "ccd14c9b04142f6690e8c61f6fb8fbe473b64792be48486131ddc879f4fc26eb"
+    },
+    {
+      "bytes": 66997,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/lecture_thread_ecology.py",
+      "sha256": "893f7ec353f4d1efe6b0476aa475d66538052dfed67bd2b9dec96d0ded48ae05"
+    },
+    {
+      "bytes": 96599,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/llm_agents.py",
+      "sha256": "4993530438cb5e7222dd50253066e1e34941465c87d19f84665740f20918f50d"
+    },
+    {
+      "bytes": 88976,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/llm_population.py",
+      "sha256": "7b3c5598d8133547aedcf0131f0c84744d7af10e219909f1ae0b026b1ea404c1"
+    },
+    {
+      "bytes": 53959,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/mass_engine.py",
+      "sha256": "e95ac744713c954ba0af42040d8179615af841f6c5552bb62bafa44c4526145a"
+    },
+    {
+      "bytes": 26355,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/mass_population.py",
+      "sha256": "c967e79a30b207a850a48ebac52b7cbe2d61037c4313d918d6e537c24a6da859"
+    },
+    {
+      "bytes": 26346,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/mass_simulation.py",
+      "sha256": "57b3490c89f14dd979c7a59b88bb4f586aaa1f522d096227f1ea012b29658217"
+    },
+    {
+      "bytes": 7182,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/metrics.py",
+      "sha256": "5342b662f12a916d21c99882747a9d01076f633c6f110ff03a76e9e7e60771fd"
+    },
+    {
+      "bytes": 38900,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/pilot.py",
+      "sha256": "0ca3a5741d5287c4f418f1d21ba7cc897087898319b21a164327abcfdcf796d6"
+    },
+    {
+      "bytes": 10038,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/pilot_report.py",
+      "sha256": "d4576a22b42077a137be617cee9c7aa0a895d6dc088d2705261a2450cf8a076a"
+    },
+    {
+      "bytes": 1282,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/policies.py",
+      "sha256": "2ca9e74715cdf4e364cb6b4712a799a30f2dab4004346de71833e80a79649ef0"
+    },
+    {
+      "bytes": 4808,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/provenance.py",
+      "sha256": "99eee03c209f393e669f261446860fca5c1a6067595fa29de8a8a8606854ab2c"
+    },
+    {
+      "bytes": 22247,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/public_corpus.py",
+      "sha256": "ce95aa9b3a3577a8324bed3c2b0c225984558474f2990a255801947c04d6cadd"
+    },
+    {
+      "bytes": 5972,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/report.py",
+      "sha256": "5a0b9d59593c36641387c5e245db6b3461e7c6155a08aadcdfb0dde87ba0df17"
+    },
+    {
+      "bytes": 34562,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/representative_personas.py",
+      "sha256": "a93a345d82760774b33e9cf1f23307db590892790cf124d803b0559998755961"
+    },
+    {
+      "bytes": 18123,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/representative_release.py",
+      "sha256": "caf72ac1b292808ba9d7d1095e1048c710550493437683dc51f15dcc26e0a81d"
+    },
+    {
+      "bytes": 45399,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/representative_taxonomy.py",
+      "sha256": "f40ae3c762375138ec3e8c25f8d4ee9d9186ce8a8b7713a10d4ac2ca73a74f26"
+    },
+    {
+      "bytes": 18212,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/robustness.py",
+      "sha256": "4d638ba425f2814f5af65564886d84263ab659b6d5b9bf1245b995cbac101efe"
+    },
+    {
+      "bytes": 82145,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/semantic_population.py",
+      "sha256": "e7aede57b13a3aa8a85211f9ed8c8dd18011ef21d52b8657c8fe955b55ca6131"
+    },
+    {
+      "bytes": 69390,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/shock_replay.py",
+      "sha256": "271628540e00b9c77455304d15db0200aebc98a760db39426d76404295efdda7"
+    },
+    {
+      "bytes": 5713,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/simulation.py",
+      "sha256": "e3f055324cc75fefe54510dbaf4af7482302a259d998a88c33c6e75f6a98e4f6"
+    },
+    {
+      "bytes": 22700,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/validation.py",
+      "sha256": "762694df43cb6044c137eff9d563049e3c94aa75eb0360752885d06c2810345c"
+    },
+    {
+      "bytes": 11641,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/validation_report.py",
+      "sha256": "37d5db517b49925252c88d670b739fff6c6da7c2b9577d974bd623fa14f54b51"
+    },
+    {
+      "bytes": 14988,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/variant_gate_acceptance.py",
+      "sha256": "2fe8f848c6ea0a06894d1c5d4a75ff1e365c84caa226f8d8c8e4e4d8958e9d0c"
+    },
+    {
+      "bytes": 142066,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/windowed_sensing.py",
+      "sha256": "c217248014e43a490202f4c21515d8a1b987d8088cba01bf998cbf448ff0e4e5"
+    },
+    {
+      "bytes": 53064,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/windowed_sensing_parent_contract.py",
+      "sha256": "56fbac622156b235dfff80af87e7ba0d6f033427208780cc97f8752b2566c5d3"
+    },
+    {
+      "bytes": 65313,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/yulan_scale.py",
+      "sha256": "be4374a4d98e111306d3947ef65982832afe0c60364bb34e7a71bbd7941e5ff7"
+    },
+    {
+      "bytes": 135132,
+      "path": "03_population_polarization/code/campuspulse_core/src/campuspulse_core/yulan_scale_engine.py",
+      "sha256": "c719d4cd557019ba85d7517a8eccb3205c9ff04cdea4de94ab0b4854055fbf6e"
+    },
+    {
       "bytes": 7948,
       "path": "03_population_polarization/code/campuspulse_core/tests/test_comparison_harness.py",
       "sha256": "3cb3801d0ce8a3cbd96b9b07d64136437820f7b419bb342589568d08f63a5006"
@@ -709,14 +1444,44 @@
       "sha256": "b70d216818291961b1b1c316836695c84cfb0acc7dd92448252b8ab8725ded5e"
     },
     {
+      "bytes": 1557,
+      "path": "03_population_polarization/code/project_configs/campuspulse_action_assimilation_v1.0.0.yaml",
+      "sha256": "8b483a6f94e34ecbf77b5718a76f7f9f1c96b63340b131d0e388e915479d8a48"
+    },
+    {
+      "bytes": 110,
+      "path": "03_population_polarization/code/project_configs/campuspulse_action_assimilation_v1.0.0.yaml.sha256",
+      "sha256": "fb0946b48b91a25ada4f2069c1be5341f851a67488550d080a7845be46690657"
+    },
+    {
+      "bytes": 24036,
+      "path": "03_population_polarization/code/project_configs/evaluation_definitions.yaml",
+      "sha256": "243b995d4199a7b7c018d314ceb8194fddea22948a0a397424a6f5d2a3826939"
+    },
+    {
+      "bytes": 94,
+      "path": "03_population_polarization/code/project_configs/evaluation_definitions.yaml.sha256",
+      "sha256": "1d9117f9bbded5305c44f8ac4dbae95fd8b8cfceb2cbc9d504e614ee9b5fa975"
+    },
+    {
+      "bytes": 7012,
+      "path": "03_population_polarization/code/project_configs/locked_protocol.yaml",
+      "sha256": "1cc0678d116204cae61c3c26c4002058a1a48cad71553474ebdb95e416a2b915"
+    },
+    {
+      "bytes": 87,
+      "path": "03_population_polarization/code/project_configs/locked_protocol.yaml.sha256",
+      "sha256": "8f74aa963af32763522b5770b3dfb1774839c9b3cdaa62132c0ed0b9c3bee98d"
+    },
+    {
       "bytes": 758,
       "path": "03_population_polarization/code/README.md",
       "sha256": "ffeda1d7f2ee556311a3f00e9d25aca540eedf4b4e473c6fa0128bcef9071250"
     },
     {
-      "bytes": 11796,
+      "bytes": 32801,
       "path": "03_population_polarization/code/SOURCE_MANIFEST.json",
-      "sha256": "1b2d814e8c96738257c89a9948721a7102d93c1c18286d2a76a0814d47c47b94"
+      "sha256": "bd2172620b13e8de64a468d59cce0b58795981e14b5c10302a330dd79cd79260"
     },
     {
       "bytes": 1973,
@@ -899,6 +1664,26 @@
       "sha256": "337fdf6ede401707968be0a83bec20ba38cedca00252d3c57d13389032cac281"
     },
     {
+      "bytes": 14,
+      "path": "environment/PYTHON_VERSION.txt",
+      "sha256": "917601090ffb73a030e3eaa8b7a01c41400cad4b61366b4218d7756a5733b66c"
+    },
+    {
+      "bytes": 339,
+      "path": "environment/README.md",
+      "sha256": "ffa60b7e62d0e8e48bc2ec564e8668eb83dfa11e8b5e117dcb63b0dc489a86ef"
+    },
+    {
+      "bytes": 447,
+      "path": "environment/requirements-real-provider.lock.txt",
+      "sha256": "fb2df84f920a6b236f34885ded9383c94479581a56d8a6f49285f7b503253d68"
+    },
+    {
+      "bytes": 62,
+      "path": "environment/requirements.txt",
+      "sha256": "96afc1bf761c8d7f041398e3ab2a9d615ab373ccfadf2f2d0ea985be08502b51"
+    },
+    {
       "bytes": 37404,
       "path": "publication_authority/Comparative_Experiment_Plan_FINAL.md",
       "sha256": "b161f81ddffe1c60d3776f144f370f3c1a24644f240ed71c95337c91961cdda8"
@@ -909,9 +1694,14 @@
       "sha256": "1cbc545f3107f7dc3bbc99b6e65d3773f3c5f1bfcc594404b57e9d2746168705"
     },
     {
-      "bytes": 676,
+      "bytes": 1017,
       "path": "README.md",
-      "sha256": "f361c0f8bce8ba87ba20ba78fe40a7f4658340b5b7ebe90d1fd9a429904192d8"
+      "sha256": "e2033b1045236be5e3b1faf6b942a0d2872eff7286961fd3f73312d459f4ed3f"
+    },
+    {
+      "bytes": 2832,
+      "path": "REPRODUCE.md",
+      "sha256": "ff6d68d9a1fce8eeff8fff42bc579a9d8b871f398b0d80969394e87bc77958ba"
     },
     {
       "bytes": 3776,
@@ -927,6 +1717,11 @@
       "bytes": 18407,
       "path": "usage/usage_ledger_v1.json",
       "sha256": "be22aabdf7f7c9c387ce74e1b1226ba6c0145ca225c79ea4ad6ad1a36428d973"
+    },
+    {
+      "bytes": 4304,
+      "path": "verify_release.py",
+      "sha256": "49894c4a9e821e9c048a8265109e8dabad95a3d45827a78f5579aa0fbc60775d"
     }
   ],
   "schema_version": "campus-pulse-paper-evidence-manifest-v1",

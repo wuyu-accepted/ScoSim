@@ -1,0 +1,24 @@
+{
+  "schema_version": "locked-dimension3-cross-method-metrics-v1.5.0",
+  "status": "frozen",
+  "analysis_unit": "one equally weighted parent agent",
+  "population_count_per_method_tick": 1000,
+  "measurement_ticks": [0, 3, 9],
+  "entropy": {
+    "range": [-1.0, 1.0],
+    "bin_count": 20,
+    "bin_width": 0.1,
+    "bin_edges": [-1.0, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+    "log_base": "natural",
+    "primary_report": "raw Shannon entropy",
+    "normalized_report": "raw entropy divided by ln(20)",
+    "degenerate_variance_threshold": 1e-10,
+    "degenerate_result": null
+  },
+  "campuspulse_reference": {
+    "tick_0": {"raw": null, "normalized": null},
+    "tick_3": {"raw": 0.7057371313262125, "normalized": 0.2355808419718897},
+    "tick_9": {"raw": 2.0275453539563917, "normalized": 0.6768112664323673}
+  },
+  "uniform_application": "The same fixed edges and degeneracy rule apply to CampusPulse, Belief Engine, Generative Agents, and Chuang et al."
+}

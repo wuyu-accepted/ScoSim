@@ -1,0 +1,33 @@
+{
+  "schema_version": "locked-dimension3-cross-method-metrics-v1.4.0",
+  "status": "frozen",
+  "supersedes": ["dimension-3-cross-method-v1.3.0", "prefilled CampusPulse cells in Comparative_Experiment_Plan_v2(2).md"],
+  "scope": "dimension three horizontal comparison only",
+  "analysis_unit": "one equally weighted parent agent",
+  "population_count_per_method_tick": 1000,
+  "measurement_ticks": [0, 3, 9],
+  "net_stance": {
+    "range": [-1.0, 1.0],
+    "campuspulse": "within each parent, normalize its 10 particle weights; weighted mean(support)-weighted mean(opposition)",
+    "belief_engine": "tanh(native_log_odds/2)",
+    "generative_agents": "five-level full-population questionnaire response divided by 2",
+    "chuang_opinion_dynamics": "native opinion in {-2,-1,0,1,2} divided by 2"
+  },
+  "operators": {
+    "mean": "unweighted arithmetic mean of the 1000 parent-agent stances",
+    "standard_deviation": "population standard deviation, ddof=0",
+    "sarle_bimodality": "(bias-corrected skewness^2+1)/bias-corrected Pearson kurtosis; NA if n<4, variance<1e-10, or kurtosis<=0",
+    "sarle_bimodal_threshold": 0.555,
+    "kde_peaks": "Gaussian KDE with scipy Scott bandwidth on 1024 equally spaced points over [-1,1]; scipy find_peaks prominence=5% of maximum density; NA if n<3 or variance<1e-10",
+    "interest_group_r_squared": "one-dimensional between-group sum of squares divided by total sum of squares on net stance; NA when stance variance is below 1e-10",
+    "interest_group_labels": ["directly_affected", "bystander"],
+    "permutation_test": "199 label permutations; one-sided add-one empirical p=(1+number(permuted_R2>=observed_R2))/200; RNG seed=20260722+tick",
+    "entropy": "natural-log Shannon entropy over fixed bins [-1,-0.6,-0.2,0.2,0.6,1]; normalized value divides by ln(5)"
+  },
+  "campuspulse_recomputed_reference": {
+    "tick_0": {"mean": -1.6391276724814218e-11, "sd": 3.988080540876498e-09, "bc": null, "kde_peaks": null, "interest_group_r_squared": null, "permutation_p": null, "entropy_raw": -0.0},
+    "tick_3": {"mean": 0.3085077389525314, "sd": 0.0471938721423173, "bc": 0.6127391575018688, "kde_peaks": 2, "interest_group_r_squared": 0.058251340555170866, "permutation_p": 0.005, "entropy_raw": -0.0},
+    "tick_9": {"mean": 0.13580867208430247, "sd": 0.21711462150711502, "bc": 0.630152845225192, "kde_peaks": 2, "interest_group_r_squared": 0.03157131281670511, "permutation_p": 0.005, "entropy_raw": 0.7686815232576862}
+  },
+  "interpretation_boundary": "The 12-dimensional multivariate interest-group R-squared belongs to the dimension-three ablation panel and must not be inserted into this cross-method net-stance table."
+}

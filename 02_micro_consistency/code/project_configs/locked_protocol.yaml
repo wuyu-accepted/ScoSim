@@ -1,0 +1,206 @@
+# AAMAS 2027 comparison and ablation protocol
+# Frozen: 2026-09-25 Asia/Shanghai
+# Any semantic change requires a new protocol_version and rerunning affected experiments.
+
+protocol_version: "1.3.0"
+status: "frozen"
+frozen_at: "2026-09-25T00:00:00+08:00"
+study: "CampusPulse micro-constraint and group-polarization experiments"
+
+scope:
+  include:
+    - "dimension_2_ablation"
+    - "dimension_3_ablation"
+    - "cross_method_comparison"
+  exclude:
+    - "frontend"
+    - "web_api"
+    - "workbench"
+    - "deployment"
+
+scenario:
+  id: "governance_legitimacy_dispute"
+  title: "Summer housing allocation legitimacy dispute"
+  initial_beds: 520
+  available_beds: 320
+  applications: 536
+  population_size: 1000
+  tick_start: 0
+  tick_end: 9
+  key_ticks: [0, 3, 9]
+  network_policy: "same_frozen_relationship_graph_for_all_methods"
+  event_policy: "same_event_content_timing_and_visibility_for_all_methods"
+
+model:
+  provider_protocol: "OpenAI-compatible chat completions"
+  model_id: "gpt-5.6-luna"
+  temperature: 0.20
+  top_p: 1.0
+  resident_max_output_tokens: 512
+  governance_max_output_tokens: 384
+  retry_policy:
+    transport_retries: 3
+    schema_repairs: 3
+    record_every_failure: true
+
+randomization:
+  pilot_seeds: [20260722]
+  formal_seeds: [20260722, 20261731, 20262740, 20263749, 20264758]
+  paired_across_methods: true
+  paired_across_ablation_variants: true
+
+dimension_2:
+  representative_agent_count: 12
+  paired_slot_count: 48
+  predecision_state_source: "identity-bound state captured after the frozen 12-agent full-method warmup trajectory at ticks 0, 1, and 2 and immediately before the paired Tick-3 action"
+  warmup:
+    condition: "full"
+    ticks: [0, 1, 2]
+    required_records: 36
+    capture_point: "after every agent's Tick-2 native assimilation and before any Tick-3 ablation prompt is rendered"
+    shared_snapshot_policy: "state_only and full receive the same captured particles and weights; context_only and profile_only receive no latent state"
+    forbidden: ["fresh initialization at Tick 3", "use of generated Tick-3 output", "anonymous particle identity recovery", "condition-specific warmup"]
+  stance_proposition: "The currently announced housing-allocation process is legitimate and acceptable."
+  public_stance_contract: "-1 strong opposition, 0 neutral or mixed, +1 strong support toward stance_proposition; structured value and generated text must have the same direction"
+  public_stance_binning:
+    rule: "fixed_absolute_deadband"
+    neutral_radius: 0.05
+    applies_to:
+      - "structured_public_stance_behavior_distribution"
+      - "condition_classifier_stance_features"
+    independent_from_prestate_calibration: true
+  expression_pre_state_agreement_calibration:
+    rule: "method_native_equal_neutral_mass_quantile"
+    neutral_quantile: 0.82
+    quantile_method: "higher_order_statistic_with_boundary_ties_included"
+    calibration_uses_expression_labels: false
+    calibration_panel: "the 512 paired horizontal pre-observation state snapshots per applicable method"
+    calibration_source_sha256:
+      campuspulse_records: "a754ef394e796ad5266805c4f01b3f9023500bfda654c091cadd381b03e13790"
+      belief_engine_preobservation_state: "9b6aa29aab7df9eab601ff5b98baa45d3dca9d25a6adbfe4031c9b1091af9b3d"
+    neutral_radius_by_method:
+      campuspulse: 0.041589952012686116
+      belief_engine: 0.18032786885245905
+    realized_calibration_neutral_count:
+      campuspulse: 421
+      belief_engine: 424
+    calibration_sample_count_per_method: 512
+    applies_only_to:
+      - "expression_pre_state_agreement_rate"
+    explicitly_does_not_modify:
+      - "structured_public_stance"
+      - "action_emotion_stance_distributions"
+      - "condition_classifier_stance_features"
+      - "generated_text"
+      - "decision_post_state_expression_consistency"
+  conditions:
+    - id: "context_only"
+      profile: false
+      smc_state: false
+    - id: "profile_only"
+      profile: true
+      smc_state: false
+    - id: "state_only"
+      profile: false
+      smc_state: true
+    - id: "full"
+      profile: true
+      smc_state: true
+  metrics:
+    - "direct_context_uptake_rate"
+    - "unsupported_fact_fabrication_rate"
+    - "expression_pre_state_agreement_rate"
+    - "decision_post_state_expression_consistency_rate"
+    - "llm_particle_update_direction_agreement_rate"
+    - "deduplicated_language_style_consistency"
+    - "action_emotion_stance_distributions"
+    - "condition_classification_accuracy"
+    - "condition_classification_macro_f1"
+  condition_classifier: "SVM"
+  validation: "leave_one_agent_out"
+  permutation_count: 999
+
+dimension_3:
+  variants:
+    - id: "full"
+      profile: true
+      particle_count: 10
+      resampling_diffusion: true
+    - id: "single_particle"
+      profile: true
+      particle_count: 1
+      resampling_diffusion: false
+    - id: "no_profile"
+      profile: false
+      particle_count: 10
+      resampling_diffusion: true
+    - id: "no_profile_no_smc"
+      profile: false
+      particle_count: 0
+      resampling_diffusion: false
+  metrics:
+    - "state_matrix_effective_rank"
+    - "interest_group_r_squared"
+    - "interest_group_permutation_p"
+    - "state_dimension_mean_sd"
+    - "net_stance_mean_sd"
+    - "sarle_bimodality_coefficient"
+    - "kde_peak_count"
+    - "discrete_stance_entropy"
+  permutation_count: 199
+  standard_deviation_ddof: 0
+  effective_rank_definition: "exp_shannon_entropy_of_normalized_singular_values"
+  kde_kernel: "gaussian"
+  kde_bandwidth_policy: "scott"
+  entropy_bins:
+    edges: [-1.0, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    degenerate_variance_threshold: 1.0e-10
+
+comparison_methods:
+  - id: "campuspulse"
+    implementation: "campuspulse_core"
+  - id: "belief_engine"
+    implementation: "paper_reimplementation_unless_author_code_arrives"
+  - id: "generative_agents"
+    upstream_commit: "fe05a71d3e4ed7d10bf68aa4eda6dd995ec070f4"
+  - id: "chuang_opinion_dynamics"
+    upstream_commit: "edfd7c91c366307ee06344477dcc8082eb720215"
+
+output_contract:
+  required_fields:
+    - "experiment_id"
+    - "method"
+    - "variant"
+    - "seed"
+    - "agent_id"
+    - "tick"
+    - "profile_id"
+    - "interest_group"
+    - "visible_context"
+    - "pre_state"
+    - "particles"
+    - "particle_weights"
+    - "generated_text"
+    - "action"
+    - "emotion"
+    - "public_stance"
+    - "public_or_private"
+    - "model_status"
+  state_capture: "before_generation_and_after_update"
+  run_layout: "runs/<experiment>/<method>/<variant>/<seed>/"
+  immutable_raw_outputs: true
+
+analysis:
+  confidence_level: 0.95
+  bootstrap_resamples: 2000
+  multiple_testing_correction: "Benjamini-Hochberg FDR"
+  not_applicable_policy: "NA_not_zero"
+  tuning_to_expected_ranking_forbidden: true
+
+completion_gates:
+  - "all_preregistered_seeds_completed"
+  - "schema_validation_passed"
+  - "tick_continuity_passed"
+  - "particle_weight_validation_passed"
+  - "failures_and_exclusions_audited"
+  - "tables_reproducible_from_raw_outputs"

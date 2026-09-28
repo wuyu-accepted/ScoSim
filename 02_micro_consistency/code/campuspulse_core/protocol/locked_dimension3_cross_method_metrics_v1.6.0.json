@@ -1,0 +1,33 @@
+{
+  "schema_version": "locked-dimension3-cross-method-metrics-v1.6.0",
+  "status": "frozen",
+  "supersedes": "locked-dimension3-cross-method-metrics-v1.5.0",
+  "scope": "dimension three horizontal comparison and longitudinal ablation",
+  "analysis_unit": "one equally weighted parent agent",
+  "population_count_per_method_tick": 1000,
+  "measurement_ticks": [0, 3, 9],
+  "sarle_bimodality": {
+    "formula": "(ordinary central-moment skewness^2 + 1) / ordinary central-moment Pearson kurtosis",
+    "scipy_parameters": {
+      "skew_bias": true,
+      "kurtosis_fisher": false,
+      "kurtosis_bias": true
+    },
+    "threshold": 0.555,
+    "minimum_n": 4,
+    "degenerate_variance_threshold": 1e-10,
+    "degenerate_result": null,
+    "range": [0.0, 1.0]
+  },
+  "entropy": {
+    "range": [-1.0, 1.0],
+    "bin_count": 20,
+    "bin_width": 0.1,
+    "log_base": "natural",
+    "primary_report": "raw Shannon entropy",
+    "normalized_report": "raw entropy divided by ln(20)",
+    "degenerate_variance_threshold": 1e-10,
+    "degenerate_result": null
+  },
+  "uniform_application": "The same ordinary-moment Sarle operator and fixed 20-bin entropy operator apply to all dimension-three methods and ablation conditions."
+}

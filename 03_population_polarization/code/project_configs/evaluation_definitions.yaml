@@ -1,0 +1,381 @@
+# AAMAS 2027 evaluation definitions
+# This file completes definitions left implicit by the experiment plan.
+# Formulas and exclusion rules must not be changed after inspecting outcomes.
+
+definitions_version: "1.6.0"
+status: "frozen"
+frozen_at: "2026-09-25T00:00:00+08:00"
+protocol_version: "1.3.0"
+fairness_contract_version: "1.1.0"
+scenario_id: "governance_legitimacy_dispute"
+
+global_rules:
+  primary_population_unit: "one parent agent; particles are uncertainty states and never extra people"
+  primary_ticks: [0, 3, 9]
+  auxiliary_ticks: [1, 2, 4, 5, 6, 7, 8]
+  population_size: 1000
+  standard_deviation_ddof: 0
+  confidence_level: 0.95
+  bootstrap_resamples: 2000
+  bootstrap_unit: "agent_id"
+  bootstrap_design: "paired resampling of agent IDs across methods or variants"
+  bootstrap_seed: 20260722
+  multiple_testing:
+    method: "Benjamini-Hochberg FDR"
+    alpha: 0.05
+    families:
+      - "all preregistered dimension-2 pairwise method contrasts"
+      - "all preregistered dimension-2 ablation contrasts"
+      - "all preregistered dimension-3 cross-method contrasts across ticks 0,3,9"
+      - "all preregistered dimension-3 ablation contrasts across ticks 0,3,9"
+  numeric_tolerance: 0.00000001
+  missing_policy:
+    not_applicable: "NA; excluded from denominators and never replaced by zero"
+    extraction_failure: "NA_extraction_failure; report count and coverage"
+    model_failure: "retain failed record; exclude only from content metric denominator and report failure rate"
+    empty_eligible_set: "metric is null with status NA_no_eligible_records"
+  result_blindness:
+    tune_to_expected_ranking: "forbidden"
+    legacy_table_values: "nonbinding references; recompute with this definition version"
+
+common_text_judge:
+  role: "method-blind external evaluator"
+  model_id: "gpt-5.6-luna"
+  temperature: 0.0
+  top_p: 1.0
+  max_output_tokens: 256
+  input_visibility:
+    include:
+      - "closed-world fact registry visible at the decision tick"
+      - "forum context visible to the evaluated agent"
+      - "method-internal factual evidence actually present in the generation input, with provenance labels removed"
+      - "generated public or private expression"
+    exclude:
+      - "method name"
+      - "variant or condition name"
+      - "agent ID"
+      - "pre-state and post-state values"
+      - "expected answer or method ranking"
+  output_schema: "dimension2_text_judgement_v1.0.0.schema.json"
+  prompt_template:
+    file: "dimension2_text_judge_v1.0.0.prompt.txt"
+    sha256: "98c8630f31175c05f8e9ee94280e92eb8b4484ed7a860accb6cfda56d22481b9"
+  decoding_failure_policy: "retry under frozen schema-repair prompt up to 3 times, then NA_extraction_failure"
+  audit:
+    mode: "model_judge_with_stratified_human_review"
+    human_double_review_fraction: 0.20
+    human_review_required: true
+    sampling_population: "all eligible records with a completed model judgement"
+    target_count: "ceil(0.20 * sampling_population_count)"
+    strata: ["method", "variant", "seed", "public_or_private"]
+    allocation: "proportional largest-remainder allocation to the fixed overall target; ties and within-stratum order are resolved by SHA-256 with seed 20260722"
+    blindness: "human reviewer receives only the frozen method-blind judge packet and must not see method, variant, agent ID, latent state, model judgement, or aggregate outcomes"
+    primary_label_policy: "model-judge labels remain the primary labels for full-sample metrics; human labels estimate audit reliability and do not silently replace model labels"
+    disagreement_policy: "report disagreements without replacement; a systematic rubric or extraction failure requires an explicit versioned protocol amendment before rerunning affected evaluations"
+    completion_gate: "paper-facing dimension-2 text results remain provisional until every selected human case passes schema validation and the reliability report is generated"
+    report: ["model_judge_coverage", "extraction_failure_count", "label_distribution", "human_audit_target_count", "human_audit_completed_count", "human_model_raw_agreement", "human_model_cohens_kappa", "disagreement_count"]
+    limitation: "The 20% audit measures agreement with one independent human review on the sampled records; it is not a second full-sample ground truth annotation."
+    change_control: "Human audit was reinstated by the study owner after the CampusPulse pilot outcomes existed and before the full comparative experiment; existing text results are provisional until audited."
+
+dimension_2_cross_method:
+  evaluation_unit: "successful generated expression for one agent at one tick"
+  pairing: "same agent slot, tick, visible context, event, seed, and action opportunity across methods"
+
+  direct_context_uptake_rate:
+    metric_id: "d2_context_uptake_rate_v1"
+    judgement_labels: ["yes", "no", "insufficient_evidence"]
+    yes_rule: "expression explicitly responds to, uses, challenges, answers, or continues at least one concrete item in the visible context or current event"
+    no_rule: "expression is only broadly on-topic, generic, unrelated, or fails to engage any concrete visible item"
+    insufficient_rule: "visible context or generated expression is missing or unusable"
+    numerator: "count(label == yes)"
+    denominator: "count(label in {yes,no})"
+    auxiliary: ["eligible_count", "insufficient_count", "coverage_rate", "95% paired-cluster bootstrap interval"]
+
+  unsupported_fact_fabrication_rate:
+    metric_id: "d2_unsupported_fact_rate_v1"
+    judgement_labels: ["yes", "no", "insufficient_evidence"]
+    factual_claim_rule: "a claim presented as externally verifiable fact; opinions, preferences, questions, hypotheticals, and clearly marked uncertainty are not factual claims"
+    supported_sources:
+      - "closed-world fact registry available at the tick"
+      - "visible forum or governance context"
+      - "factual evidence explicitly supplied in the method-specific generation input"
+    yes_rule: "at least one factual claim lacks support in every permitted source or contradicts a permitted source"
+    no_rule: "all factual claims are supported, or the expression contains no factual claim"
+    insufficient_rule: "source packet or expression is missing or corrupted"
+    numerator: "count(label == yes)"
+    denominator: "count(label in {yes,no})"
+    record_level_evidence: "judge must return unsupported_spans and nearest_source_ids; spans empty when label is no"
+    auxiliary: ["eligible_count", "insufficient_count", "coverage_rate", "95% paired-cluster bootstrap interval"]
+
+  expression_previous_state_agreement_rate:
+    metric_id: "d2_expression_prestate_agreement_v1"
+    applicable_methods: ["campuspulse", "belief_engine"]
+    not_applicable_methods:
+      generative_agents: "no explicit pre-decision numeric cognitive state in the registered comparison"
+      chuang_opinion_dynamics: "NA under the registered dimension-2 plan"
+    applicable_ablation_variants: ["state_only", "full"]
+    inapplicable_ablation_variants: ["context_only", "profile_only"]
+    state_direction:
+      calibration_rule: "method-native absolute radius at the 0.82 quantile of abs(pre-observation internal state) on the frozen 512 paired observations; inclusive ties are neutral"
+      calibration_population: "the same 512 pre-observation states per applicable method; fitted once and never refitted by outcome, ablation condition, or report run"
+      neutral_quantile: 0.82
+      labels: ["oppose", "neutral", "support"]
+      campuspulse:
+        scalar: "sum_i(normalized_pre_particle_weight_i * (support_i - opposition_i))"
+        neutral_radius: 0.041589952012686116
+        mapping: "oppose below -0.041589952012686116; neutral within the inclusive radius; support above +0.041589952012686116"
+        provenance: "cross-method records use their captured longitudinal predecision particles; ablation records use the protocol-1.3.0 frozen Tick-0--2 warmup snapshot; isolated Tick-3 reinitialization is invalid"
+      belief_engine:
+        scalar: "paper-native pre-decision log-odds transformed to [-1,1] by the frozen monotone adapter"
+        neutral_radius: 0.18032786885245905
+        mapping: "oppose below -0.18032786885245905; neutral within the inclusive radius; support above +0.18032786885245905"
+        adapter_requirement: "the frozen monotone adapter is unchanged; only the registered direction projection uses the calibrated native radius"
+      concept_boundary:
+        applies_only_to: "expression_previous_state_agreement_rate"
+        excluded_from: ["structured_public_stance", "behavior_distributions", "condition_classifier", "generated_text", "decision_post_state_expression_consistency_rate"]
+    expression_direction:
+      extractor_output_levels:
+        strong_oppose: -1.0
+        weak_oppose: -0.5
+        neutral_or_mixed: 0.0
+        weak_support: 0.5
+        strong_support: 1.0
+        insufficient_evidence: null
+      sign_mapping: "oppose for values < 0; neutral for 0; support for values > 0"
+      extraction_input: "generated expression plus the proposition: support the announced housing-allocation policy as legitimate"
+      generation_contract: "the shared generation prompt defines public_stance against the identical proposition and requires text/value directional consistency"
+    agreement: "1 when state_direction equals expression_direction, otherwise 0"
+    numerator: "sum(agreement)"
+    denominator: "expressed records with successful extraction and an applicable pre-state"
+    mandatory_auxiliary:
+      - "expression_coverage_rate among successful action opportunities"
+      - "extractor_success_rate"
+      - "direction-specific confusion matrix"
+      - "eligible_count"
+      - "95% paired-cluster bootstrap interval"
+    anti_gaming: "non-expression does not enter the main denominator and must be reported separately as expression coverage"
+
+  decision_post_state_expression_consistency_rate:
+    metric_id: "d2_decision_poststate_expression_consistency_v1"
+    status: "exploratory_not_causal"
+    applicable_methods: ["campuspulse"]
+    applicable_ablation_variants: ["state_only", "full"]
+    inapplicable_ablation_variants: ["context_only", "profile_only"]
+    state_scalar: "post_state.support - post_state.opposition after native assimilation of the generated action and stance"
+    state_direction: "independent fixed radius: oppose below -0.05, neutral within [-0.05,0.05], support above 0.05; do not inherit the pre-state calibration"
+    expression_direction: "reuse the same frozen external-judge expression_stance label and sign mapping as expression_previous_state_agreement_rate; do not issue a second judgement"
+    agreement: "1 when post_state_direction equals expression_direction, otherwise 0"
+    denominator: "the identical eligibility rule used by expression_previous_state_agreement_rate: expressed records with successful extraction and an applicable post-state"
+    uncertainty: "the identical agent-cluster bootstrap implementation used by expression_previous_state_agreement_rate"
+    limitation: "the generated expression contributes to native post-state assimilation, so this is an internal self-consistency diagnostic and cannot replace the causal pre-state metric"
+
+  language_style_consistency:
+    metric_id: "d2_deduplicated_language_style_consistency_v2"
+    eligible_text: "nonempty generated public or private expression after Unicode NFKC normalization"
+    exact_duplicate_policy: "within each agent and analysis condition, retain the first occurrence of each exactly equal normalized text and discard later identical occurrences before vectorization"
+    cross_agent_duplicate_policy: "do not deduplicate across agents"
+    features:
+      normalization: "Unicode NFKC, lowercase where applicable, remove all whitespace"
+      tokens: "overlapping character 1-, 2-, and 3-grams"
+      vectorizer: "signed BLAKE2b feature hashing"
+      dimensions: 256
+      normalization_norm: "L2"
+    per_agent_score: "mean cosine similarity over all unordered eligible expression pairs for that agent"
+    aggregate: "unweighted mean of per-agent scores so prolific agents do not dominate"
+    minimum_expressions_per_agent: 2
+    minimum_eligible_agents: 10
+    insufficient_result: "null with status NA_insufficient_repeated_expression"
+    mandatory_auxiliary: ["raw_expression_count", "exact_duplicate_count", "eligible_agent_count", "eligible_unique_expression_count", "coverage_rate", "95% agent-bootstrap interval"]
+
+dimension_2_ablation:
+  predecision_state:
+    source: "frozen 12-agent full-method warmup trajectory"
+    warmup_ticks: [0, 1, 2]
+    required_warmup_records: 36
+    capture_tick: 3
+    capture_point: "after Tick-2 native assimilation and before any Tick-3 ablation generation"
+    shared_across_variants: true
+    applicable_variants: ["state_only", "full"]
+    forbidden_sources: ["lost 366-slot identity snapshot", "anonymous particle panel", "fresh Tick-3 initialization", "current Tick-3 generated output"]
+  panel:
+    representative_agent_count: 12
+    conditions: ["context_only", "profile_only", "state_only", "full"]
+    required_records: 48
+    pairing: "each agent appears exactly once in each condition under the same visible context and event"
+  repeated_style_panel:
+    purpose: "estimate one deduplicated within-agent language-style score for each ablation condition"
+    minimum_observations_per_agent_condition: 2
+    minimum_eligible_agents_per_condition: 10
+    minimum_total_records: 96
+    pairing: "the same 12 agents receive the same ordered observations under all four conditions"
+    exact_duplicate_policy: "within each agent and condition, retain the first occurrence of each Unicode-NFKC/lowercase/whitespace-removed text and discard later exact matches"
+    cross_agent_duplicate_policy: "do not deduplicate across agents"
+    score: "for each agent, mean cosine over all unordered pairs of distinct hashed character 1-, 2-, and 3-gram vectors; condition score is the unweighted mean over eligible agents"
+    insufficient_result: "null with status NA_insufficient_repeated_expression"
+  behavior_categories:
+    action_order: ["ignore", "read", "post", "reply", "seek_help", "report_risk"]
+    action_aliases:
+      quote: "reply"
+      repost: "post"
+      seek_verify: "seek_help"
+      correct: "reply"
+    emotion_order: ["neutral", "calm", "curious", "concerned", "skeptical", "frustrated", "supportive", "urgent"]
+    stance_order: ["support", "oppose", "mixed", "uncertain", "neutral"]
+    public_stance_scalar_fallback:
+      rule: "independent fixed absolute deadband; does not inherit the expression/pre-state calibration"
+      neutral_radius: 0.05
+      mapping: "oppose below -0.05; neutral within [-0.05,0.05] or when missing; support above 0.05"
+    stance_aliases:
+      supportive: "support"
+      critical: "oppose"
+      concerned: "oppose"
+    public_or_private_order: ["public", "private", "none"]
+    unknown_category_policy: "schema failure; do not create an other category after seeing results"
+  distribution_reporting:
+    report: ["count", "proportion"]
+    denominator: "all 12 paired records per condition, including none/silent actions"
+  condition_classifier:
+    metric_ids: ["d2_condition_accuracy_v1", "d2_condition_macro_f1_v1", "d2_profile_factor_accuracy_v1", "d2_state_factor_accuracy_v1"]
+    feature_vector_order:
+      - "6 action one-hot features in action_order"
+      - "8 emotion one-hot features in emotion_order"
+      - "5 stance one-hot features in stance_order"
+      - "3 public_or_private one-hot features in public_or_private_order"
+      - "generated_expression_present boolean"
+      - "min(Unicode codepoint length / 512, 1)"
+    feature_count: 24
+    forbidden_features: ["agent_id", "profile_id", "condition label", "pre_state", "post_state", "particles", "particle_weights", "prompt hash"]
+    classifier: "linear support-vector classifier"
+    C: 1.0
+    scaling: "StandardScaler fit only on each training fold"
+    validation: "leave one agent out; the held-out agent contributes all four test records"
+    tasks:
+      four_condition: "four-class prediction; chance reference 0.25; report accuracy and macro-F1"
+      profile_factor: "profile present vs absent; chance reference 0.50; report accuracy"
+      state_factor: "SMC state present vs absent; chance reference 0.50; report accuracy"
+    permutation_test:
+      count: 999
+      seed: 20260722
+      scheme: "permute the four condition labels independently within every agent, refit the complete fold pipeline for each permutation"
+      p_value: "(1 + count(null_score >= observed_score)) / 1000"
+      sidedness: "one-sided"
+
+  llm_particle_update_direction_agreement:
+    metric_id: "d2_llm_particle_direction_agreement_v1"
+    applicable_variants: ["state_only", "full"]
+    interpretation: "mechanism-consistency diagnostic, not independent predictive validation"
+    state_deadband: 0.0000001
+    expected_directions:
+      trust: "sign(trust_delta) when nonzero"
+      satisfaction: "sign(satisfaction_delta) when nonzero"
+      concern: "sign(urgency - pre_concern) when nonzero"
+      activity: "sign(I(action is public) - pre_activity) when nonzero"
+      support_and_opposition: "support expression expects support up/opposition down; oppose expression expects support down/opposition up"
+      verified_and_rumor_belief: "verified/corrected evidence expects verified_belief up/rumor_belief down"
+    observed_direction: "sign(post_parent_mean - pre_parent_mean) with the same deadband"
+    score: "number of matching tested field directions / number of tested field directions"
+    exclusions: "fields with zero expected direction are not tested; a turn with no tested field is NA"
+    mandatory_auxiliary: ["tested_direction_count", "matched_turn_count", "per_field_rates", "turn_coverage_rate"]
+
+dimension_3_cross_method:
+  common_domain: "one normalized net-stance scalar per parent agent"
+  required_agent_count: 1000
+  ticks: [0, 3, 9]
+  stance_mapping:
+    campuspulse: "weighted pre-specified 10-particle expectation of support minus opposition"
+    belief_engine: "paper-native log-odds transformed monotonically to [-1,1] by the frozen adapter"
+    generative_agents: "non-updating five-level survey probe mapped to {-1,-0.5,0,0.5,1}"
+    chuang_opinion_dynamics: "paper-native {-2,-1,0,1,2} opinion divided by 2"
+  probe_noninterference: "probe responses are not written to memory, forum state, or subsequent prompts"
+  clipping: "values outside [-1,1] are a validation failure, not silently clipped"
+  metrics:
+    net_stance_mean: "arithmetic mean over 1000 parent agents"
+    net_stance_sd: "population standard deviation with ddof=0"
+    sarle_bimodality:
+      formula: "(ordinary_central_moment_skewness^2 + 1) / ordinary_central_moment_Pearson_kurtosis (scipy bias=true)"
+      threshold: 0.555
+      minimum_n: 4
+      degenerate_variance_below: 0.0000000001
+      degenerate_result: null
+    kde_peak_count:
+      kernel: "Gaussian"
+      bandwidth: "Scott"
+      grid: "1024 equally spaced points including -1 and 1"
+      peak_rule: "strict interior local maximum returned by scipy.signal.find_peaks"
+      minimum_prominence: "0.05 times the maximum evaluated density"
+      endpoint_policy: "endpoints are not peaks"
+      degenerate_or_n_below_3: null
+    stake_group_r_squared:
+      groups: ["directly_affected", "bystander"]
+      group_mapping: "frozen pre-event scenario-stake label; directly affected includes direct flag or service/resource-need intensity >= 0.65, all remaining agents are bystanders"
+      formula: "between-group sum of squares / total sum of squares on the 1-D net-stance vector"
+      permutation_count: 199
+      permutation_seed: "20260722 + tick"
+      permutation_scheme: "globally permute frozen group labels, preserving group sizes and stance values"
+      p_value: "(1 + count(null_R2 >= observed_R2)) / 200"
+    discrete_stance_entropy:
+      bin_edges: [-1.0, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+      degenerate_variance_threshold: 1.0e-10
+      boundary_rule: "left-closed/right-open except final bin includes 1.0"
+      log_base: "natural"
+      formula: "-sum(nonzero_bin_probability * ln(nonzero_bin_probability))"
+      range: [0.0, 2.995732273553991]
+      auxiliary_normalized_entropy: "raw entropy / ln(20)"
+
+dimension_3_ablation:
+  common_domain: "1000 by 12 parent-agent post-update state matrix plus parent-level net stance"
+  ticks: [0, 3, 9]
+  particle_reduction: "within each parent, normalize its particle weights to one and compute the weighted mean; never flatten 10 particles into 10000 people"
+  state_fields: ["attention", "concern", "trust", "satisfaction", "support", "opposition", "activity", "voice", "service_strain", "rumor_belief", "verified_belief", "evidence_acceptance"]
+  effective_rank:
+    metric_id: "d3_state_effective_rank_v1"
+    matrix: "column-centered 1000 by 12 parent-state matrix"
+    singular_values: "nonnegative singular values from numpy.linalg.svd(compute_uv=False)"
+    probabilities: "singular_value / sum(all singular_values), excluding exact zeros"
+    formula: "exp(-sum(p * ln(p)))"
+    zero_matrix_result: 0.0
+    note: "this follows locked_protocol v1.0.0; legacy correlation-eigenvalue ranks and old table values are nonbinding"
+  multivariate_stake_group_r_squared:
+    metric_id: "d3_state_group_multivariate_r2_v1"
+    matrix: "the unstandardized 1000 by 12 parent-state matrix"
+    groups: "same frozen binary group mapping as cross-method stance R-squared"
+    formula: "sum_g(n_g * squared_L2(group_mean_g - overall_mean)) / sum_i(squared_L2(row_i - overall_mean))"
+    permutation_count: 199
+    permutation_seed: "20260722 + 1000 + tick"
+    p_value: "(1 + count(null_R2 >= observed_R2)) / 200"
+  per_state_dimension:
+    report_for_all_12_fields: ["mean", "population_sd_ddof_0", "Sarle_bimodality", "Scott_KDE_peak_count"]
+    formulas: "same univariate definitions as the cross-method net-stance metrics"
+  net_stance:
+    scalar: "parent support minus parent opposition"
+    report: ["mean", "population_sd_ddof_0", "Sarle_bimodality", "Scott_KDE_peak_count", "fixed-bin entropy"]
+
+quality_and_exclusion_gates:
+  schema_validation: "100% of retained raw records pass unified schema"
+  tick_continuity: "every required agent has every required tick; otherwise the run is incomplete"
+  particle_weights: "nonnegative, same length as particles, sum to 1 within absolute tolerance 1e-6"
+  dimension_2_panel: "exactly 12 agents paired across all four conditions"
+  dimension_3_population: "exactly 1000 parent agents at each primary tick"
+  failure_reporting: "report attempted, successful, failed, repaired, excluded, and NA counts by method/variant/seed"
+  minimum_cross_method_completion: "a method-seed is not analyzed as complete unless at least 95% of scheduled generations succeed; lower completion is reported separately"
+  exclusion_authority: "only rules in this file; no post-outcome exclusions"
+
+required_outputs:
+  dimension_2:
+    - "record-level method-blind judgement sidecar"
+    - "metric numerators, denominators, coverage, and confidence intervals"
+    - "behavior count/proportion tables"
+    - "classifier fold predictions and permutation-null summary"
+  dimension_3:
+    - "1000-value stance vector per method/seed/primary tick"
+    - "1000x12 parent-state matrix per CampusPulse ablation/seed/primary tick"
+    - "metric sufficient statistics and permutation-null summary"
+  provenance:
+    - "definition file SHA-256"
+    - "raw output SHA-256"
+    - "evaluator code commit or file hashes"
+    - "judge prompt and model-parameter hashes"
+
+change_control:
+  semantic_change_requires: ["new definitions_version", "new SHA-256", "written rationale", "rerun of all affected evaluations"]
+  forbidden_without_version_bump: ["formula change", "threshold change", "bin change", "judge rubric change", "category remapping", "denominator or exclusion change"]
